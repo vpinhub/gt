@@ -610,7 +610,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">VPINHUB <span>GT Ballers</span></a>
@@ -625,7 +624,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>🏌️ <span class="highlight">VPINHUB</span> Golden Tee Ballers</h1>
@@ -637,7 +635,6 @@
         </div>
     </section>
 
-    <!-- Quick Stats -->
     <section class="section">
         <div class="container">
             <div class="stats-grid" id="statsGrid">
@@ -661,7 +658,6 @@
         </div>
     </section>
 
-    <!-- Weekly Challenge Section -->
     <section class="section" id="weekly">
         <div class="container">
             <div class="section-header">
@@ -678,7 +674,6 @@
         </div>
     </section>
 
-    <!-- Featured Video Spotlight -->
     <section class="section">
         <div class="container">
             <div class="spotlight">
@@ -690,7 +685,6 @@
         </div>
     </section>
 
-    <!-- Players Section -->
     <section class="section" id="players">
         <div class="container">
             <div class="section-header">
@@ -704,7 +698,6 @@
         </div>
     </section>
 
-    <!-- Courses Section -->
     <section class="section" id="courses">
         <div class="container">
             <div class="section-header">
@@ -720,7 +713,6 @@
         </div>
     </section>
 
-    <!-- Videos Section -->
     <section class="section" id="videos">
         <div class="container">
             <div class="section-header">
@@ -736,7 +728,6 @@
         </div>
     </section>
 
-    <!-- Leaderboard -->
     <section class="section" id="leaderboard">
         <div class="container">
             <div class="section-header">
@@ -755,7 +746,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -787,7 +777,6 @@
         </div>
     </footer>
 
-    <!-- Modal for Join Leaderboard -->
     <div class="modal" id="joinModal">
         <div class="modal-content" style="max-width: 600px;">
             <button class="modal-close" onclick="closeJoinModal()">×</button>
@@ -806,7 +795,6 @@
         </div>
     </div>
 
-    <!-- Modal for Scorecard -->
     <div class="modal" id="scorecardModal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">×</button>
@@ -874,8 +862,8 @@
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
             document.getElementById('weeklyCourseName').textContent = WEEKLY_CHALLENGE_COURSE;
 
-            // Filter entries for this course in the current week
-            const weeklyEntries = leaderboardData.filter(entry => {
+            // 1. Filter entries for this course in the current week (DO NOT sort yet)
+            const allWeeklyEntries = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
 
                 // Parse entry date
@@ -887,12 +875,37 @@
                 } catch (e) {
                     return false;
                 }
-            }).sort((a, b) => {
+            });
+
+            // 2. --- NEW LOGIC START ---
+            //    Create a map to store the single best entry for each player
+            const playerBestScores = {};
+
+            allWeeklyEntries.forEach(entry => {
+                const player = entry.username || 'Unknown';
+                const score = parseInt(entry.total_score);
+
+                if (isNaN(score)) return; // Skip entries without a valid score
+
+                // Check if this player is not in the map OR if this entry's score is better (lower)
+                if (!playerBestScores[player] || score < parseInt(playerBestScores[player].total_score)) {
+                    // Save this entry as the player's new best
+                    playerBestScores[player] = entry;
+                }
+            });
+
+            // 3. Convert the map of best scores back into an array
+            const weeklyEntries = Object.values(playerBestScores);
+            
+            // 4. --- NEW LOGIC END ---
+            //    Now, sort the de-duplicated list by score
+            weeklyEntries.sort((a, b) => {
                 const scoreA = parseInt(a.total_score) || 999;
                 const scoreB = parseInt(b.total_score) || 999;
                 return scoreA - scoreB;
             });
 
+            // The rest of the function remains the same
             const container = document.getElementById('weeklyContent');
 
             if (weeklyEntries.length === 0) {
