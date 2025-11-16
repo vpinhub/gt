@@ -1,4 +1,4 @@
-name: Scrape TeknoParrot Leaderboard
+name: Scrape Leaderboard
 
 on:
   schedule:
