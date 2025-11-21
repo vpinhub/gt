@@ -815,7 +815,8 @@
         });
 
         function loadJSONFile(filename) {
-            fetch(filename)
+            // Cache busting: Append timestamp to URL to force browser to download new file
+            fetch(filename + '?v=' + new Date().getTime())
                 .then(response => response.json())
                 .then(data => {
                     leaderboardData = data;
@@ -831,6 +832,46 @@
                     console.error('Error loading data:', error);
                     document.getElementById('spotlightContent').innerHTML = '<div class="no-data">Unable to load data. Please check if golden_tee_leaderboard.json exists.</div>';
                 });
+        }
+
+        function parseDate(dateStr) {
+            // Robust parsing for "MM/DD/YYYY H:MM:SS PM" format
+            if (!dateStr) return null;
+            
+            // Try standard parsing first
+            let d = new Date(dateStr);
+            if (!isNaN(d.getTime())) return d;
+
+            // Fallback parser for browsers that dislike AM/PM
+            try {
+                // Expected format: "11/21/2025 7:43:45 PM"
+                const parts = dateStr.split(' ');
+                if (parts.length < 3) return null;
+
+                const dateParts = parts[0].split('/');
+                const timeParts = parts[1].split(':');
+                const ampm = parts[2];
+
+                if (dateParts.length !== 3 || timeParts.length !== 3) return null;
+
+                let hours = parseInt(timeParts[0]);
+                const minutes = parseInt(timeParts[1]);
+                const seconds = parseInt(timeParts[2]);
+                
+                if (ampm === 'PM' && hours < 12) hours += 12;
+                if (ampm === 'AM' && hours === 12) hours = 0;
+
+                return new Date(
+                    parseInt(dateParts[2]), // Year
+                    parseInt(dateParts[0]) - 1, // Month (0-indexed)
+                    parseInt(dateParts[1]), // Day
+                    hours,
+                    minutes,
+                    seconds
+                );
+            } catch (e) {
+                return null;
+            }
         }
 
         function showWeeklyChallenge() {
@@ -865,16 +906,12 @@
             // 1. Filter entries for this course in the current week (DO NOT sort yet)
             const allWeeklyEntries = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
-
-                // Parse entry date
                 if (!entry.date) return false;
 
-                try {
-                    const entryDate = new Date(entry.date);
-                    return entryDate >= weekStart && entryDate < weekEnd;
-                } catch (e) {
-                    return false;
-                }
+                const entryDate = parseDate(entry.date);
+                if (!entryDate) return false;
+
+                return entryDate >= weekStart && entryDate < weekEnd;
             });
 
             // 2. --- NEW LOGIC START ---
@@ -940,8 +977,9 @@
 
             weeklyEntries.forEach((entry, index) => {
                 const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
-                const dateObj = new Date(entry.date);
-                const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                // Use safe parser for display date too
+                const dateObj = parseDate(entry.date);
+                const dateStr = dateObj ? dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : 'N/A';
 
                 html += `
                     <tr onclick='showScorecard(${JSON.stringify(entry).replace(/'/g, "&apos;")})' style="cursor: pointer;">
