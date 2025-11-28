@@ -199,7 +199,7 @@
     "total_score": "48",
     "score_vs_par": "+12",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:43:43.765549",
+    "scraped_at": "2025-11-28T06:28:59.410430",
     "query_user_id": "ed20910"
   },
   {
@@ -402,7 +402,7 @@
     "total_score": "40",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:43:44.900809",
+    "scraped_at": "2025-11-28T06:29:00.588731",
     "query_user_id": "ed20910"
   },
   {
@@ -605,7 +605,7 @@
     "total_score": "40",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:43:46.034607",
+    "scraped_at": "2025-11-28T06:29:01.724835",
     "query_user_id": "ed20910"
   },
   {
@@ -808,7 +808,7 @@
     "total_score": "47",
     "score_vs_par": "+11",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:43:47.175229",
+    "scraped_at": "2025-11-28T06:29:02.860942",
     "query_user_id": "ed20910"
   },
   {
@@ -1013,7 +1013,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=Q8QAgx86iWM",
     "youtube_embed": "https://www.youtube.com/embed/Q8QAgx86iWM",
-    "scraped_at": "2025-11-28T03:43:48.310445",
+    "scraped_at": "2025-11-28T06:29:03.995657",
     "query_user_id": "ed20910"
   },
   {
@@ -1216,7 +1216,7 @@
     "total_score": "46",
     "score_vs_par": "+10",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:43:49.446108",
+    "scraped_at": "2025-11-28T06:29:05.131077",
     "query_user_id": "ed20910"
   },
   {
@@ -1421,7 +1421,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=cnnPKOvTJno",
     "youtube_embed": "https://www.youtube.com/embed/cnnPKOvTJno",
-    "scraped_at": "2025-11-28T03:43:50.591166",
+    "scraped_at": "2025-11-28T06:29:06.275505",
     "query_user_id": "ed20910"
   },
   {
@@ -1626,7 +1626,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=6_jqFjm7KQI",
     "youtube_embed": "https://www.youtube.com/embed/6_jqFjm7KQI",
-    "scraped_at": "2025-11-28T03:43:51.724595",
+    "scraped_at": "2025-11-28T06:29:07.410135",
     "query_user_id": "ed20910"
   },
   {
@@ -1831,212 +1831,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=vrGOSaBXi7Y",
     "youtube_embed": "https://www.youtube.com/embed/vrGOSaBXi7Y",
-    "scraped_at": "2025-11-28T03:43:52.858372",
-    "query_user_id": "ed20910"
-  },
-  {
-    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt06&entryId=458",
-    "game": "Golden Tee Live 2006",
-    "username": "ed20910",
-    "course": "Coral Vista",
-    "date": "11/11/2025 11:13:10 PM",
-    "capture_id": "11111606212025",
-    "holes": [
-      "HOLE",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "OUT",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14",
-      "15",
-      "16",
-      "17",
-      "18",
-      "IN",
-      "TOT",
-      "+/-",
-      "GSP"
-    ],
-    "distances": [
-      "404",
-      "369",
-      "173",
-      "570",
-      "307",
-      "478",
-      "157",
-      "514",
-      "287",
-      "3259",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "-",
-      "3259",
-      "0",
-      "0"
-    ],
-    "pars": [
-      "4",
-      "4",
-      "3",
-      "5",
-      "4",
-      "4",
-      "3",
-      "5",
-      "4",
-      "36",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "0",
-      "36",
-      "0",
-      "0"
-    ],
-    "players": [
-      {
-        "player": "1",
-        "scores": [
-          "4",
-          "3",
-          "3",
-          "5",
-          "3",
-          "4",
-          "2",
-          "4",
-          "5",
-          "33",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "33",
-          "-3",
-          "0"
-        ]
-      },
-      {
-        "player": "2",
-        "scores": [
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "E",
-          "0"
-        ]
-      },
-      {
-        "player": "3",
-        "scores": [
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "E",
-          "0"
-        ]
-      },
-      {
-        "player": "4",
-        "scores": [
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "E",
-          "0"
-        ]
-      }
-    ],
-    "total_score": "33",
-    "score_vs_par": "-3",
-    "gsp": "0",
-    "youtube_video": "https://www.youtube.com/watch?v=KV6F6js18Uw",
-    "youtube_embed": "https://www.youtube.com/embed/KV6F6js18Uw",
-    "scraped_at": "2025-11-28T03:43:53.992834",
+    "scraped_at": "2025-11-28T06:29:08.546713",
     "query_user_id": "ed20910"
   },
   {
@@ -2241,7 +2036,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=KV6F6js18Uw",
     "youtube_embed": "https://www.youtube.com/embed/KV6F6js18Uw",
-    "scraped_at": "2025-11-28T03:43:55.125665",
+    "scraped_at": "2025-11-28T06:29:09.830354",
     "query_user_id": "ed20910"
   },
   {
@@ -2444,7 +2239,7 @@
     "total_score": "68",
     "score_vs_par": "-4",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:43:59.623573",
+    "scraped_at": "2025-11-28T06:29:14.430815",
     "query_user_id": "ed20910"
   },
   {
@@ -2647,7 +2442,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:44:00.755930",
+    "scraped_at": "2025-11-28T06:29:15.565072",
     "query_user_id": "ed20910"
   },
   {
@@ -2850,7 +2645,7 @@
     "total_score": "65",
     "score_vs_par": "-7",
     "gsp": "9434",
-    "scraped_at": "2025-11-28T03:44:01.889820",
+    "scraped_at": "2025-11-28T06:29:16.702161",
     "query_user_id": "ed20910"
   },
   {
@@ -3053,7 +2848,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:44:03.025858",
+    "scraped_at": "2025-11-28T06:29:17.945315",
     "query_user_id": "ed20910"
   },
   {
@@ -3256,7 +3051,7 @@
     "total_score": "71",
     "score_vs_par": "-1",
     "gsp": "3058",
-    "scraped_at": "2025-11-28T03:44:04.160765",
+    "scraped_at": "2025-11-28T06:29:19.085241",
     "query_user_id": "ed20910"
   },
   {
@@ -3459,7 +3254,7 @@
     "total_score": "70",
     "score_vs_par": "-2",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:44:05.297312",
+    "scraped_at": "2025-11-28T06:29:20.221721",
     "query_user_id": "ed20910"
   },
   {
@@ -3664,7 +3459,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=aKD-rScSa7E",
     "youtube_embed": "https://www.youtube.com/embed/aKD-rScSa7E",
-    "scraped_at": "2025-11-28T03:44:06.431057",
+    "scraped_at": "2025-11-28T06:29:21.356730",
     "query_user_id": "ed20910"
   },
   {
@@ -3869,7 +3664,7 @@
     "gsp": "2475",
     "youtube_video": "https://www.youtube.com/watch?v=3jAiTLFZ3n0",
     "youtube_embed": "https://www.youtube.com/embed/3jAiTLFZ3n0",
-    "scraped_at": "2025-11-28T03:44:07.563801",
+    "scraped_at": "2025-11-28T06:29:22.497153",
     "query_user_id": "ed20910"
   },
   {
@@ -4072,7 +3867,7 @@
     "total_score": "72",
     "score_vs_par": "-1",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:44:08.697090",
+    "scraped_at": "2025-11-28T06:29:23.739850",
     "query_user_id": "ed20910"
   },
   {
@@ -4277,7 +4072,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=klWf5BJP8hM",
     "youtube_embed": "https://www.youtube.com/embed/klWf5BJP8hM",
-    "scraped_at": "2025-11-28T03:44:09.828628",
+    "scraped_at": "2025-11-28T06:29:25.011804",
     "query_user_id": "ed20910"
   },
   {
@@ -4482,7 +4277,7 @@
     "gsp": "5091",
     "youtube_video": "https://www.youtube.com/watch?v=nsShvE-IcZI",
     "youtube_embed": "https://www.youtube.com/embed/nsShvE-IcZI",
-    "scraped_at": "2025-11-28T03:44:10.961322",
+    "scraped_at": "2025-11-28T06:29:26.230857",
     "query_user_id": "ed20910"
   },
   {
@@ -4687,7 +4482,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=RIep9HIdiTE",
     "youtube_embed": "https://www.youtube.com/embed/RIep9HIdiTE",
-    "scraped_at": "2025-11-28T03:44:12.093499",
+    "scraped_at": "2025-11-28T06:29:27.365133",
     "query_user_id": "ed20910"
   },
   {
@@ -4892,7 +4687,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=QXUddxTmgcI",
     "youtube_embed": "https://www.youtube.com/embed/QXUddxTmgcI",
-    "scraped_at": "2025-11-28T03:44:13.226842",
+    "scraped_at": "2025-11-28T06:29:28.512747",
     "query_user_id": "ed20910"
   },
   {
@@ -5097,7 +4892,7 @@
     "gsp": "6942",
     "youtube_video": "https://www.youtube.com/watch?v=dKV8a3HHL2o",
     "youtube_embed": "https://www.youtube.com/embed/dKV8a3HHL2o",
-    "scraped_at": "2025-11-28T03:44:14.371429",
+    "scraped_at": "2025-11-28T06:29:29.664900",
     "query_user_id": "ed20910"
   },
   {
@@ -5302,7 +5097,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=zz-4n7zgtZo",
     "youtube_embed": "https://www.youtube.com/embed/zz-4n7zgtZo",
-    "scraped_at": "2025-11-28T03:44:15.510674",
+    "scraped_at": "2025-11-28T06:29:30.803052",
     "query_user_id": "ed20910"
   },
   {
@@ -5507,7 +5302,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=BLmIH-LHYpU",
     "youtube_embed": "https://www.youtube.com/embed/BLmIH-LHYpU",
-    "scraped_at": "2025-11-28T03:44:16.656055",
+    "scraped_at": "2025-11-28T06:29:31.939299",
     "query_user_id": "ed20910"
   },
   {
@@ -5712,7 +5507,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=fm9QNcVD6_g",
     "youtube_embed": "https://www.youtube.com/embed/fm9QNcVD6_g",
-    "scraped_at": "2025-11-28T03:44:17.804747",
+    "scraped_at": "2025-11-28T06:29:33.073637",
     "query_user_id": "ed20910"
   },
   {
@@ -5917,7 +5712,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=fsc3c1Y5b6M",
     "youtube_embed": "https://www.youtube.com/embed/fsc3c1Y5b6M",
-    "scraped_at": "2025-11-28T03:44:18.941748",
+    "scraped_at": "2025-11-28T06:29:34.209661",
     "query_user_id": "ed20910"
   },
   {
@@ -6122,7 +5917,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=f08-BZ0sPHE",
     "youtube_embed": "https://www.youtube.com/embed/f08-BZ0sPHE",
-    "scraped_at": "2025-11-28T03:44:20.120453",
+    "scraped_at": "2025-11-28T06:29:35.348562",
     "query_user_id": "ed20910"
   },
   {
@@ -6327,7 +6122,7 @@
     "gsp": "2750",
     "youtube_video": "https://www.youtube.com/watch?v=zDcpDV_hiJc",
     "youtube_embed": "https://www.youtube.com/embed/zDcpDV_hiJc",
-    "scraped_at": "2025-11-28T03:44:21.327136",
+    "scraped_at": "2025-11-28T06:29:36.488462",
     "query_user_id": "ed20910"
   },
   {
@@ -6530,7 +6325,7 @@
     "total_score": "70",
     "score_vs_par": "-3",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:44:22.598264",
+    "scraped_at": "2025-11-28T06:29:37.827270",
     "query_user_id": "ed20910"
   },
   {
@@ -6735,7 +6530,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=VzD5DI3TYl8",
     "youtube_embed": "https://www.youtube.com/embed/VzD5DI3TYl8",
-    "scraped_at": "2025-11-28T03:44:23.778909",
+    "scraped_at": "2025-11-28T06:29:39.061078",
     "query_user_id": "ed20910"
   },
   {
@@ -6938,210 +6733,7 @@
     "total_score": "85",
     "score_vs_par": "+13",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:44:24.972774",
-    "query_user_id": "ed20910"
-  },
-  {
-    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=288",
-    "game": "Golden Tee Unplugged 2016",
-    "username": "ed20910",
-    "course": "Coconut Beach",
-    "date": "11/5/2025 2:58:23 AM",
-    "capture_id": "1141946302025",
-    "holes": [
-      "HOLE",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "OUT",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14",
-      "15",
-      "16",
-      "17",
-      "18",
-      "IN",
-      "TOT",
-      "+/-",
-      "GSP"
-    ],
-    "distances": [
-      "176",
-      "481",
-      "536",
-      "184",
-      "324",
-      "575",
-      "356",
-      "211",
-      "296",
-      "3139",
-      "490",
-      "352",
-      "226",
-      "307",
-      "566",
-      "586",
-      "138",
-      "285",
-      "288",
-      "3238",
-      "6377",
-      "0",
-      "0"
-    ],
-    "pars": [
-      "4",
-      "4",
-      "5",
-      "3",
-      "4",
-      "5",
-      "4",
-      "3",
-      "4",
-      "36",
-      "4",
-      "5",
-      "3",
-      "4",
-      "4",
-      "5",
-      "3",
-      "4",
-      "4",
-      "36",
-      "72",
-      "0",
-      "0"
-    ],
-    "players": [
-      {
-        "player": "1",
-        "scores": [
-          "4",
-          "6",
-          "5",
-          "7",
-          "5",
-          "5",
-          "6",
-          "4",
-          "8",
-          "50",
-          "5",
-          "8",
-          "7",
-          "5",
-          "6",
-          "9",
-          "6",
-          "6",
-          "5",
-          "57",
-          "107",
-          "+35",
-          "405"
-        ]
-      },
-      {
-        "player": "2",
-        "scores": [
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "E",
-          "0"
-        ]
-      },
-      {
-        "player": "3",
-        "scores": [
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "E",
-          "0"
-        ]
-      },
-      {
-        "player": "4",
-        "scores": [
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "E",
-          "0"
-        ]
-      }
-    ],
-    "total_score": "107",
-    "score_vs_par": "+35",
-    "gsp": "405",
-    "scraped_at": "2025-11-28T03:44:26.144468",
+    "scraped_at": "2025-11-28T06:29:40.300936",
     "query_user_id": "ed20910"
   },
   {
@@ -7344,7 +6936,7 @@
     "total_score": "34",
     "score_vs_par": "+8",
     "gsp": "40614",
-    "scraped_at": "2025-11-28T03:44:27.286369",
+    "scraped_at": "2025-11-28T06:29:41.804427",
     "query_user_id": "ed20910"
   },
   {
@@ -7547,7 +7139,7 @@
     "total_score": "35",
     "score_vs_par": "+9",
     "gsp": "49002",
-    "scraped_at": "2025-11-28T03:44:28.437908",
+    "scraped_at": "2025-11-28T06:29:43.088014",
     "query_user_id": "ed20910"
   },
   {
@@ -7750,7 +7342,7 @@
     "total_score": "31",
     "score_vs_par": "+5",
     "gsp": "27706",
-    "scraped_at": "2025-11-28T03:44:29.583879",
+    "scraped_at": "2025-11-28T06:29:44.378468",
     "query_user_id": "ed20910"
   },
   {
@@ -7953,7 +7545,7 @@
     "total_score": "23",
     "score_vs_par": "-3",
     "gsp": "39388",
-    "scraped_at": "2025-11-28T03:44:30.718378",
+    "scraped_at": "2025-11-28T06:29:45.516366",
     "query_user_id": "ed20910"
   },
   {
@@ -8156,7 +7748,7 @@
     "total_score": "34",
     "score_vs_par": "+8",
     "gsp": "33579",
-    "scraped_at": "2025-11-28T03:44:31.851854",
+    "scraped_at": "2025-11-28T06:29:46.651616",
     "query_user_id": "ed20910"
   },
   {
@@ -8361,7 +7953,7 @@
     "gsp": "37914",
     "youtube_video": "https://www.youtube.com/watch?v=hUfhkkfDPH4",
     "youtube_embed": "https://www.youtube.com/embed/hUfhkkfDPH4",
-    "scraped_at": "2025-11-28T03:44:32.985540",
+    "scraped_at": "2025-11-28T06:29:47.790838",
     "query_user_id": "ed20910"
   },
   {
@@ -8564,7 +8156,7 @@
     "total_score": "22",
     "score_vs_par": "-4",
     "gsp": "34447",
-    "scraped_at": "2025-11-28T03:44:34.122039",
+    "scraped_at": "2025-11-28T06:29:48.934218",
     "query_user_id": "ed20910"
   },
   {
@@ -8767,7 +8359,7 @@
     "total_score": "23",
     "score_vs_par": "-3",
     "gsp": "38410",
-    "scraped_at": "2025-11-28T03:44:35.255661",
+    "scraped_at": "2025-11-28T06:29:50.068806",
     "query_user_id": "ed20910"
   },
   {
@@ -8970,7 +8562,7 @@
     "total_score": "40",
     "score_vs_par": "-17",
     "gsp": "104181",
-    "scraped_at": "2025-11-28T03:44:36.390834",
+    "scraped_at": "2025-11-28T06:29:51.204582",
     "query_user_id": "ed20910"
   },
   {
@@ -9173,7 +8765,7 @@
     "total_score": "59",
     "score_vs_par": "+5",
     "gsp": "67191",
-    "scraped_at": "2025-11-28T03:44:37.524517",
+    "scraped_at": "2025-11-28T06:29:52.339298",
     "query_user_id": "ed20910"
   },
   {
@@ -9376,7 +8968,7 @@
     "total_score": "65",
     "score_vs_par": "+11",
     "gsp": "74967",
-    "scraped_at": "2025-11-28T03:44:38.657745",
+    "scraped_at": "2025-11-28T06:29:53.474380",
     "query_user_id": "ed20910"
   },
   {
@@ -9579,7 +9171,7 @@
     "total_score": "49",
     "score_vs_par": "-8",
     "gsp": "87904",
-    "scraped_at": "2025-11-28T03:44:39.794322",
+    "scraped_at": "2025-11-28T06:29:54.610541",
     "query_user_id": "ed20910"
   },
   {
@@ -9782,7 +9374,7 @@
     "total_score": "60",
     "score_vs_par": "+3",
     "gsp": "67280",
-    "scraped_at": "2025-11-28T03:44:40.930329",
+    "scraped_at": "2025-11-28T06:29:55.745613",
     "query_user_id": "ed20910"
   },
   {
@@ -9985,7 +9577,7 @@
     "total_score": "56",
     "score_vs_par": "-1",
     "gsp": "49381",
-    "scraped_at": "2025-11-28T03:44:42.068916",
+    "scraped_at": "2025-11-28T06:29:56.907539",
     "query_user_id": "ed20910"
   },
   {
@@ -10188,7 +9780,7 @@
     "total_score": "54",
     "score_vs_par": "-3",
     "gsp": "76293",
-    "scraped_at": "2025-11-28T03:44:43.202241",
+    "scraped_at": "2025-11-28T06:29:58.043047",
     "query_user_id": "ed20910"
   },
   {
@@ -10391,7 +9983,7 @@
     "total_score": "68",
     "score_vs_par": "+14",
     "gsp": "85500",
-    "scraped_at": "2025-11-28T03:44:44.335811",
+    "scraped_at": "2025-11-28T06:29:59.177115",
     "query_user_id": "ed20910"
   },
   {
@@ -10594,7 +10186,7 @@
     "total_score": "45",
     "score_vs_par": "-9",
     "gsp": "87100",
-    "scraped_at": "2025-11-28T03:44:45.468015",
+    "scraped_at": "2025-11-28T06:30:00.314257",
     "query_user_id": "ed20910"
   },
   {
@@ -10797,7 +10389,7 @@
     "total_score": "50",
     "score_vs_par": "-4",
     "gsp": "79424",
-    "scraped_at": "2025-11-28T03:44:46.602035",
+    "scraped_at": "2025-11-28T06:30:01.500961",
     "query_user_id": "ed20910"
   },
   {
@@ -11000,7 +10592,7 @@
     "total_score": "64",
     "score_vs_par": "+10",
     "gsp": "93974",
-    "scraped_at": "2025-11-28T03:44:52.003478",
+    "scraped_at": "2025-11-28T06:30:02.636298",
     "query_user_id": "ed20910"
   },
   {
@@ -11203,7 +10795,7 @@
     "total_score": "51",
     "score_vs_par": "-3",
     "gsp": "88705",
-    "scraped_at": "2025-11-28T03:44:53.463422",
+    "scraped_at": "2025-11-28T06:30:03.770778",
     "query_user_id": "ed20910"
   },
   {
@@ -11406,7 +10998,7 @@
     "total_score": "41",
     "score_vs_par": "-17",
     "gsp": "85938",
-    "scraped_at": "2025-11-28T03:44:54.703487",
+    "scraped_at": "2025-11-28T06:30:04.911440",
     "query_user_id": "ed20910"
   },
   {
@@ -11609,7 +11201,7 @@
     "total_score": "54",
     "score_vs_par": "-4",
     "gsp": "84354",
-    "scraped_at": "2025-11-28T03:44:55.921449",
+    "scraped_at": "2025-11-28T06:30:06.046565",
     "query_user_id": "ed20910"
   },
   {
@@ -11812,7 +11404,7 @@
     "total_score": "50",
     "score_vs_par": "-7",
     "gsp": "93784",
-    "scraped_at": "2025-11-28T03:44:57.106764",
+    "scraped_at": "2025-11-28T06:30:07.184542",
     "query_user_id": "ed20910"
   },
   {
@@ -12015,7 +11607,7 @@
     "total_score": "56",
     "score_vs_par": "-1",
     "gsp": "98282",
-    "scraped_at": "2025-11-28T03:44:58.244512",
+    "scraped_at": "2025-11-28T06:30:08.326230",
     "query_user_id": "ed20910"
   },
   {
@@ -12218,7 +11810,7 @@
     "total_score": "45",
     "score_vs_par": "-12",
     "gsp": "118742",
-    "scraped_at": "2025-11-28T03:44:59.405250",
+    "scraped_at": "2025-11-28T06:30:09.552249",
     "query_user_id": "ed20910"
   },
   {
@@ -12421,7 +12013,7 @@
     "total_score": "52",
     "score_vs_par": "-5",
     "gsp": "92317",
-    "scraped_at": "2025-11-28T03:45:00.543022",
+    "scraped_at": "2025-11-28T06:30:10.704317",
     "query_user_id": "ed20910"
   },
   {
@@ -12624,7 +12216,7 @@
     "total_score": "22",
     "score_vs_par": "-4",
     "gsp": "30450",
-    "scraped_at": "2025-11-28T03:45:01.679519",
+    "scraped_at": "2025-11-28T06:30:11.840419",
     "query_user_id": "ed20910"
   },
   {
@@ -12829,7 +12421,7 @@
     "gsp": "7928",
     "youtube_video": "https://www.youtube.com/watch?v=omq8bfMBGmg",
     "youtube_embed": "https://www.youtube.com/embed/omq8bfMBGmg",
-    "scraped_at": "2025-11-28T03:45:22.919353",
+    "scraped_at": "2025-11-28T06:30:30.933819",
     "query_user_id": "Paladin242"
   },
   {
@@ -13032,7 +12624,7 @@
     "total_score": "76",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:45:24.060535",
+    "scraped_at": "2025-11-28T06:30:32.068504",
     "query_user_id": "Paladin242"
   },
   {
@@ -13237,7 +12829,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=jjKsj937XVA",
     "youtube_embed": "https://www.youtube.com/embed/jjKsj937XVA",
-    "scraped_at": "2025-11-28T03:45:25.194666",
+    "scraped_at": "2025-11-28T06:30:33.204971",
     "query_user_id": "Paladin242"
   },
   {
@@ -13442,7 +13034,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=NjdfGJ04Pqs",
     "youtube_embed": "https://www.youtube.com/embed/NjdfGJ04Pqs",
-    "scraped_at": "2025-11-28T03:45:26.337930",
+    "scraped_at": "2025-11-28T06:30:34.340220",
     "query_user_id": "Paladin242"
   },
   {
@@ -13645,7 +13237,7 @@
     "total_score": "73",
     "score_vs_par": "+1",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:45:27.485761",
+    "scraped_at": "2025-11-28T06:30:35.476955",
     "query_user_id": "Paladin242"
   },
   {
@@ -13850,7 +13442,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=8nD057A2AZY",
     "youtube_embed": "https://www.youtube.com/embed/8nD057A2AZY",
-    "scraped_at": "2025-11-28T03:45:28.622279",
+    "scraped_at": "2025-11-28T06:30:36.612881",
     "query_user_id": "Paladin242"
   },
   {
@@ -14055,7 +13647,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=_bEatOj52_M",
     "youtube_embed": "https://www.youtube.com/embed/_bEatOj52_M",
-    "scraped_at": "2025-11-28T03:45:29.757482",
+    "scraped_at": "2025-11-28T06:30:37.749127",
     "query_user_id": "Paladin242"
   },
   {
@@ -14260,7 +13852,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=C1ya0Dt2tYs",
     "youtube_embed": "https://www.youtube.com/embed/C1ya0Dt2tYs",
-    "scraped_at": "2025-11-28T03:45:30.891960",
+    "scraped_at": "2025-11-28T06:30:38.885543",
     "query_user_id": "Paladin242"
   },
   {
@@ -14465,7 +14057,7 @@
     "gsp": "2579",
     "youtube_video": "https://www.youtube.com/watch?v=GkPm4ArkZrM",
     "youtube_embed": "https://www.youtube.com/embed/GkPm4ArkZrM",
-    "scraped_at": "2025-11-28T03:45:32.026908",
+    "scraped_at": "2025-11-28T06:30:40.130707",
     "query_user_id": "Paladin242"
   },
   {
@@ -14670,7 +14262,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=jfVIfYz29G0",
     "youtube_embed": "https://www.youtube.com/embed/jfVIfYz29G0",
-    "scraped_at": "2025-11-28T03:45:33.162395",
+    "scraped_at": "2025-11-28T06:30:41.321890",
     "query_user_id": "Paladin242"
   },
   {
@@ -14873,7 +14465,7 @@
     "total_score": "89",
     "score_vs_par": "+17",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:45:34.295511",
+    "scraped_at": "2025-11-28T06:30:42.511242",
     "query_user_id": "Paladin242"
   },
   {
@@ -15078,7 +14670,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=zDHWUT7pM-M",
     "youtube_embed": "https://www.youtube.com/embed/zDHWUT7pM-M",
-    "scraped_at": "2025-11-28T03:45:35.431074",
+    "scraped_at": "2025-11-28T06:30:43.648917",
     "query_user_id": "Paladin242"
   },
   {
@@ -15283,7 +14875,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=fWUQT1tq_JY",
     "youtube_embed": "https://www.youtube.com/embed/fWUQT1tq_JY",
-    "scraped_at": "2025-11-28T03:45:36.565993",
+    "scraped_at": "2025-11-28T06:30:44.789757",
     "query_user_id": "Paladin242"
   },
   {
@@ -15488,7 +15080,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=_umWyhzGwyw",
     "youtube_embed": "https://www.youtube.com/embed/_umWyhzGwyw",
-    "scraped_at": "2025-11-28T03:45:37.699412",
+    "scraped_at": "2025-11-28T06:30:45.924773",
     "query_user_id": "Paladin242"
   },
   {
@@ -15693,7 +15285,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=I_MyDixAe2Y",
     "youtube_embed": "https://www.youtube.com/embed/I_MyDixAe2Y",
-    "scraped_at": "2025-11-28T03:45:38.835311",
+    "scraped_at": "2025-11-28T06:30:47.061149",
     "query_user_id": "Paladin242"
   },
   {
@@ -15898,7 +15490,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=v6E1ZzFhdQ8",
     "youtube_embed": "https://www.youtube.com/embed/v6E1ZzFhdQ8",
-    "scraped_at": "2025-11-28T03:45:39.972367",
+    "scraped_at": "2025-11-28T06:30:48.285748",
     "query_user_id": "Paladin242"
   },
   {
@@ -16103,7 +15695,7 @@
     "gsp": "3462",
     "youtube_video": "https://www.youtube.com/watch?v=JbpCNPiNhL8",
     "youtube_embed": "https://www.youtube.com/embed/JbpCNPiNhL8",
-    "scraped_at": "2025-11-28T03:45:41.127103",
+    "scraped_at": "2025-11-28T06:30:49.908811",
     "query_user_id": "Paladin242"
   },
   {
@@ -16306,7 +15898,7 @@
     "total_score": "71",
     "score_vs_par": "-1",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:45:42.260729",
+    "scraped_at": "2025-11-28T06:30:51.103283",
     "query_user_id": "Paladin242"
   },
   {
@@ -16511,7 +16103,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=wjwllS7uw5o",
     "youtube_embed": "https://www.youtube.com/embed/wjwllS7uw5o",
-    "scraped_at": "2025-11-28T03:45:43.397457",
+    "scraped_at": "2025-11-28T06:30:52.337257",
     "query_user_id": "Paladin242"
   },
   {
@@ -16714,7 +16306,7 @@
     "total_score": "75",
     "score_vs_par": "+2",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:45:44.531892",
+    "scraped_at": "2025-11-28T06:30:53.538389",
     "query_user_id": "Paladin242"
   },
   {
@@ -16917,7 +16509,7 @@
     "total_score": "71",
     "score_vs_par": "-1",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:45:45.665804",
+    "scraped_at": "2025-11-28T06:30:54.675553",
     "query_user_id": "Paladin242"
   },
   {
@@ -17122,7 +16714,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=xODBtO7FgHQ",
     "youtube_embed": "https://www.youtube.com/embed/xODBtO7FgHQ",
-    "scraped_at": "2025-11-28T03:45:46.800675",
+    "scraped_at": "2025-11-28T06:30:55.810856",
     "query_user_id": "Paladin242"
   },
   {
@@ -17327,7 +16919,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=ao5IlbsIPvY",
     "youtube_embed": "https://www.youtube.com/embed/ao5IlbsIPvY",
-    "scraped_at": "2025-11-28T03:45:47.936565",
+    "scraped_at": "2025-11-28T06:30:57.028421",
     "query_user_id": "Paladin242"
   },
   {
@@ -17532,7 +17124,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=-XKLK9hHVZg",
     "youtube_embed": "https://www.youtube.com/embed/-XKLK9hHVZg",
-    "scraped_at": "2025-11-28T03:45:49.070217",
+    "scraped_at": "2025-11-28T06:30:58.163813",
     "query_user_id": "Paladin242"
   },
   {
@@ -17735,7 +17327,7 @@
     "total_score": "73",
     "score_vs_par": "+1",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:45:50.205867",
+    "scraped_at": "2025-11-28T06:30:59.299735",
     "query_user_id": "Paladin242"
   },
   {
@@ -17940,7 +17532,7 @@
     "gsp": "50003",
     "youtube_video": "https://www.youtube.com/watch?v=wlNSdWMft_U",
     "youtube_embed": "https://www.youtube.com/embed/wlNSdWMft_U",
-    "scraped_at": "2025-11-28T03:45:51.341075",
+    "scraped_at": "2025-11-28T06:31:00.434754",
     "query_user_id": "Paladin242"
   },
   {
@@ -18143,7 +17735,7 @@
     "total_score": "49",
     "score_vs_par": "-8",
     "gsp": "90503",
-    "scraped_at": "2025-11-28T03:45:52.475926",
+    "scraped_at": "2025-11-28T06:31:01.570704",
     "query_user_id": "Paladin242"
   },
   {
@@ -18346,7 +17938,7 @@
     "total_score": "31",
     "score_vs_par": "+3",
     "gsp": "48895",
-    "scraped_at": "2025-11-28T03:45:53.624891",
+    "scraped_at": "2025-11-28T06:31:02.705389",
     "query_user_id": "Paladin242"
   },
   {
@@ -18551,7 +18143,7 @@
     "gsp": "73372",
     "youtube_video": "https://www.youtube.com/watch?v=IMeM6-RnlAs",
     "youtube_embed": "https://www.youtube.com/embed/IMeM6-RnlAs",
-    "scraped_at": "2025-11-28T03:45:54.757988",
+    "scraped_at": "2025-11-28T06:31:03.838680",
     "query_user_id": "Paladin242"
   },
   {
@@ -18756,7 +18348,7 @@
     "gsp": "90013",
     "youtube_video": "https://www.youtube.com/watch?v=PnkaRlSshi0",
     "youtube_embed": "https://www.youtube.com/embed/PnkaRlSshi0",
-    "scraped_at": "2025-11-28T03:45:55.906635",
+    "scraped_at": "2025-11-28T06:31:04.975159",
     "query_user_id": "Paladin242"
   },
   {
@@ -18961,7 +18553,7 @@
     "gsp": "34256",
     "youtube_video": "https://www.youtube.com/watch?v=pWLSCd-oauI",
     "youtube_embed": "https://www.youtube.com/embed/pWLSCd-oauI",
-    "scraped_at": "2025-11-28T03:45:57.039649",
+    "scraped_at": "2025-11-28T06:31:06.108429",
     "query_user_id": "Paladin242"
   },
   {
@@ -19166,7 +18758,7 @@
     "gsp": "41178",
     "youtube_video": "https://www.youtube.com/watch?v=Dv3m_tC_Qb0",
     "youtube_embed": "https://www.youtube.com/embed/Dv3m_tC_Qb0",
-    "scraped_at": "2025-11-28T03:45:58.176712",
+    "scraped_at": "2025-11-28T06:31:07.242973",
     "query_user_id": "Paladin242"
   },
   {
@@ -19371,7 +18963,7 @@
     "gsp": "43501",
     "youtube_video": "https://www.youtube.com/watch?v=R6-8zuvWTIE",
     "youtube_embed": "https://www.youtube.com/embed/R6-8zuvWTIE",
-    "scraped_at": "2025-11-28T03:45:59.310409",
+    "scraped_at": "2025-11-28T06:31:08.379501",
     "query_user_id": "Paladin242"
   },
   {
@@ -19576,7 +19168,7 @@
     "gsp": "27536",
     "youtube_video": "https://www.youtube.com/watch?v=-zTk1twzqvQ",
     "youtube_embed": "https://www.youtube.com/embed/-zTk1twzqvQ",
-    "scraped_at": "2025-11-28T03:46:00.443808",
+    "scraped_at": "2025-11-28T06:31:09.516808",
     "query_user_id": "Paladin242"
   },
   {
@@ -19779,7 +19371,7 @@
     "total_score": "77",
     "score_vs_par": "+23",
     "gsp": "67995",
-    "scraped_at": "2025-11-28T03:46:01.579079",
+    "scraped_at": "2025-11-28T06:31:10.651196",
     "query_user_id": "Paladin242"
   },
   {
@@ -19982,7 +19574,7 @@
     "total_score": "23",
     "score_vs_par": "-3",
     "gsp": "29681",
-    "scraped_at": "2025-11-28T03:46:02.713895",
+    "scraped_at": "2025-11-28T06:31:11.783476",
     "query_user_id": "Paladin242"
   },
   {
@@ -20185,7 +19777,7 @@
     "total_score": "20",
     "score_vs_par": "-6",
     "gsp": "37440",
-    "scraped_at": "2025-11-28T03:46:03.848412",
+    "scraped_at": "2025-11-28T06:31:12.918360",
     "query_user_id": "Paladin242"
   },
   {
@@ -20388,7 +19980,7 @@
     "total_score": "104",
     "score_vs_par": "+32",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:46:20.670768",
+    "scraped_at": "2025-11-28T06:31:28.717754",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -20591,7 +20183,7 @@
     "total_score": "76",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:46:21.806189",
+    "scraped_at": "2025-11-28T06:31:29.851068",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -20794,7 +20386,7 @@
     "total_score": "82",
     "score_vs_par": "+10",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:46:22.941547",
+    "scraped_at": "2025-11-28T06:31:30.986042",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -20997,7 +20589,7 @@
     "total_score": "77",
     "score_vs_par": "+5",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:46:24.075062",
+    "scraped_at": "2025-11-28T06:31:32.120214",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -21200,7 +20792,7 @@
     "total_score": "68",
     "score_vs_par": "-4",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:46:25.215521",
+    "scraped_at": "2025-11-28T06:31:33.256501",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -21403,7 +20995,7 @@
     "total_score": "75",
     "score_vs_par": "+3",
     "gsp": "0",
-    "scraped_at": "2025-11-28T03:46:26.370505",
+    "scraped_at": "2025-11-28T06:31:34.409482",
     "query_user_id": "LynnInDenver"
   }
 ]
