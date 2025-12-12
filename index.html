@@ -6,12 +6,8 @@
     <title>VPINHUB Golden Tee Ballers - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* --- CSS STYLES --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --primary-orange: #FF6B00;
             --dark-orange: #CC5500;
@@ -21,7 +17,6 @@
             --light-gray: #3a3a3a;
             --text-gray: #cccccc;
         }
-
         body {
             font-family: 'Poppins', sans-serif;
             background: var(--black);
@@ -29,13 +24,11 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Rajdhani', sans-serif;
             font-weight: 700;
             color: #ffffff;
         }
-
         /* Navigation */
         .navbar {
             background: linear-gradient(180deg, var(--dark-gray) 0%, var(--black) 100%);
@@ -45,7 +38,6 @@
             z-index: 1000;
             border-bottom: 2px solid var(--primary-orange);
         }
-
         .nav-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -54,7 +46,6 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
             font-size: 1.8em;
             font-weight: 700;
@@ -64,17 +55,12 @@
             align-items: center;
             gap: 10px;
         }
-
-        .logo span {
-            color: #ffffff;
-        }
-
+        .logo span { color: #ffffff; }
         .nav-menu {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
-
         .nav-menu a {
             color: var(--text-gray);
             text-decoration: none;
@@ -82,12 +68,7 @@
             transition: color 0.3s;
             position: relative;
         }
-
-        .nav-menu a:hover,
-        .nav-menu a.active {
-            color: var(--primary-orange);
-        }
-
+        .nav-menu a:hover, .nav-menu a.active { color: var(--primary-orange); }
         .nav-menu a::after {
             content: '';
             position: absolute;
@@ -98,11 +79,7 @@
             background: var(--primary-orange);
             transition: width 0.3s;
         }
-
-        .nav-menu a:hover::after {
-            width: 100%;
-        }
-
+        .nav-menu a:hover::after { width: 100%; }
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
@@ -112,7 +89,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .hero::before {
             content: '🏌️';
             position: absolute;
@@ -122,30 +98,20 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
         .hero-content {
             max-width: 900px;
             margin: 0 auto;
             position: relative;
             z-index: 1;
         }
-
         .hero h1 {
             font-size: 3.5em;
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
-        .hero .highlight {
-            color: var(--primary-orange);
-        }
-
-        .hero p {
-            font-size: 1.3em;
-            margin-bottom: 2rem;
-        }
-
+        .hero .highlight { color: var(--primary-orange); }
+        .hero p { font-size: 1.3em; margin-bottom: 2rem; }
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -157,47 +123,23 @@
             transition: all 0.3s;
             border: 2px solid var(--primary-orange);
         }
-
-        .btn:hover {
-            background: transparent;
-            color: var(--primary-orange);
-        }
-
+        .btn:hover { background: transparent; color: var(--primary-orange); }
         .btn-secondary {
             background: transparent;
             border: 2px solid var(--primary-orange);
             color: var(--primary-orange);
         }
-
-        .btn-secondary:hover {
-            background: var(--primary-orange);
-            color: #ffffff;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 4rem 0;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
+        .btn-secondary:hover { background: var(--primary-orange); color: #ffffff; }
+        /* Container & Sections */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
+        .section { padding: 4rem 0; }
+        .section-header { text-align: center; margin-bottom: 3rem; }
         .section-header h2 {
             font-size: 2.5em;
             margin-bottom: 0.5rem;
             position: relative;
             display: inline-block;
         }
-
         .section-header h2::after {
             content: '';
             position: absolute;
@@ -208,27 +150,20 @@
             height: 3px;
             background: var(--primary-orange);
         }
-
-        .section-header p {
-            font-size: 1.1em;
-            color: var(--text-gray);
-        }
-
-        /* Featured Video Spotlight */
+        .section-header p { font-size: 1.1em; color: var(--text-gray); }
+        /* Spotlight */
         .spotlight {
             background: var(--dark-gray);
             border-radius: 15px;
             padding: 2rem;
             border: 2px solid var(--light-gray);
         }
-
         .spotlight h3 {
             font-size: 2em;
             margin-bottom: 1.5rem;
             text-align: center;
             color: var(--primary-orange);
         }
-
         .video-container {
             position: relative;
             width: 100%;
@@ -239,7 +174,6 @@
             border-radius: 10px;
             overflow: hidden;
         }
-
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -247,33 +181,25 @@
             width: 100%;
             height: 100%;
         }
-
-        .spotlight-info {
-            text-align: center;
-            padding: 1rem;
-        }
-
+        .spotlight-info { text-align: center; padding: 1rem; }
         .spotlight-info .player-name {
             font-size: 1.5em;
             color: var(--primary-orange);
             font-weight: 600;
         }
-
-        /* Leaderboard Preview */
+        /* Leaderboard Components */
         .leaderboard-preview {
             background: var(--dark-gray);
             border-radius: 15px;
             overflow: hidden;
             border: 2px solid var(--light-gray);
         }
-
         .game-tabs {
             display: flex;
             background: var(--medium-gray);
             border-bottom: 2px solid var(--primary-orange);
             overflow-x: auto;
         }
-
         .tab {
             padding: 1rem 2rem;
             background: transparent;
@@ -285,30 +211,15 @@
             white-space: nowrap;
             border-bottom: 3px solid transparent;
         }
-
-        .tab:hover {
-            background: var(--light-gray);
-        }
-
+        .tab:hover { background: var(--light-gray); }
         .tab.active {
             background: var(--light-gray);
             color: var(--primary-orange);
             border-bottom-color: var(--primary-orange);
         }
-
-        .leaderboard-content {
-            padding: 2rem;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        thead {
-            background: var(--medium-gray);
-        }
-
+        .leaderboard-content { padding: 2rem; }
+        table { width: 100%; border-collapse: collapse; }
+        thead { background: var(--medium-gray); }
         th {
             padding: 1rem;
             text-align: left;
@@ -316,54 +227,23 @@
             font-weight: 600;
             border-bottom: 2px solid var(--primary-orange);
         }
-
-        td {
-            padding: 1rem;
-            border-bottom: 1px solid var(--light-gray);
-        }
-
-        tbody tr {
-            transition: background 0.3s;
-            cursor: pointer;
-        }
-
-        tbody tr:hover {
-            background: var(--medium-gray);
-        }
-
-        .rank {
-            font-weight: 700;
-            font-size: 1.2em;
-        }
-
+        td { padding: 1rem; border-bottom: 1px solid var(--light-gray); }
+        tbody tr { transition: background 0.3s; cursor: pointer; }
+        tbody tr:hover { background: var(--medium-gray); }
+        .rank { font-weight: 700; font-size: 1.2em; }
         .rank-1 { color: #FFD700; }
         .rank-2 { color: #C0C0C0; }
         .rank-3 { color: #CD7F32; }
-
-        .player-name {
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        .score-highlight {
-            color: var(--primary-orange);
-            font-weight: 700;
-            font-size: 1.1em;
-        }
-
-        .video-icon {
-            color: var(--primary-orange);
-            font-size: 1.2em;
-        }
-
-        /* Quick Stats */
+        .player-name { font-weight: 600; color: #ffffff; }
+        .score-highlight { color: var(--primary-orange); font-weight: 700; font-size: 1.1em; }
+        .video-icon { color: var(--primary-orange); font-size: 1.2em; }
+        /* Stats Grid */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
-
         .stat-card {
             background: var(--dark-gray);
             padding: 2rem;
@@ -373,25 +253,51 @@
             transition: transform 0.3s, border-color 0.3s;
             cursor: pointer;
         }
-
         .stat-card:hover {
             transform: translateY(-5px);
             border-color: var(--primary-orange);
         }
-
         .stat-card .stat-number {
             font-size: 3em;
             color: var(--primary-orange);
             font-weight: 700;
             display: block;
         }
-
         .stat-card .stat-label {
             font-size: 1.1em;
             color: var(--text-gray);
             margin-top: 0.5rem;
         }
-
+        /* Player Card */
+        .player-card {
+            background: var(--dark-gray);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid var(--light-gray);
+            transition: border-color 0.3s;
+        }
+        .player-card:hover { border-color: var(--primary-orange); }
+        .player-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--light-gray);
+        }
+        .player-rank { font-size: 3em; font-weight: 700; min-width: 80px; }
+        .player-details { flex: 1; margin-left: 2rem; }
+        .player-details h3 { font-size: 2em; margin-bottom: 0.5rem; }
+        .player-stats { display: flex; gap: 2rem; color: var(--text-gray); }
+        .scorecard-video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .scorecard-compact { overflow-x: auto; }
+        .scorecard-compact table { font-size: 0.9em; }
         /* Footer */
         .footer {
             background: var(--dark-gray);
@@ -399,44 +305,27 @@
             padding: 3rem 0 1rem;
             margin-top: 4rem;
         }
-
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
         }
-
-        .footer-section h3 {
-            color: var(--primary-orange);
-            margin-bottom: 1rem;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 0.5rem;
-        }
-
+        .footer-section h3 { color: var(--primary-orange); margin-bottom: 1rem; }
+        .footer-section ul { list-style: none; }
+        .footer-section ul li { margin-bottom: 0.5rem; }
         .footer-section a {
             color: var(--text-gray);
             text-decoration: none;
             transition: color 0.3s;
         }
-
-        .footer-section a:hover {
-            color: var(--primary-orange);
-        }
-
+        .footer-section a:hover { color: var(--primary-orange); }
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
             border-top: 1px solid var(--light-gray);
             color: var(--text-gray);
         }
-
         /* Modal */
         .modal {
             display: none;
@@ -450,13 +339,7 @@
             overflow-y: auto;
             padding: 2rem;
         }
-
-        .modal.active {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
+        .modal.active { display: flex; align-items: center; justify-content: center; }
         .modal-content {
             background: var(--dark-gray);
             border-radius: 15px;
@@ -466,7 +349,6 @@
             position: relative;
             border: 2px solid var(--primary-orange);
         }
-
         .modal-close {
             position: absolute;
             top: 1rem;
@@ -483,130 +365,24 @@
             align-items: center;
             justify-content: center;
         }
-
-        .modal-close:hover {
-            background: var(--dark-orange);
-        }
-
-        .scorecard-table {
-            width: 100%;
-            margin-top: 2rem;
-            overflow-x: auto;
-        }
-
-        .scorecard-table th {
-            background: var(--medium-gray);
-            padding: 0.75rem;
-            text-align: center;
-        }
-
-        .scorecard-table td {
-            text-align: center;
-            padding: 0.75rem;
-        }
-
-        .player-card {
-            background: var(--dark-gray);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border: 2px solid var(--light-gray);
-            transition: border-color 0.3s;
-        }
-
-        .player-card:hover {
-            border-color: var(--primary-orange);
-        }
-
-        .player-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid var(--light-gray);
-        }
-
-        .player-rank {
-            font-size: 3em;
-            font-weight: 700;
-            min-width: 80px;
-        }
-
-        .player-details {
-            flex: 1;
-            margin-left: 2rem;
-        }
-
-        .player-details h3 {
-            font-size: 2em;
-            margin-bottom: 0.5rem;
-        }
-
-        .player-stats {
-            display: flex;
-            gap: 2rem;
-            color: var(--text-gray);
-        }
-
-        .scorecard-video-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .scorecard-compact {
-            overflow-x: auto;
-        }
-
-        .scorecard-compact table {
-            font-size: 0.9em;
-        }
-
+        .modal-close:hover { background: var(--dark-orange); }
+        .scorecard-table { width: 100%; margin-top: 2rem; overflow-x: auto; }
+        .scorecard-table th { background: var(--medium-gray); padding: 0.75rem; text-align: center; }
+        .scorecard-table td { text-align: center; padding: 0.75rem; }
+        
+        /* Mobile Breakpoints */
         @media (max-width: 1024px) {
-            .scorecard-video-grid {
-                grid-template-columns: 1fr;
-            }
+            .scorecard-video-grid { grid-template-columns: 1fr; }
         }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2em;
-            }
-
-            .nav-menu {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            .game-tabs {
-                flex-direction: column;
-            }
-
-            table {
-                font-size: 0.9em;
-            }
-
-            th, td {
-                padding: 0.5rem;
-            }
+            .hero h1 { font-size: 2em; }
+            .nav-menu { flex-direction: column; gap: 0.5rem; }
+            .game-tabs { flex-direction: column; }
+            table { font-size: 0.9em; }
+            th, td { padding: 0.5rem; }
         }
-
-        /* Loading State */
-        .loading {
-            text-align: center;
-            padding: 3rem;
-            color: var(--text-gray);
-        }
-
-        .no-data {
-            text-align: center;
-            padding: 3rem;
-            color: var(--text-gray);
-            font-size: 1.2em;
-        }
+        .loading { text-align: center; padding: 3rem; color: var(--text-gray); }
+        .no-data { text-align: center; padding: 3rem; color: var(--text-gray); font-size: 1.2em; }
     </style>
 </head>
 <body>
@@ -758,8 +534,8 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#leaderboard">Rankings</a></li>
-                        <li><a href="#">Players</a></li>
-                        <li><a href="#">Courses</a></li>
+                        <li><a href="#players">Players</a></li>
+                        <li><a href="#courses">Courses</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -807,8 +583,8 @@
         let bestRoundEntry = null;
 
         // Weekly Challenge Configuration
-        // UPDATED VARIABLE HERE
-        const WEEKLY_CHALLENGE_COURSE = "Antelope Pass"; // Update this manually each week
+        // UPDATED: Reverted to "Antelope Pass" per request
+        const WEEKLY_CHALLENGE_COURSE = "Antelope Pass"; 
 
         // Auto-load data on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -835,44 +611,54 @@
                 });
         }
 
+        // --- FIXED ROBUST DATE PARSER (Handles MM/DD/YYYY and DD-MM-YYYY) ---
         function parseDate(dateStr) {
-            // Robust parsing for "MM/DD/YYYY H:MM:SS PM" format
             if (!dateStr) return null;
-            
-            // Try standard parsing first
-            let d = new Date(dateStr);
-            if (!isNaN(d.getTime())) return d;
 
-            // Fallback parser for browsers that dislike AM/PM
-            try {
-                // Expected format: "11/21/2025 7:43:45 PM"
-                const parts = dateStr.split(' ');
-                if (parts.length < 3) return null;
+            const parts = dateStr.trim().split(' ');
+            const datePart = parts[0];
+            const timePart = parts[1];
+            const ampm = parts[2];
 
-                const dateParts = parts[0].split('/');
-                const timeParts = parts[1].split(':');
-                const ampm = parts[2];
+            let day, month, year;
 
-                if (dateParts.length !== 3 || timeParts.length !== 3) return null;
-
-                let hours = parseInt(timeParts[0]);
-                const minutes = parseInt(timeParts[1]);
-                const seconds = parseInt(timeParts[2]);
-                
-                if (ampm === 'PM' && hours < 12) hours += 12;
-                if (ampm === 'AM' && hours === 12) hours = 0;
-
-                return new Date(
-                    parseInt(dateParts[2]), // Year
-                    parseInt(dateParts[0]) - 1, // Month (0-indexed)
-                    parseInt(dateParts[1]), // Day
-                    hours,
-                    minutes,
-                    seconds
-                );
-            } catch (e) {
-                return null;
+            if (datePart.includes('-')) {
+                // International Format: DD-MM-YYYY (e.g. 16-11-2025)
+                const dateComponents = datePart.split('-');
+                if (dateComponents.length !== 3) return null;
+                day = parseInt(dateComponents[0], 10);
+                month = parseInt(dateComponents[1], 10) - 1; // 0-indexed
+                year = parseInt(dateComponents[2], 10);
+            } else {
+                // Standard Format: MM/DD/YYYY (e.g. 11/12/2025)
+                const dateComponents = datePart.split('/');
+                if (dateComponents.length !== 3) return null;
+                month = parseInt(dateComponents[0], 10) - 1; // 0-indexed
+                day = parseInt(dateComponents[1], 10);
+                year = parseInt(dateComponents[2], 10);
             }
+
+            // Fix 2-digit years
+            if (year < 100) year += 2000;
+
+            let hours = 0, minutes = 0, seconds = 0;
+            if (timePart) {
+                const timeComponents = timePart.split(':');
+                if (timeComponents.length >= 2) {
+                    hours = parseInt(timeComponents[0], 10);
+                    minutes = parseInt(timeComponents[1], 10);
+                    seconds = timeComponents.length > 2 ? parseInt(timeComponents[2], 10) : 0;
+
+                    if (ampm) {
+                        const upperAmpm = ampm.toUpperCase();
+                        if (upperAmpm === 'PM' && hours < 12) hours += 12;
+                        if (upperAmpm === 'AM' && hours === 12) hours = 0;
+                    }
+                }
+            }
+
+            const d = new Date(year, month, day, hours, minutes, seconds);
+            return isNaN(d.getTime()) ? null : d;
         }
 
         function showWeeklyChallenge() {
@@ -904,7 +690,7 @@
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
             document.getElementById('weeklyCourseName').textContent = WEEKLY_CHALLENGE_COURSE;
 
-            // 1. Filter entries for this course in the current week (DO NOT sort yet)
+            // 1. Filter entries for this course in the current week
             const allWeeklyEntries = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
                 if (!entry.date) return false;
@@ -912,38 +698,34 @@
                 const entryDate = parseDate(entry.date);
                 if (!entryDate) return false;
 
+                // Strict week window check
                 return entryDate >= weekStart && entryDate < weekEnd;
             });
 
-            // 2. --- NEW LOGIC START ---
-            //    Create a map to store the single best entry for each player
+            // 2. Create a map to store the single best entry for each player
             const playerBestScores = {};
 
             allWeeklyEntries.forEach(entry => {
                 const player = entry.username || 'Unknown';
-                const score = parseInt(entry.total_score);
+                const score = parseInt(entry.total_score, 10);
 
-                if (isNaN(score)) return; // Skip entries without a valid score
+                if (isNaN(score)) return;
 
-                // Check if this player is not in the map OR if this entry's score is better (lower)
-                if (!playerBestScores[player] || score < parseInt(playerBestScores[player].total_score)) {
-                    // Save this entry as the player's new best
+                if (!playerBestScores[player] || score < parseInt(playerBestScores[player].total_score, 10)) {
                     playerBestScores[player] = entry;
                 }
             });
 
-            // 3. Convert the map of best scores back into an array
+            // 3. Convert map to array
             const weeklyEntries = Object.values(playerBestScores);
             
-            // 4. --- NEW LOGIC END ---
-            //    Now, sort the de-duplicated list by score
+            // 4. Sort by score
             weeklyEntries.sort((a, b) => {
-                const scoreA = parseInt(a.total_score) || 999;
-                const scoreB = parseInt(b.total_score) || 999;
+                const scoreA = parseInt(a.total_score, 10) || 999;
+                const scoreB = parseInt(b.total_score, 10) || 999;
                 return scoreA - scoreB;
             });
 
-            // The rest of the function remains the same
             const container = document.getElementById('weeklyContent');
 
             if (weeklyEntries.length === 0) {
@@ -978,7 +760,6 @@
 
             weeklyEntries.forEach((entry, index) => {
                 const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
-                // Use safe parser for display date too
                 const dateObj = parseDate(entry.date);
                 const dateStr = dateObj ? dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : 'N/A';
 
@@ -1003,12 +784,11 @@
             const rounds = leaderboardData.length;
             const videos = leaderboardData.filter(e => e.youtube_video).length;
 
-            // Find best score (most negative or lowest)
             let bestEntry = null;
             let bestScoreValue = 999;
 
             leaderboardData.forEach(entry => {
-                const score = parseInt(entry.total_score);
+                const score = parseInt(entry.total_score, 10);
                 if (!isNaN(score) && score < bestScoreValue) {
                     bestScoreValue = score;
                     bestEntry = entry;
@@ -1020,7 +800,7 @@
             document.getElementById('totalVideos').textContent = videos;
 
             if (bestEntry) {
-                bestRoundEntry = bestEntry; // Store for modal
+                bestRoundEntry = bestEntry;
                 document.getElementById('bestScore').textContent = bestEntry.score_vs_par || 'E';
                 document.getElementById('bestScoreDetails').innerHTML = `
                     <strong style="color: var(--primary-orange); font-size: 1.2em;">Best Round</strong><br>
@@ -1032,12 +812,11 @@
         }
 
         function showPlayers() {
-            // Group entries by player and find their best round
             const playersMap = {};
 
             leaderboardData.forEach(entry => {
                 const player = entry.username || 'Unknown';
-                const score = parseInt(entry.total_score);
+                const score = parseInt(entry.total_score, 10);
 
                 if (!playersMap[player]) {
                     playersMap[player] = {
@@ -1056,7 +835,6 @@
                 }
             });
 
-            // Sort players by best score
             const players = Object.values(playersMap)
                 .filter(p => p.bestEntry)
                 .sort((a, b) => a.bestScore - b.bestScore);
@@ -1123,7 +901,7 @@
             let dataIndices = [];
 
             for (let i = 1; i < holes.length; i++) {
-                if (holes[i] && !isNaN(parseInt(holes[i]))) {
+                if (holes[i] && !isNaN(parseInt(holes[i], 10))) {
                     holeHeaders.push(holes[i]);
                     dataIndices.push(i - 1);
                 }
@@ -1135,19 +913,17 @@
             holeHeaders.forEach(h => html += `<th>${h}</th>`);
             html += '<th>Total</th></tr></thead><tbody>';
 
-            // Par row
             if (pars && pars.length > 0) {
                 html += '<tr><td><strong>Par</strong></td>';
                 dataIndices.forEach(i => html += `<td>${pars[i] || '-'}</td>`);
                 html += `<td><strong>${entry.score_vs_par || 'E'}</strong></td></tr>`;
             }
 
-            // Score row with colors
             html += '<tr><td><strong>Score</strong></td>';
             dataIndices.forEach(i => {
                 const score = scores[i] || '-';
-                const par = pars && pars[i] ? parseInt(pars[i]) : null;
-                const scoreNum = parseInt(score);
+                const par = pars && pars[i] ? parseInt(pars[i], 10) : null;
+                const scoreNum = parseInt(score, 10);
                 let style = '';
 
                 if (!isNaN(scoreNum) && par !== null) {
@@ -1169,7 +945,6 @@
         }
 
         function showCourses() {
-            // Get all unique courses
             const coursesMap = {};
 
             leaderboardData.forEach(entry => {
@@ -1184,16 +959,14 @@
                     };
                 }
 
-                const score = parseInt(entry.total_score);
+                const score = parseInt(entry.total_score, 10);
                 if (!isNaN(score) && score < coursesMap[course].bestScore) {
                     coursesMap[course].bestScore = score;
                     coursesMap[course].bestEntry = entry;
                 }
             });
 
-            // Sort courses alphabetically
             const courses = Object.values(coursesMap).sort((a, b) => a.name.localeCompare(b.name));
-
             const container = document.getElementById('coursesContent');
 
             if (courses.length === 0) {
@@ -1224,8 +997,8 @@
                         <td><span class="score-highlight">${entry?.score_vs_par || 'N/A'}</span> (${entry?.total_score || 'N/A'})</td>
                         <td><span class="player-name">${entry?.username || 'Unknown'}</span></td>
                         <td>
-                            ${hasVideo ?
-                                `<a href="${entry.youtube_video}" target="_blank" onclick="event.stopPropagation()" style="color: var(--primary-orange); text-decoration: none;">🎬 Watch</a>`
+                            ${hasVideo ? 
+                                `<a href="${entry.youtube_video}" target="_blank" onclick="event.stopPropagation()" style="color: var(--primary-orange); text-decoration: none;">🎬 Watch</a>` 
                                 : '<span style="opacity: 0.5;">No video</span>'
                             }
                         </td>
@@ -1241,8 +1014,8 @@
             const videoEntries = leaderboardData
                 .filter(entry => entry.youtube_video)
                 .sort((a, b) => {
-                    const scoreA = parseInt(a.total_score) || 999;
-                    const scoreB = parseInt(b.total_score) || 999;
+                    const scoreA = parseInt(a.total_score, 10) || 999;
+                    const scoreB = parseInt(b.total_score, 10) || 999;
                     return scoreA - scoreB;
                 });
 
@@ -1325,7 +1098,7 @@
         function initializeLeaderboards() {
             const games = [...new Set(leaderboardData.map(entry => entry.game))];
             const targetGames = ['Golden Tee Unplugged 2016', 'Power Putt Live 2013', 'Golden Tee Live 2006'];
-            const filteredGames = games.filter(game =>
+            const filteredGames = games.filter(game => 
                 targetGames.some(target => game && game.includes(target.split(' ').slice(0, 3).join(' ')))
             );
 
@@ -1355,7 +1128,7 @@
 
             const entries = leaderboardData
                 .filter(entry => entry.game === game)
-                .sort((a, b) => (parseInt(a.total_score) || 999) - (parseInt(b.total_score) || 999))
+                .sort((a, b) => (parseInt(a.total_score, 10) || 999) - (parseInt(b.total_score, 10) || 999))
                 .slice(0, 10);
 
             displayLeaderboard(entries);
@@ -1441,7 +1214,7 @@
             let dataIndices = [];
 
             for (let i = 1; i < holes.length; i++) {
-                if (holes[i] && !isNaN(parseInt(holes[i]))) {
+                if (holes[i] && !isNaN(parseInt(holes[i], 10))) {
                     holeHeaders.push(holes[i]);
                     dataIndices.push(i - 1);
                 }
@@ -1464,8 +1237,8 @@
             html += '<tr><td><strong>Score</strong></td>';
             dataIndices.forEach(i => {
                 const score = scores[i] || '-';
-                const par = pars && pars[i] ? parseInt(pars[i]) : null;
-                const scoreNum = parseInt(score);
+                const par = pars && pars[i] ? parseInt(pars[i], 10) : null;
+                const scoreNum = parseInt(score, 10);
                 let style = '';
 
                 if (!isNaN(scoreNum) && par !== null) {
