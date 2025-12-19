@@ -402,7 +402,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>🏌️ <span class="highlight">VPINHUB</span> Golden Tee Ballers</h1>
+            <h1>居住 <span class="highlight">VPINHUB</span> Golden Tee Ballers</h1>
             <p>Compete. Dominate. Rise through the ranks.</p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="#leaderboard" class="btn">View Leaderboard</a>
@@ -438,7 +438,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>🏆 Weekly Challenge Course</h2>
-                <p id="weeklyCourseName">Turtle Island</p>
+                <p id="weeklyCourseName">Shady Acres</p>
                 <p id="weeklyDateRange" style="font-size: 0.9em; opacity: 0.8; margin-top: 0.5rem;">Loading week range...</p>
             </div>
 
@@ -583,8 +583,8 @@
         let bestRoundEntry = null;
 
         // Weekly Challenge Configuration
-        // UPDATED: Set to Turtle Island
-        const WEEKLY_CHALLENGE_COURSE = "Turtle Island"; 
+        // UPDATED: Set to Shady Acres
+        const WEEKLY_CHALLENGE_COURSE = "Shady Acres"; 
 
         // Auto-load data on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -592,7 +592,6 @@
         });
 
         function loadJSONFile(filename) {
-            // Cache busting: Append timestamp to URL to force browser to download new file
             fetch(filename + '?v=' + new Date().getTime())
                 .then(response => response.json())
                 .then(data => {
@@ -611,36 +610,29 @@
                 });
         }
 
-        // --- FIXED ROBUST DATE PARSER (Handles MM/DD/YYYY and DD-MM-YYYY) ---
         function parseDate(dateStr) {
             if (!dateStr) return null;
-
             const parts = dateStr.trim().split(' ');
             const datePart = parts[0];
             const timePart = parts[1];
             const ampm = parts[2];
-
             let day, month, year;
 
             if (datePart.includes('-')) {
-                // International Format: DD-MM-YYYY (e.g. 16-11-2025)
                 const dateComponents = datePart.split('-');
                 if (dateComponents.length !== 3) return null;
                 day = parseInt(dateComponents[0], 10);
-                month = parseInt(dateComponents[1], 10) - 1; // 0-indexed
+                month = parseInt(dateComponents[1], 10) - 1;
                 year = parseInt(dateComponents[2], 10);
             } else {
-                // Standard Format: MM/DD/YYYY (e.g. 11/12/2025)
                 const dateComponents = datePart.split('/');
                 if (dateComponents.length !== 3) return null;
-                month = parseInt(dateComponents[0], 10) - 1; // 0-indexed
+                month = parseInt(dateComponents[0], 10) - 1;
                 day = parseInt(dateComponents[1], 10);
                 year = parseInt(dateComponents[2], 10);
             }
 
-            // Fix 2-digit years
             if (year < 100) year += 2000;
-
             let hours = 0, minutes = 0, seconds = 0;
             if (timePart) {
                 const timeComponents = timePart.split(':');
@@ -648,7 +640,6 @@
                     hours = parseInt(timeComponents[0], 10);
                     minutes = parseInt(timeComponents[1], 10);
                     seconds = timeComponents.length > 2 ? parseInt(timeComponents[2], 10) : 0;
-
                     if (ampm) {
                         const upperAmpm = ampm.toUpperCase();
                         if (upperAmpm === 'PM' && hours < 12) hours += 12;
@@ -656,70 +647,48 @@
                     }
                 }
             }
-
             const d = new Date(year, month, day, hours, minutes, seconds);
             return isNaN(d.getTime()) ? null : d;
         }
 
         function showWeeklyChallenge() {
-            // Calculate current week (Friday 12pm ET to next Friday 12pm ET)
             const now = new Date();
             const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-
-            // Find most recent Friday at 12pm
             let weekStart = new Date(et);
             weekStart.setHours(12, 0, 0, 0);
-
-            // Go back to most recent Friday
             const daysSinceFriday = (weekStart.getDay() + 2) % 7;
             weekStart.setDate(weekStart.getDate() - daysSinceFriday);
-
-            // If we're before Friday 12pm this week, go back another week
             if (et < weekStart) {
                 weekStart.setDate(weekStart.getDate() - 7);
             }
-
-            // Calculate week end (next Friday 12pm)
             const weekEnd = new Date(weekStart);
             weekEnd.setDate(weekEnd.getDate() + 7);
 
-            // Update display
             const options = { month: 'short', day: 'numeric', year: 'numeric' };
             const startStr = weekStart.toLocaleDateString('en-US', options);
             const endStr = weekEnd.toLocaleDateString('en-US', options);
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
             document.getElementById('weeklyCourseName').textContent = WEEKLY_CHALLENGE_COURSE;
 
-            // 1. Filter entries for this course in the current week
             const allWeeklyEntries = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
                 if (!entry.date) return false;
-
                 const entryDate = parseDate(entry.date);
                 if (!entryDate) return false;
-
-                // Strict week window check
                 return entryDate >= weekStart && entryDate < weekEnd;
             });
 
-            // 2. Create a map to store the single best entry for each player
             const playerBestScores = {};
-
             allWeeklyEntries.forEach(entry => {
                 const player = entry.username || 'Unknown';
                 const score = parseInt(entry.total_score, 10);
-
                 if (isNaN(score)) return;
-
                 if (!playerBestScores[player] || score < parseInt(playerBestScores[player].total_score, 10)) {
                     playerBestScores[player] = entry;
                 }
             });
 
-            // 3. Convert map to array
             const weeklyEntries = Object.values(playerBestScores);
-            
-            // 4. Sort by score
             weeklyEntries.sort((a, b) => {
                 const scoreA = parseInt(a.total_score, 10) || 999;
                 const scoreB = parseInt(b.total_score, 10) || 999;
@@ -727,7 +696,6 @@
             });
 
             const container = document.getElementById('weeklyContent');
-
             if (weeklyEntries.length === 0) {
                 container.innerHTML = `
                     <div class="no-data">
@@ -783,7 +751,6 @@
             const players = new Set(leaderboardData.map(e => e.username)).size;
             const rounds = leaderboardData.length;
             const videos = leaderboardData.filter(e => e.youtube_video).length;
-
             let bestEntry = null;
             let bestScoreValue = 999;
 
@@ -813,45 +780,30 @@
 
         function showPlayers() {
             const playersMap = {};
-
             leaderboardData.forEach(entry => {
                 const player = entry.username || 'Unknown';
                 const score = parseInt(entry.total_score, 10);
-
                 if (!playersMap[player]) {
-                    playersMap[player] = {
-                        name: player,
-                        bestScore: 999,
-                        bestEntry: null,
-                        totalRounds: 0
-                    };
+                    playersMap[player] = { name: player, bestScore: 999, bestEntry: null, totalRounds: 0 };
                 }
-
                 playersMap[player].totalRounds++;
-
                 if (!isNaN(score) && score < playersMap[player].bestScore) {
                     playersMap[player].bestScore = score;
                     playersMap[player].bestEntry = entry;
                 }
             });
 
-            const players = Object.values(playersMap)
-                .filter(p => p.bestEntry)
-                .sort((a, b) => a.bestScore - b.bestScore);
-
+            const players = Object.values(playersMap).filter(p => p.bestEntry).sort((a, b) => a.bestScore - b.bestScore);
             const container = document.getElementById('playersContent');
-
             if (players.length === 0) {
                 container.innerHTML = '<div class="no-data">No players found</div>';
                 return;
             }
 
             let html = '';
-
             players.forEach((player, index) => {
                 const entry = player.bestEntry;
                 const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
-
                 html += `
                     <div class="player-card">
                         <div class="player-header">
@@ -865,7 +817,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="scorecard-video-grid">
                             <div class="scorecard-compact">
                                 <h4 style="color: var(--primary-orange); margin-bottom: 1rem;">Best Round Scorecard</h4>
@@ -883,53 +834,41 @@
                     </div>
                 `;
             });
-
             container.innerHTML = html;
         }
 
         function buildCompactScorecard(entry) {
-            if (!entry.players || entry.players.length === 0) {
-                return '<p>No scorecard data available</p>';
-            }
-
+            if (!entry.players || entry.players.length === 0) return '<p>No scorecard data available</p>';
             const player = entry.players[0];
             const scores = player.scores;
             const pars = entry.pars;
             const holes = entry.holes || [];
-
             let holeHeaders = [];
             let dataIndices = [];
-
             for (let i = 1; i < holes.length; i++) {
                 if (holes[i] && !isNaN(parseInt(holes[i], 10))) {
                     holeHeaders.push(holes[i]);
                     dataIndices.push(i - 1);
                 }
             }
-
             if (dataIndices.length === 0) return '<p>No hole data available</p>';
-
             let html = '<table><thead><tr><th>Hole</th>';
             holeHeaders.forEach(h => html += `<th>${h}</th>`);
             html += '<th>Total</th></tr></thead><tbody>';
-
             if (pars && pars.length > 0) {
                 html += '<tr><td><strong>Par</strong></td>';
                 dataIndices.forEach(i => html += `<td>${pars[i] || '-'}</td>`);
                 html += `<td><strong>${entry.score_vs_par || 'E'}</strong></td></tr>`;
             }
-
             html += '<tr><td><strong>Score</strong></td>';
             dataIndices.forEach(i => {
                 const score = scores[i] || '-';
                 const par = pars && pars[i] ? parseInt(pars[i], 10) : null;
                 const scoreNum = parseInt(score, 10);
                 let style = '';
-
                 if (!isNaN(scoreNum) && par !== null) {
-                    if (scoreNum === 1) {
-                        style = 'color: #FFD700; font-weight: bold;';
-                    } else {
+                    if (scoreNum === 1) style = 'color: #FFD700; font-weight: bold;';
+                    else {
                         const diff = scoreNum - par;
                         if (diff <= -2) style = 'color: #00BFFF; font-weight: bold;';
                         else if (diff === -1) style = 'color: #00FF00; font-weight: bold;';
@@ -938,109 +877,52 @@
                 }
                 html += `<td style="${style}">${score}</td>`;
             });
-            html += `<td><strong>${entry.total_score || 'N/A'}</strong></td></tr>`;
-
-            html += '</tbody></table>';
+            html += `<td><strong>${entry.total_score || 'N/A'}</strong></td></tr></tbody></table>`;
             return html;
         }
 
         function showCourses() {
             const coursesMap = {};
-
             leaderboardData.forEach(entry => {
                 const course = entry.course;
                 if (!course) return;
-
-                if (!coursesMap[course]) {
-                    coursesMap[course] = {
-                        name: course,
-                        bestScore: 999,
-                        bestEntry: null
-                    };
-                }
-
+                if (!coursesMap[course]) coursesMap[course] = { name: course, bestScore: 999, bestEntry: null };
                 const score = parseInt(entry.total_score, 10);
                 if (!isNaN(score) && score < coursesMap[course].bestScore) {
                     coursesMap[course].bestScore = score;
                     coursesMap[course].bestEntry = entry;
                 }
             });
-
             const courses = Object.values(coursesMap).sort((a, b) => a.name.localeCompare(b.name));
             const container = document.getElementById('coursesContent');
-
             if (courses.length === 0) {
                 container.innerHTML = '<div class="no-data">No courses found</div>';
                 return;
             }
-
-            let html = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Course Name</th>
-                            <th>Best Score</th>
-                            <th>Player</th>
-                            <th>Best Video</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-
+            let html = `<table><thead><tr><th>Course Name</th><th>Best Score</th><th>Player</th><th>Best Video</th></tr></thead><tbody>`;
             courses.forEach(course => {
                 const entry = course.bestEntry;
                 const hasVideo = entry && entry.youtube_video;
-
                 html += `
                     <tr ${hasVideo ? `onclick='showScorecard(${JSON.stringify(entry).replace(/'/g, "&apos;")})'` : ''} style="${hasVideo ? 'cursor: pointer;' : ''}">
                         <td><strong style="color: #ffffff;">${course.name}</strong></td>
                         <td><span class="score-highlight">${entry?.score_vs_par || 'N/A'}</span> (${entry?.total_score || 'N/A'})</td>
                         <td><span class="player-name">${entry?.username || 'Unknown'}</span></td>
-                        <td>
-                            ${hasVideo ? 
-                                `<a href="${entry.youtube_video}" target="_blank" onclick="event.stopPropagation()" style="color: var(--primary-orange); text-decoration: none;">🎬 Watch</a>` 
-                                : '<span style="opacity: 0.5;">No video</span>'
-                            }
-                        </td>
-                    </tr>
-                `;
+                        <td>${hasVideo ? `<a href="${entry.youtube_video}" target="_blank" onclick="event.stopPropagation()" style="color: var(--primary-orange); text-decoration: none;">🎬 Watch</a>` : '<span style="opacity: 0.5;">No video</span>'}</td>
+                    </tr>`;
             });
-
             html += '</tbody></table>';
             container.innerHTML = html;
         }
 
         function showVideos() {
-            const videoEntries = leaderboardData
-                .filter(entry => entry.youtube_video)
-                .sort((a, b) => {
-                    const scoreA = parseInt(a.total_score, 10) || 999;
-                    const scoreB = parseInt(b.total_score, 10) || 999;
-                    return scoreA - scoreB;
-                });
-
+            const videoEntries = leaderboardData.filter(entry => entry.youtube_video).sort((a, b) => (parseInt(a.total_score, 10) || 999) - (parseInt(b.total_score, 10) || 999));
             const container = document.getElementById('videosContent');
-
             if (videoEntries.length === 0) {
                 container.innerHTML = '<div class="no-data">No video submissions yet</div>';
                 return;
             }
-
-            let html = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Player</th>
-                            <th>Game</th>
-                            <th>Course</th>
-                            <th>Score</th>
-                            <th>Video</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-
+            let html = `<table><thead><tr><th>Rank</th><th>Player</th><th>Game</th><th>Course</th><th>Score</th><th>Video</th></tr></thead><tbody>`;
             videoEntries.forEach((entry, index) => {
                 const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
                 html += `
@@ -1051,67 +933,38 @@
                         <td>${entry.course || 'Unknown'}</td>
                         <td><span class="score-highlight">${entry.score_vs_par || 'E'}</span> (${entry.total_score || 'N/A'})</td>
                         <td><a href="${entry.youtube_video}" target="_blank" onclick="event.stopPropagation()" style="color: var(--primary-orange); text-decoration: none;">🎬 Watch</a></td>
-                    </tr>
-                `;
+                    </tr>`;
             });
-
             html += '</tbody></table>';
             container.innerHTML = html;
         }
 
-        function showVideoModal(entry) {
-            showScorecard(entry);
-        }
-
-        function showJoinModal() {
-            document.getElementById('joinModal').classList.add('active');
-        }
-
-        function closeJoinModal() {
-            document.getElementById('joinModal').classList.remove('active');
-        }
-        function showBestRoundModal() {
-            if (bestRoundEntry) {
-                showScorecard(bestRoundEntry);
-            }
-        }
-
+        function showVideoModal(entry) { showScorecard(entry); }
+        function showJoinModal() { document.getElementById('joinModal').classList.add('active'); }
+        function closeJoinModal() { document.getElementById('joinModal').classList.remove('active'); }
         function showRandomSpotlight() {
             const videoEntries = leaderboardData.filter(entry => entry.youtube_embed);
             if (videoEntries.length === 0) {
                 document.getElementById('spotlightContent').innerHTML = '<div class="no-data">No videos available</div>';
                 return;
             }
-
             const randomEntry = videoEntries[Math.floor(Math.random() * videoEntries.length)];
             document.getElementById('spotlightContent').innerHTML = `
-                <div class="video-container">
-                    <iframe src="${randomEntry.youtube_embed}" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="spotlight-info">
-                    <span class="player-name">${randomEntry.username || 'Unknown'}</span> on ${randomEntry.course || 'Unknown Course'}
-                    <br>Score: <strong style="color: var(--primary-orange)">${randomEntry.score_vs_par || 'E'}</strong> (${randomEntry.total_score || 'N/A'})
-                </div>
-            `;
+                <div class="video-container"><iframe src="${randomEntry.youtube_embed}" frameborder="0" allowfullscreen></iframe></div>
+                <div class="spotlight-info"><span class="player-name">${randomEntry.username || 'Unknown'}</span> on ${randomEntry.course || 'Unknown Course'}<br>Score: <strong style="color: var(--primary-orange)">${randomEntry.score_vs_par || 'E'}</strong> (${randomEntry.total_score || 'N/A'})</div>`;
         }
 
         function initializeLeaderboards() {
             const games = [...new Set(leaderboardData.map(entry => entry.game))];
             const targetGames = ['Golden Tee Unplugged 2016', 'Power Putt Live 2013', 'Golden Tee Live 2006'];
-            const filteredGames = games.filter(game => 
-                targetGames.some(target => game && game.includes(target.split(' ').slice(0, 3).join(' ')))
-            );
-
+            const filteredGames = games.filter(game => targetGames.some(target => game && game.includes(target.split(' ').slice(0, 3).join(' '))));
             createTabs(filteredGames);
-            if (filteredGames.length > 0) {
-                showGame(filteredGames[0]);
-            }
+            if (filteredGames.length > 0) showGame(filteredGames[0]);
         }
 
         function createTabs(games) {
             const tabsContainer = document.getElementById('gameTabs');
             tabsContainer.innerHTML = '';
-
             games.forEach(game => {
                 const tab = document.createElement('button');
                 tab.className = 'tab';
@@ -1122,41 +975,18 @@
         }
 
         function showGame(game) {
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.toggle('active', tab.textContent === game);
-            });
-
-            const entries = leaderboardData
-                .filter(entry => entry.game === game)
-                .sort((a, b) => (parseInt(a.total_score, 10) || 999) - (parseInt(b.total_score, 10) || 999))
-                .slice(0, 10);
-
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.toggle('active', tab.textContent === game));
+            const entries = leaderboardData.filter(entry => entry.game === game).sort((a, b) => (parseInt(a.total_score, 10) || 999) - (parseInt(b.total_score, 10) || 999)).slice(0, 10);
             displayLeaderboard(entries);
         }
 
         function displayLeaderboard(entries) {
             const container = document.getElementById('leaderboardContent');
-
             if (entries.length === 0) {
                 container.innerHTML = '<div class="no-data">No entries found</div>';
                 return;
             }
-
-            let html = `
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Player</th>
-                            <th>Course</th>
-                            <th>Score</th>
-                            <th>Total</th>
-                            <th>Video</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-
+            let html = `<table><thead><tr><th>Rank</th><th>Player</th><th>Course</th><th>Score</th><th>Total</th><th>Video</th></tr></thead><tbody>`;
             entries.forEach((entry, index) => {
                 const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
                 html += `
@@ -1167,10 +997,8 @@
                         <td><span class="score-highlight">${entry.score_vs_par || 'E'}</span></td>
                         <td>${entry.total_score || 'N/A'}</td>
                         <td>${entry.youtube_video ? '<span class="video-icon">📹</span>' : ''}</td>
-                    </tr>
-                `;
+                    </tr>`;
             });
-
             html += '</tbody></table>';
             container.innerHTML = html;
         }
@@ -1178,28 +1006,9 @@
         function showScorecard(entry) {
             const modal = document.getElementById('scorecardModal');
             const content = document.getElementById('modalContent');
-
-            let html = `
-                <h2 style="color: var(--primary-orange)">${entry.game}</h2>
-                <h3>${entry.username || 'Unknown'} - ${entry.course || 'Unknown'}</h3>
-                <p style="font-size: 1.3em; margin: 1rem 0;">
-                    <strong style="color: var(--primary-orange); font-size: 1.5em;">${entry.score_vs_par || 'E'}</strong>
-                    <span style="opacity: 0.7;">(${entry.total_score || 'N/A'})</span> | ${entry.date || 'Unknown date'}
-                </p>
-            `;
-
-            if (entry.youtube_embed) {
-                html += `
-                    <div class="video-container">
-                        <iframe src="${entry.youtube_embed}" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                `;
-            }
-
-            if (entry.players && entry.players.length > 0) {
-                html += buildScorecardTable(entry);
-            }
-
+            let html = `<h2 style="color: var(--primary-orange)">${entry.game}</h2><h3>${entry.username || 'Unknown'} - ${entry.course || 'Unknown'}</h3><p style="font-size: 1.3em; margin: 1rem 0;"><strong style="color: var(--primary-orange); font-size: 1.5em;">${entry.score_vs_par || 'E'}</strong><span style="opacity: 0.7;">(${entry.total_score || 'N/A'})</span> | ${entry.date || 'Unknown date'}</p>`;
+            if (entry.youtube_embed) html += `<div class="video-container"><iframe src="${entry.youtube_embed}" frameborder="0" allowfullscreen></iframe></div>`;
+            if (entry.players && entry.players.length > 0) html += buildScorecardTable(entry);
             content.innerHTML = html;
             modal.classList.add('active');
         }
@@ -1209,42 +1018,32 @@
             const scores = player.scores;
             const pars = entry.pars;
             const holes = entry.holes || [];
-
             let holeHeaders = [];
             let dataIndices = [];
-
             for (let i = 1; i < holes.length; i++) {
                 if (holes[i] && !isNaN(parseInt(holes[i], 10))) {
                     holeHeaders.push(holes[i]);
                     dataIndices.push(i - 1);
                 }
             }
-
             if (dataIndices.length === 0) return '';
-
             let html = '<div class="scorecard-table"><table><thead><tr><th>Hole</th>';
             holeHeaders.forEach(h => html += `<th>${h}</th>`);
             html += '<th>Total</th></tr></thead><tbody>';
-
-            // Par row
             if (pars && pars.length > 0) {
                 html += '<tr><td><strong>Par</strong></td>';
                 dataIndices.forEach(i => html += `<td>${pars[i] || '-'}</td>`);
                 html += `<td><strong>${entry.score_vs_par || 'E'}</strong></td></tr>`;
             }
-
-            // Score row with colors
             html += '<tr><td><strong>Score</strong></td>';
             dataIndices.forEach(i => {
                 const score = scores[i] || '-';
                 const par = pars && pars[i] ? parseInt(pars[i], 10) : null;
                 const scoreNum = parseInt(score, 10);
                 let style = '';
-
                 if (!isNaN(scoreNum) && par !== null) {
-                    if (scoreNum === 1) {
-                        style = 'color: #FFD700; font-weight: bold;';
-                    } else {
+                    if (scoreNum === 1) style = 'color: #FFD700; font-weight: bold;';
+                    else {
                         const diff = scoreNum - par;
                         if (diff <= -2) style = 'color: #00BFFF; font-weight: bold;';
                         else if (diff === -1) style = 'color: #00FF00; font-weight: bold;';
@@ -1253,24 +1052,13 @@
                 }
                 html += `<td style="${style}">${score}</td>`;
             });
-            html += `<td><strong>${entry.total_score || 'N/A'}</strong></td></tr>`;
-
-            html += '</tbody></table></div>';
+            html += `<td><strong>${entry.total_score || 'N/A'}</strong></td></tr></tbody></table></div>`;
             return html;
         }
 
-        function closeModal() {
-            document.getElementById('scorecardModal').classList.remove('active');
-        }
-
-        // Close modal on outside click
-        document.getElementById('scorecardModal').addEventListener('click', function(e) {
-            if (e.target === this) closeModal();
-        });
-
-        document.getElementById('joinModal').addEventListener('click', function(e) {
-            if (e.target === this) closeJoinModal();
-        });
+        function closeModal() { document.getElementById('scorecardModal').classList.remove('active'); }
+        document.getElementById('scorecardModal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
+        document.getElementById('joinModal').addEventListener('click', function(e) { if (e.target === this) closeJoinModal(); });
     </script>
 </body>
 </html>
