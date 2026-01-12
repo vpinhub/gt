@@ -653,13 +653,19 @@
         function showWeeklyChallenge() {
             const now = new Date();
             const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+            
+            // Set weekStart to the most recent Friday at 12pm ET
             let weekStart = new Date(et);
             weekStart.setHours(12, 0, 0, 0);
-            const daysSinceFriday = (weekStart.getDay() + 2) % 7;
+            const dayNum = weekStart.getDay(); 
+            const daysSinceFriday = (dayNum >= 5) ? (dayNum - 5) : (dayNum + 2);
             weekStart.setDate(weekStart.getDate() - daysSinceFriday);
-            if (et < weekStart) {
+            
+            // If it's currently Friday before 12pm, move back one week
+            if (et.getDay() === 5 && et.getHours() < 12) {
                 weekStart.setDate(weekStart.getDate() - 7);
             }
+
             const weekEnd = new Date(weekStart);
             weekEnd.setDate(weekEnd.getDate() + 7);
 
@@ -669,12 +675,12 @@
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
             document.getElementById('weeklyCourseName').textContent = WEEKLY_CHALLENGE_COURSE;
 
+            // FILTER LOGIC: include scores up to the current moment 'et' to capture Monday morning runs
             const allWeeklyEntries = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
-                if (!entry.date) return false;
                 const entryDate = parseDate(entry.date);
                 if (!entryDate) return false;
-                return entryDate >= weekStart && entryDate < weekEnd;
+                return entryDate >= weekStart && entryDate <= et;
             });
 
             const playerBestScores = {};
@@ -954,9 +960,18 @@
         }
 
         function initializeLeaderboards() {
-            const games = [...new Set(leaderboardData.map(entry => entry.game))];
-            const targetGames = ['Golden Tee Unplugged 2016', 'Power Putt Live 2013', 'Golden Tee Live 2006'];
-            const filteredGames = games.filter(game => targetGames.some(target => game && game.includes(target.split(' ').slice(0, 3).join(' '))));
+            const availableGames = [...new Set(leaderboardData.map(entry => entry.game))];
+            
+            // FIX: explicitly handle 2016 and 2017 separately
+            const targetOrder = [
+                'Golden Tee Unplugged 2017',
+                'Golden Tee Unplugged 2016',
+                'Golden Tee Live 2007',
+                'Golden Tee Live 2006',
+                'Power Putt Live 2013'
+            ];
+
+            const filteredGames = targetOrder.filter(gameName => availableGames.includes(gameName));
             createTabs(filteredGames);
             if (filteredGames.length > 0) showGame(filteredGames[0]);
         }
