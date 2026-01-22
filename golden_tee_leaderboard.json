@@ -199,7 +199,7 @@
     "total_score": "48",
     "score_vs_par": "+12",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:26:30.471896",
+    "scraped_at": "2026-01-22T01:41:19.641708",
     "query_user_id": "ed20910"
   },
   {
@@ -402,7 +402,7 @@
     "total_score": "40",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:26:31.597858",
+    "scraped_at": "2026-01-22T01:41:20.772066",
     "query_user_id": "ed20910"
   },
   {
@@ -605,7 +605,7 @@
     "total_score": "40",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:26:32.725678",
+    "scraped_at": "2026-01-22T01:41:21.902816",
     "query_user_id": "ed20910"
   },
   {
@@ -808,7 +808,7 @@
     "total_score": "47",
     "score_vs_par": "+11",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:26:33.853207",
+    "scraped_at": "2026-01-22T01:41:23.033277",
     "query_user_id": "ed20910"
   },
   {
@@ -1013,7 +1013,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=Q8QAgx86iWM",
     "youtube_embed": "https://www.youtube.com/embed/Q8QAgx86iWM",
-    "scraped_at": "2026-01-21T21:26:34.980694",
+    "scraped_at": "2026-01-22T01:41:24.162498",
     "query_user_id": "ed20910"
   },
   {
@@ -1216,7 +1216,7 @@
     "total_score": "46",
     "score_vs_par": "+10",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:26:36.117932",
+    "scraped_at": "2026-01-22T01:41:25.305280",
     "query_user_id": "ed20910"
   },
   {
@@ -1421,7 +1421,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=cnnPKOvTJno",
     "youtube_embed": "https://www.youtube.com/embed/cnnPKOvTJno",
-    "scraped_at": "2026-01-21T21:26:37.242805",
+    "scraped_at": "2026-01-22T01:41:26.434396",
     "query_user_id": "ed20910"
   },
   {
@@ -1626,7 +1626,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=6_jqFjm7KQI",
     "youtube_embed": "https://www.youtube.com/embed/6_jqFjm7KQI",
-    "scraped_at": "2026-01-21T21:26:38.368336",
+    "scraped_at": "2026-01-22T01:41:27.565884",
     "query_user_id": "ed20910"
   },
   {
@@ -1831,7 +1831,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=vrGOSaBXi7Y",
     "youtube_embed": "https://www.youtube.com/embed/vrGOSaBXi7Y",
-    "scraped_at": "2026-01-21T21:26:39.495573",
+    "scraped_at": "2026-01-22T01:41:28.694303",
     "query_user_id": "ed20910"
   },
   {
@@ -2036,7 +2036,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=KV6F6js18Uw",
     "youtube_embed": "https://www.youtube.com/embed/KV6F6js18Uw",
-    "scraped_at": "2026-01-21T21:26:40.621313",
+    "scraped_at": "2026-01-22T01:41:29.822096",
     "query_user_id": "ed20910"
   },
   {
@@ -2241,7 +2241,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=KV6F6js18Uw",
     "youtube_embed": "https://www.youtube.com/embed/KV6F6js18Uw",
-    "scraped_at": "2026-01-21T21:26:41.747278",
+    "scraped_at": "2026-01-22T01:41:30.951452",
     "query_user_id": "ed20910"
   },
   {
@@ -2446,7 +2446,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=QOYaKskceGk",
     "youtube_embed": "https://www.youtube.com/embed/QOYaKskceGk",
-    "scraped_at": "2026-01-21T21:26:42.872423",
+    "scraped_at": "2026-01-22T01:41:32.079994",
     "query_user_id": "ed20910"
   },
   {
@@ -2649,7 +2649,7 @@
     "total_score": "42",
     "score_vs_par": "+7",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:26:43.998171",
+    "scraped_at": "2026-01-22T01:41:33.210530",
     "query_user_id": "ed20910"
   },
   {
@@ -2852,7 +2852,1645 @@
     "total_score": "32",
     "score_vs_par": "-3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:26:45.127918",
+    "scraped_at": "2026-01-22T01:41:34.339549",
+    "query_user_id": "ed20910"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1078",
+    "game": "Golden Tee Unplugged 2016",
+    "username": "ed20910",
+    "course": "Sequoia Grove",
+    "date": "22-01-2026 03:39:49",
+    "capture_id": "01212027132026",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "449",
+      "523",
+      "117",
+      "250",
+      "420",
+      "66",
+      "235",
+      "460",
+      "270",
+      "2790",
+      "348",
+      "128",
+      "475",
+      "246",
+      "390",
+      "177",
+      "287",
+      "274",
+      "304",
+      "2629",
+      "5419",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "4",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "3",
+          "4",
+          "2",
+          "3",
+          "3",
+          "2",
+          "4",
+          "5",
+          "2",
+          "28",
+          "4",
+          "2",
+          "4",
+          "3",
+          "4",
+          "4",
+          "4",
+          "4",
+          "5",
+          "34",
+          "62",
+          "-10",
+          "0"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "62",
+    "score_vs_par": "-10",
+    "gsp": "0",
+    "scraped_at": "2026-01-22T01:41:38.784362",
+    "query_user_id": "ed20910"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1077",
+    "game": "Golden Tee Unplugged 2016",
+    "username": "ed20910",
+    "course": "Sequoia Grove",
+    "date": "22-01-2026 03:17:30",
+    "capture_id": "01212005202026",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "6",
+      "529",
+      "118",
+      "256",
+      "426",
+      "63",
+      "236",
+      "466",
+      "253",
+      "2353",
+      "340",
+      "124",
+      "487",
+      "259",
+      "400",
+      "174",
+      "273",
+      "278",
+      "302",
+      "2637",
+      "4990",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "4",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "3",
+          "4",
+          "2",
+          "3",
+          "3",
+          "2",
+          "3",
+          "5",
+          "3",
+          "28",
+          "4",
+          "4",
+          "4",
+          "4",
+          "3",
+          "4",
+          "3",
+          "7",
+          "3",
+          "36",
+          "64",
+          "-8",
+          "4704"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "64",
+    "score_vs_par": "-8",
+    "gsp": "4704",
+    "youtube_video": "https://www.youtube.com/watch?v=0yNo-y2mE9w",
+    "youtube_embed": "https://www.youtube.com/embed/0yNo-y2mE9w",
+    "scraped_at": "2026-01-22T01:41:39.915683",
+    "query_user_id": "ed20910"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1076",
+    "game": "Golden Tee Unplugged 2016",
+    "username": "ed20910",
+    "course": "Sequoia Grove",
+    "date": "22-01-2026 03:04:42",
+    "capture_id": "01211952462026",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "441",
+      "445",
+      "111",
+      "258",
+      "415",
+      "75",
+      "233",
+      "464",
+      "268",
+      "2710",
+      "347",
+      "129",
+      "488",
+      "252",
+      "385",
+      "172",
+      "296",
+      "272",
+      "309",
+      "2650",
+      "5360",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "4",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "3",
+          "3",
+          "2",
+          "4",
+          "3",
+          "1",
+          "4",
+          "4",
+          "2",
+          "26",
+          "5",
+          "3",
+          "6",
+          "3",
+          "4",
+          "3",
+          "3",
+          "5",
+          "6",
+          "38",
+          "64",
+          "-8",
+          "7565"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "64",
+    "score_vs_par": "-8",
+    "gsp": "7565",
+    "youtube_video": "https://www.youtube.com/watch?v=PcVyF6NFuSM",
+    "youtube_embed": "https://www.youtube.com/embed/PcVyF6NFuSM",
+    "scraped_at": "2026-01-22T01:41:41.045322",
+    "query_user_id": "ed20910"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1075",
+    "game": "Golden Tee Unplugged 2016",
+    "username": "ed20910",
+    "course": "Sequoia Grove",
+    "date": "22-01-2026 02:49:44",
+    "capture_id": "01211938072026",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "444",
+      "531",
+      "117",
+      "258",
+      "410",
+      "74",
+      "234",
+      "468",
+      "256",
+      "2792",
+      "352",
+      "125",
+      "491",
+      "248",
+      "390",
+      "173",
+      "283",
+      "279",
+      "302",
+      "2643",
+      "5435",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "4",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "3",
+          "4",
+          "2",
+          "3",
+          "4",
+          "2",
+          "4",
+          "4",
+          "4",
+          "30",
+          "5",
+          "2",
+          "6",
+          "4",
+          "4",
+          "2",
+          "6",
+          "6",
+          "3",
+          "38",
+          "68",
+          "-4",
+          "0"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "68",
+    "score_vs_par": "-4",
+    "gsp": "0",
+    "youtube_video": "https://www.youtube.com/watch?v=g6FQ8OwxZfE",
+    "youtube_embed": "https://www.youtube.com/embed/g6FQ8OwxZfE",
+    "scraped_at": "2026-01-22T01:41:42.176529",
+    "query_user_id": "ed20910"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1074",
+    "game": "Golden Tee Unplugged 2016",
+    "username": "ed20910",
+    "course": "Sequoia Grove",
+    "date": "22-01-2026 02:37:45",
+    "capture_id": "01211925492026",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "455",
+      "473",
+      "113",
+      "256",
+      "424",
+      "68",
+      "234",
+      "469",
+      "255",
+      "2747",
+      "352",
+      "125",
+      "480",
+      "247",
+      "402",
+      "174",
+      "294",
+      "271",
+      "309",
+      "2654",
+      "5401",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "4",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "3",
+          "3",
+          "2",
+          "3",
+          "4",
+          "2",
+          "4",
+          "5",
+          "4",
+          "30",
+          "3",
+          "2",
+          "4",
+          "3",
+          "5",
+          "6",
+          "5",
+          "5",
+          "6",
+          "39",
+          "69",
+          "-3",
+          "0"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "69",
+    "score_vs_par": "-3",
+    "gsp": "0",
+    "youtube_video": "https://www.youtube.com/watch?v=IaXujd7MnFg",
+    "youtube_embed": "https://www.youtube.com/embed/IaXujd7MnFg",
+    "scraped_at": "2026-01-22T01:41:43.307216",
+    "query_user_id": "ed20910"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1073",
+    "game": "Golden Tee Unplugged 2016",
+    "username": "ed20910",
+    "course": "Sequoia Grove",
+    "date": "22-01-2026 02:25:24",
+    "capture_id": "01211912072026",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "448",
+      "522",
+      "116",
+      "249",
+      "422",
+      "73",
+      "238",
+      "477",
+      "255",
+      "2800",
+      "352",
+      "119",
+      "488",
+      "253",
+      "406",
+      "173",
+      "283",
+      "269",
+      "312",
+      "2655",
+      "5455",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "4",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "3",
+          "5",
+          "3",
+          "3",
+          "5",
+          "2",
+          "3",
+          "4",
+          "4",
+          "32",
+          "4",
+          "4",
+          "4",
+          "3",
+          "3",
+          "2",
+          "4",
+          "6",
+          "3",
+          "33",
+          "65",
+          "-7",
+          "8070"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "65",
+    "score_vs_par": "-7",
+    "gsp": "8070",
+    "youtube_video": "https://www.youtube.com/watch?v=cwTY0oFw6lw",
+    "youtube_embed": "https://www.youtube.com/embed/cwTY0oFw6lw",
+    "scraped_at": "2026-01-22T01:41:44.436909",
+    "query_user_id": "ed20910"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1071",
+    "game": "Golden Tee Unplugged 2016",
+    "username": "ed20910",
+    "course": "Sequoia Grove",
+    "date": "21-01-2026 23:55:02",
+    "capture_id": "01211643062026",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "463",
+      "530",
+      "116",
+      "240",
+      "424",
+      "69",
+      "235",
+      "469",
+      "271",
+      "2817",
+      "344",
+      "133",
+      "480",
+      "242",
+      "385",
+      "174",
+      "284",
+      "284",
+      "302",
+      "2628",
+      "5445",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "4",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "3",
+          "4",
+          "2",
+          "3",
+          "3",
+          "2",
+          "3",
+          "5",
+          "3",
+          "28",
+          "5",
+          "3",
+          "4",
+          "4",
+          "5",
+          "2",
+          "6",
+          "6",
+          "3",
+          "38",
+          "66",
+          "-6",
+          "0"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "66",
+    "score_vs_par": "-6",
+    "gsp": "0",
+    "youtube_video": "https://www.youtube.com/watch?v=GeSuqEhwVkw",
+    "youtube_embed": "https://www.youtube.com/embed/GeSuqEhwVkw",
+    "scraped_at": "2026-01-22T01:41:45.568462",
+    "query_user_id": "ed20910"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1070",
+    "game": "Golden Tee Unplugged 2016",
+    "username": "ed20910",
+    "course": "Sequoia Grove",
+    "date": "21-01-2026 23:41:43",
+    "capture_id": "01211628462026",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "459",
+      "425",
+      "109",
+      "248",
+      "400",
+      "62",
+      "232",
+      "469",
+      "258",
+      "2662",
+      "351",
+      "123",
+      "474",
+      "252",
+      "398",
+      "169",
+      "286",
+      "273",
+      "302",
+      "2628",
+      "5290",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "4",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "2",
+          "3",
+          "3",
+          "4",
+          "4",
+          "0",
+          "6",
+          "4",
+          "4",
+          "30",
+          "3",
+          "3",
+          "4",
+          "3",
+          "3",
+          "4",
+          "4",
+          "7",
+          "3",
+          "34",
+          "64",
+          "-8",
+          "6224"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "64",
+    "score_vs_par": "-8",
+    "gsp": "6224",
+    "youtube_video": "https://www.youtube.com/watch?v=YRo3Jvvcgeg",
+    "youtube_embed": "https://www.youtube.com/embed/YRo3Jvvcgeg",
+    "scraped_at": "2026-01-22T01:41:46.699579",
     "query_user_id": "ed20910"
   },
   {
@@ -3057,7 +4695,7 @@
     "gsp": "3954",
     "youtube_video": "https://www.youtube.com/watch?v=ic92wH_pPJk",
     "youtube_embed": "https://www.youtube.com/embed/ic92wH_pPJk",
-    "scraped_at": "2026-01-21T21:26:49.408387",
+    "scraped_at": "2026-01-22T01:41:47.879356",
     "query_user_id": "ed20910"
   },
   {
@@ -3262,7 +4900,7 @@
     "gsp": "7027",
     "youtube_video": "https://www.youtube.com/watch?v=Fm_Nh0YCbho",
     "youtube_embed": "https://www.youtube.com/embed/Fm_Nh0YCbho",
-    "scraped_at": "2026-01-21T21:26:50.534914",
+    "scraped_at": "2026-01-22T01:41:49.010377",
     "query_user_id": "ed20910"
   },
   {
@@ -3467,7 +5105,7 @@
     "gsp": "4379",
     "youtube_video": "https://www.youtube.com/watch?v=CD5jVrfQXiE",
     "youtube_embed": "https://www.youtube.com/embed/CD5jVrfQXiE",
-    "scraped_at": "2026-01-21T21:26:51.660743",
+    "scraped_at": "2026-01-22T01:41:50.146025",
     "query_user_id": "ed20910"
   },
   {
@@ -3672,7 +5310,7 @@
     "gsp": "14702",
     "youtube_video": "https://www.youtube.com/watch?v=PDRjnSFaEIY",
     "youtube_embed": "https://www.youtube.com/embed/PDRjnSFaEIY",
-    "scraped_at": "2026-01-21T21:26:52.787405",
+    "scraped_at": "2026-01-22T01:41:51.275070",
     "query_user_id": "ed20910"
   },
   {
@@ -3875,7 +5513,7 @@
     "total_score": "73",
     "score_vs_par": "+1",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:26:53.912949",
+    "scraped_at": "2026-01-22T01:41:52.404167",
     "query_user_id": "ed20910"
   },
   {
@@ -4080,7 +5718,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=5t5q-0HRA_8",
     "youtube_embed": "https://www.youtube.com/embed/5t5q-0HRA_8",
-    "scraped_at": "2026-01-21T21:26:55.038402",
+    "scraped_at": "2026-01-22T01:41:53.535034",
     "query_user_id": "ed20910"
   },
   {
@@ -4285,7 +5923,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=UlpDLzg3ZOk",
     "youtube_embed": "https://www.youtube.com/embed/UlpDLzg3ZOk",
-    "scraped_at": "2026-01-21T21:26:56.165140",
+    "scraped_at": "2026-01-22T01:41:54.662596",
     "query_user_id": "ed20910"
   },
   {
@@ -4490,7 +6128,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=f3B-nUDj270",
     "youtube_embed": "https://www.youtube.com/embed/f3B-nUDj270",
-    "scraped_at": "2026-01-21T21:26:57.291055",
+    "scraped_at": "2026-01-22T01:41:55.792347",
     "query_user_id": "ed20910"
   },
   {
@@ -4695,7 +6333,7 @@
     "gsp": "8093",
     "youtube_video": "https://www.youtube.com/watch?v=7Tyn94heiHI",
     "youtube_embed": "https://www.youtube.com/embed/7Tyn94heiHI",
-    "scraped_at": "2026-01-21T21:26:58.416527",
+    "scraped_at": "2026-01-22T01:41:56.920214",
     "query_user_id": "ed20910"
   },
   {
@@ -4898,7 +6536,7 @@
     "total_score": "76",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:26:59.541475",
+    "scraped_at": "2026-01-22T01:41:58.047765",
     "query_user_id": "ed20910"
   },
   {
@@ -5103,7 +6741,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=rreNCcmgPn0",
     "youtube_embed": "https://www.youtube.com/embed/rreNCcmgPn0",
-    "scraped_at": "2026-01-21T21:27:00.666570",
+    "scraped_at": "2026-01-22T01:41:59.176569",
     "query_user_id": "ed20910"
   },
   {
@@ -5306,7 +6944,7 @@
     "total_score": "85",
     "score_vs_par": "+13",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:01.793841",
+    "scraped_at": "2026-01-22T01:42:00.306292",
     "query_user_id": "ed20910"
   },
   {
@@ -5511,7 +7149,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=bPDgcaPM8go",
     "youtube_embed": "https://www.youtube.com/embed/bPDgcaPM8go",
-    "scraped_at": "2026-01-21T21:27:02.920079",
+    "scraped_at": "2026-01-22T01:42:01.450311",
     "query_user_id": "ed20910"
   },
   {
@@ -5716,7 +7354,7 @@
     "gsp": "20180",
     "youtube_video": "https://www.youtube.com/watch?v=Oo-lX5oOEGk",
     "youtube_embed": "https://www.youtube.com/embed/Oo-lX5oOEGk",
-    "scraped_at": "2026-01-21T21:27:04.046747",
+    "scraped_at": "2026-01-22T01:42:02.577588",
     "query_user_id": "ed20910"
   },
   {
@@ -5919,7 +7557,7 @@
     "total_score": "74",
     "score_vs_par": "+2",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:05.172139",
+    "scraped_at": "2026-01-22T01:42:03.705335",
     "query_user_id": "ed20910"
   },
   {
@@ -6122,7 +7760,7 @@
     "total_score": "72",
     "score_vs_par": "E",
     "gsp": "5090",
-    "scraped_at": "2026-01-21T21:27:06.300506",
+    "scraped_at": "2026-01-22T01:42:04.837424",
     "query_user_id": "ed20910"
   },
   {
@@ -6325,7 +7963,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:07.430067",
+    "scraped_at": "2026-01-22T01:42:05.965658",
     "query_user_id": "ed20910"
   },
   {
@@ -6528,7 +8166,7 @@
     "total_score": "63",
     "score_vs_par": "-9",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:08.557789",
+    "scraped_at": "2026-01-22T01:42:07.096152",
     "query_user_id": "ed20910"
   },
   {
@@ -6731,7 +8369,7 @@
     "total_score": "73",
     "score_vs_par": "+1",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:09.685796",
+    "scraped_at": "2026-01-22T01:42:08.225543",
     "query_user_id": "ed20910"
   },
   {
@@ -6934,7 +8572,7 @@
     "total_score": "68",
     "score_vs_par": "-4",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:10.812302",
+    "scraped_at": "2026-01-22T01:42:09.354154",
     "query_user_id": "ed20910"
   },
   {
@@ -7137,7 +8775,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:11.937474",
+    "scraped_at": "2026-01-22T01:42:10.484065",
     "query_user_id": "ed20910"
   },
   {
@@ -7340,7 +8978,7 @@
     "total_score": "65",
     "score_vs_par": "-7",
     "gsp": "9434",
-    "scraped_at": "2026-01-21T21:27:13.079023",
+    "scraped_at": "2026-01-22T01:42:11.614888",
     "query_user_id": "ed20910"
   },
   {
@@ -7543,7 +9181,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:14.206073",
+    "scraped_at": "2026-01-22T01:42:12.745260",
     "query_user_id": "ed20910"
   },
   {
@@ -7746,7 +9384,7 @@
     "total_score": "71",
     "score_vs_par": "-1",
     "gsp": "3058",
-    "scraped_at": "2026-01-21T21:27:15.332606",
+    "scraped_at": "2026-01-22T01:42:13.873660",
     "query_user_id": "ed20910"
   },
   {
@@ -7949,7 +9587,7 @@
     "total_score": "70",
     "score_vs_par": "-2",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:16.457830",
+    "scraped_at": "2026-01-22T01:42:15.001335",
     "query_user_id": "ed20910"
   },
   {
@@ -8154,7 +9792,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=aKD-rScSa7E",
     "youtube_embed": "https://www.youtube.com/embed/aKD-rScSa7E",
-    "scraped_at": "2026-01-21T21:27:17.583967",
+    "scraped_at": "2026-01-22T01:42:16.131338",
     "query_user_id": "ed20910"
   },
   {
@@ -8359,7 +9997,7 @@
     "gsp": "2475",
     "youtube_video": "https://www.youtube.com/watch?v=3jAiTLFZ3n0",
     "youtube_embed": "https://www.youtube.com/embed/3jAiTLFZ3n0",
-    "scraped_at": "2026-01-21T21:27:18.709570",
+    "scraped_at": "2026-01-22T01:42:17.258336",
     "query_user_id": "ed20910"
   },
   {
@@ -8562,7 +10200,7 @@
     "total_score": "72",
     "score_vs_par": "-1",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:19.834775",
+    "scraped_at": "2026-01-22T01:42:18.387426",
     "query_user_id": "ed20910"
   },
   {
@@ -8767,7 +10405,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=klWf5BJP8hM",
     "youtube_embed": "https://www.youtube.com/embed/klWf5BJP8hM",
-    "scraped_at": "2026-01-21T21:27:20.961771",
+    "scraped_at": "2026-01-22T01:42:19.514943",
     "query_user_id": "ed20910"
   },
   {
@@ -8972,7 +10610,7 @@
     "gsp": "5091",
     "youtube_video": "https://www.youtube.com/watch?v=nsShvE-IcZI",
     "youtube_embed": "https://www.youtube.com/embed/nsShvE-IcZI",
-    "scraped_at": "2026-01-21T21:27:22.087618",
+    "scraped_at": "2026-01-22T01:42:20.643160",
     "query_user_id": "ed20910"
   },
   {
@@ -9177,7 +10815,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=RIep9HIdiTE",
     "youtube_embed": "https://www.youtube.com/embed/RIep9HIdiTE",
-    "scraped_at": "2026-01-21T21:27:23.212558",
+    "scraped_at": "2026-01-22T01:42:21.772131",
     "query_user_id": "ed20910"
   },
   {
@@ -9382,7 +11020,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=QXUddxTmgcI",
     "youtube_embed": "https://www.youtube.com/embed/QXUddxTmgcI",
-    "scraped_at": "2026-01-21T21:27:24.338839",
+    "scraped_at": "2026-01-22T01:42:22.899380",
     "query_user_id": "ed20910"
   },
   {
@@ -9587,7 +11225,7 @@
     "gsp": "6942",
     "youtube_video": "https://www.youtube.com/watch?v=dKV8a3HHL2o",
     "youtube_embed": "https://www.youtube.com/embed/dKV8a3HHL2o",
-    "scraped_at": "2026-01-21T21:27:25.478213",
+    "scraped_at": "2026-01-22T01:42:24.030190",
     "query_user_id": "ed20910"
   },
   {
@@ -9792,7 +11430,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=zz-4n7zgtZo",
     "youtube_embed": "https://www.youtube.com/embed/zz-4n7zgtZo",
-    "scraped_at": "2026-01-21T21:27:26.605744",
+    "scraped_at": "2026-01-22T01:42:25.158967",
     "query_user_id": "ed20910"
   },
   {
@@ -9997,7 +11635,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=BLmIH-LHYpU",
     "youtube_embed": "https://www.youtube.com/embed/BLmIH-LHYpU",
-    "scraped_at": "2026-01-21T21:27:27.732387",
+    "scraped_at": "2026-01-22T01:42:26.287383",
     "query_user_id": "ed20910"
   },
   {
@@ -10202,7 +11840,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=fm9QNcVD6_g",
     "youtube_embed": "https://www.youtube.com/embed/fm9QNcVD6_g",
-    "scraped_at": "2026-01-21T21:27:28.857793",
+    "scraped_at": "2026-01-22T01:42:27.417488",
     "query_user_id": "ed20910"
   },
   {
@@ -10407,7 +12045,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=fsc3c1Y5b6M",
     "youtube_embed": "https://www.youtube.com/embed/fsc3c1Y5b6M",
-    "scraped_at": "2026-01-21T21:27:29.983964",
+    "scraped_at": "2026-01-22T01:42:28.549745",
     "query_user_id": "ed20910"
   },
   {
@@ -10612,7 +12250,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=f08-BZ0sPHE",
     "youtube_embed": "https://www.youtube.com/embed/f08-BZ0sPHE",
-    "scraped_at": "2026-01-21T21:27:31.110348",
+    "scraped_at": "2026-01-22T01:42:29.678292",
     "query_user_id": "ed20910"
   },
   {
@@ -10817,7 +12455,7 @@
     "gsp": "2750",
     "youtube_video": "https://www.youtube.com/watch?v=zDcpDV_hiJc",
     "youtube_embed": "https://www.youtube.com/embed/zDcpDV_hiJc",
-    "scraped_at": "2026-01-21T21:27:32.236502",
+    "scraped_at": "2026-01-22T01:42:30.806157",
     "query_user_id": "ed20910"
   },
   {
@@ -11020,7 +12658,7 @@
     "total_score": "70",
     "score_vs_par": "-3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:33.361261",
+    "scraped_at": "2026-01-22T01:42:31.935189",
     "query_user_id": "ed20910"
   },
   {
@@ -11225,7 +12863,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=VzD5DI3TYl8",
     "youtube_embed": "https://www.youtube.com/embed/VzD5DI3TYl8",
-    "scraped_at": "2026-01-21T21:27:34.487226",
+    "scraped_at": "2026-01-22T01:42:33.079273",
     "query_user_id": "ed20910"
   },
   {
@@ -11428,7 +13066,7 @@
     "total_score": "85",
     "score_vs_par": "+13",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:27:35.613885",
+    "scraped_at": "2026-01-22T01:42:34.207746",
     "query_user_id": "ed20910"
   },
   {
@@ -11631,7 +13269,7 @@
     "total_score": "107",
     "score_vs_par": "+35",
     "gsp": "405",
-    "scraped_at": "2026-01-21T21:27:36.740733",
+    "scraped_at": "2026-01-22T01:42:35.338682",
     "query_user_id": "ed20910"
   },
   {
@@ -11834,7 +13472,7 @@
     "total_score": "34",
     "score_vs_par": "+8",
     "gsp": "40614",
-    "scraped_at": "2026-01-21T21:27:37.868255",
+    "scraped_at": "2026-01-22T01:42:36.469113",
     "query_user_id": "ed20910"
   },
   {
@@ -12037,7 +13675,7 @@
     "total_score": "35",
     "score_vs_par": "+9",
     "gsp": "49002",
-    "scraped_at": "2026-01-21T21:27:38.994060",
+    "scraped_at": "2026-01-22T01:42:37.597235",
     "query_user_id": "ed20910"
   },
   {
@@ -12240,7 +13878,7 @@
     "total_score": "31",
     "score_vs_par": "+5",
     "gsp": "27706",
-    "scraped_at": "2026-01-21T21:27:40.120773",
+    "scraped_at": "2026-01-22T01:42:38.726561",
     "query_user_id": "ed20910"
   },
   {
@@ -12443,7 +14081,7 @@
     "total_score": "23",
     "score_vs_par": "-3",
     "gsp": "39388",
-    "scraped_at": "2026-01-21T21:27:41.247458",
+    "scraped_at": "2026-01-22T01:42:39.855313",
     "query_user_id": "ed20910"
   },
   {
@@ -12646,7 +14284,7 @@
     "total_score": "34",
     "score_vs_par": "+8",
     "gsp": "33579",
-    "scraped_at": "2026-01-21T21:27:42.373664",
+    "scraped_at": "2026-01-22T01:42:40.985496",
     "query_user_id": "ed20910"
   },
   {
@@ -12851,7 +14489,7 @@
     "gsp": "37914",
     "youtube_video": "https://www.youtube.com/watch?v=hUfhkkfDPH4",
     "youtube_embed": "https://www.youtube.com/embed/hUfhkkfDPH4",
-    "scraped_at": "2026-01-21T21:27:43.516374",
+    "scraped_at": "2026-01-22T01:42:42.113211",
     "query_user_id": "ed20910"
   },
   {
@@ -13054,7 +14692,7 @@
     "total_score": "22",
     "score_vs_par": "-4",
     "gsp": "34447",
-    "scraped_at": "2026-01-21T21:27:44.641186",
+    "scraped_at": "2026-01-22T01:42:43.241115",
     "query_user_id": "ed20910"
   },
   {
@@ -13257,7 +14895,7 @@
     "total_score": "23",
     "score_vs_par": "-3",
     "gsp": "38410",
-    "scraped_at": "2026-01-21T21:27:45.768667",
+    "scraped_at": "2026-01-22T01:42:44.371533",
     "query_user_id": "ed20910"
   },
   {
@@ -13460,7 +15098,7 @@
     "total_score": "40",
     "score_vs_par": "-17",
     "gsp": "104181",
-    "scraped_at": "2026-01-21T21:27:46.893316",
+    "scraped_at": "2026-01-22T01:42:45.500097",
     "query_user_id": "ed20910"
   },
   {
@@ -13663,7 +15301,7 @@
     "total_score": "59",
     "score_vs_par": "+5",
     "gsp": "67191",
-    "scraped_at": "2026-01-21T21:27:48.019844",
+    "scraped_at": "2026-01-22T01:42:46.635684",
     "query_user_id": "ed20910"
   },
   {
@@ -13866,7 +15504,7 @@
     "total_score": "65",
     "score_vs_par": "+11",
     "gsp": "74967",
-    "scraped_at": "2026-01-21T21:27:49.146831",
+    "scraped_at": "2026-01-22T01:42:47.765364",
     "query_user_id": "ed20910"
   },
   {
@@ -14069,7 +15707,7 @@
     "total_score": "49",
     "score_vs_par": "-8",
     "gsp": "87904",
-    "scraped_at": "2026-01-21T21:27:50.271686",
+    "scraped_at": "2026-01-22T01:42:48.894937",
     "query_user_id": "ed20910"
   },
   {
@@ -14272,7 +15910,7 @@
     "total_score": "60",
     "score_vs_par": "+3",
     "gsp": "67280",
-    "scraped_at": "2026-01-21T21:27:51.398070",
+    "scraped_at": "2026-01-22T01:42:50.024203",
     "query_user_id": "ed20910"
   },
   {
@@ -14475,7 +16113,7 @@
     "total_score": "56",
     "score_vs_par": "-1",
     "gsp": "49381",
-    "scraped_at": "2026-01-21T21:27:52.523983",
+    "scraped_at": "2026-01-22T01:42:51.152934",
     "query_user_id": "ed20910"
   },
   {
@@ -14678,7 +16316,7 @@
     "total_score": "54",
     "score_vs_par": "-3",
     "gsp": "76293",
-    "scraped_at": "2026-01-21T21:27:53.649423",
+    "scraped_at": "2026-01-22T01:42:52.282490",
     "query_user_id": "ed20910"
   },
   {
@@ -14881,7 +16519,7 @@
     "total_score": "68",
     "score_vs_par": "+14",
     "gsp": "85500",
-    "scraped_at": "2026-01-21T21:27:54.777345",
+    "scraped_at": "2026-01-22T01:42:53.410197",
     "query_user_id": "ed20910"
   },
   {
@@ -15084,7 +16722,7 @@
     "total_score": "45",
     "score_vs_par": "-9",
     "gsp": "87100",
-    "scraped_at": "2026-01-21T21:27:55.902308",
+    "scraped_at": "2026-01-22T01:42:54.539056",
     "query_user_id": "ed20910"
   },
   {
@@ -15287,7 +16925,7 @@
     "total_score": "50",
     "score_vs_par": "-4",
     "gsp": "79424",
-    "scraped_at": "2026-01-21T21:27:57.028532",
+    "scraped_at": "2026-01-22T01:42:55.667400",
     "query_user_id": "ed20910"
   },
   {
@@ -15490,7 +17128,7 @@
     "total_score": "64",
     "score_vs_par": "+10",
     "gsp": "93974",
-    "scraped_at": "2026-01-21T21:27:58.153451",
+    "scraped_at": "2026-01-22T01:42:56.795309",
     "query_user_id": "ed20910"
   },
   {
@@ -15693,7 +17331,7 @@
     "total_score": "51",
     "score_vs_par": "-3",
     "gsp": "88705",
-    "scraped_at": "2026-01-21T21:27:59.278626",
+    "scraped_at": "2026-01-22T01:42:57.924464",
     "query_user_id": "ed20910"
   },
   {
@@ -15896,7 +17534,7 @@
     "total_score": "41",
     "score_vs_par": "-17",
     "gsp": "85938",
-    "scraped_at": "2026-01-21T21:28:00.407251",
+    "scraped_at": "2026-01-22T01:42:59.053188",
     "query_user_id": "ed20910"
   },
   {
@@ -16099,7 +17737,7 @@
     "total_score": "54",
     "score_vs_par": "-4",
     "gsp": "84354",
-    "scraped_at": "2026-01-21T21:28:01.532490",
+    "scraped_at": "2026-01-22T01:43:00.182548",
     "query_user_id": "ed20910"
   },
   {
@@ -16302,7 +17940,7 @@
     "total_score": "50",
     "score_vs_par": "-7",
     "gsp": "93784",
-    "scraped_at": "2026-01-21T21:28:02.658509",
+    "scraped_at": "2026-01-22T01:43:01.311133",
     "query_user_id": "ed20910"
   },
   {
@@ -16505,7 +18143,7 @@
     "total_score": "56",
     "score_vs_par": "-1",
     "gsp": "98282",
-    "scraped_at": "2026-01-21T21:28:03.784521",
+    "scraped_at": "2026-01-22T01:43:02.438786",
     "query_user_id": "ed20910"
   },
   {
@@ -16708,7 +18346,7 @@
     "total_score": "45",
     "score_vs_par": "-12",
     "gsp": "118742",
-    "scraped_at": "2026-01-21T21:28:04.911314",
+    "scraped_at": "2026-01-22T01:43:03.583524",
     "query_user_id": "ed20910"
   },
   {
@@ -16911,7 +18549,7 @@
     "total_score": "52",
     "score_vs_par": "-5",
     "gsp": "92317",
-    "scraped_at": "2026-01-21T21:28:06.037329",
+    "scraped_at": "2026-01-22T01:43:04.712903",
     "query_user_id": "ed20910"
   },
   {
@@ -17114,7 +18752,7 @@
     "total_score": "22",
     "score_vs_par": "-4",
     "gsp": "30450",
-    "scraped_at": "2026-01-21T21:28:07.161774",
+    "scraped_at": "2026-01-22T01:43:05.843835",
     "query_user_id": "ed20910"
   },
   {
@@ -17319,7 +18957,7 @@
     "gsp": "7928",
     "youtube_video": "https://www.youtube.com/watch?v=omq8bfMBGmg",
     "youtube_embed": "https://www.youtube.com/embed/omq8bfMBGmg",
-    "scraped_at": "2026-01-21T21:28:18.133015",
+    "scraped_at": "2026-01-22T01:43:16.506311",
     "query_user_id": "Paladin242"
   },
   {
@@ -17524,7 +19162,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=AyTL-mRf9Q0",
     "youtube_embed": "https://www.youtube.com/embed/AyTL-mRf9Q0",
-    "scraped_at": "2026-01-21T21:28:19.260244",
+    "scraped_at": "2026-01-22T01:43:17.634643",
     "query_user_id": "Paladin242"
   },
   {
@@ -17729,7 +19367,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=m5pb_GIi17c",
     "youtube_embed": "https://www.youtube.com/embed/m5pb_GIi17c",
-    "scraped_at": "2026-01-21T21:28:20.386703",
+    "scraped_at": "2026-01-22T01:43:18.765140",
     "query_user_id": "Paladin242"
   },
   {
@@ -17934,7 +19572,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=fC-jZvEZ3gU",
     "youtube_embed": "https://www.youtube.com/embed/fC-jZvEZ3gU",
-    "scraped_at": "2026-01-21T21:28:21.515228",
+    "scraped_at": "2026-01-22T01:43:19.895060",
     "query_user_id": "Paladin242"
   },
   {
@@ -18139,7 +19777,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=2RMYcQQBolg",
     "youtube_embed": "https://www.youtube.com/embed/2RMYcQQBolg",
-    "scraped_at": "2026-01-21T21:28:22.642178",
+    "scraped_at": "2026-01-22T01:43:21.025509",
     "query_user_id": "Paladin242"
   },
   {
@@ -18344,7 +19982,7 @@
     "gsp": "5570",
     "youtube_video": "https://www.youtube.com/watch?v=UcXJ5zFcD6Q",
     "youtube_embed": "https://www.youtube.com/embed/UcXJ5zFcD6Q",
-    "scraped_at": "2026-01-21T21:28:23.770813",
+    "scraped_at": "2026-01-22T01:43:22.153651",
     "query_user_id": "Paladin242"
   },
   {
@@ -18549,7 +20187,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=b1fjGFnXl7k",
     "youtube_embed": "https://www.youtube.com/embed/b1fjGFnXl7k",
-    "scraped_at": "2026-01-21T21:28:24.900317",
+    "scraped_at": "2026-01-22T01:43:23.281621",
     "query_user_id": "Paladin242"
   },
   {
@@ -18754,7 +20392,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=n2EhQGkKmvo",
     "youtube_embed": "https://www.youtube.com/embed/n2EhQGkKmvo",
-    "scraped_at": "2026-01-21T21:28:26.028385",
+    "scraped_at": "2026-01-22T01:43:24.411165",
     "query_user_id": "Paladin242"
   },
   {
@@ -18959,7 +20597,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=IVkL-XLGgkI",
     "youtube_embed": "https://www.youtube.com/embed/IVkL-XLGgkI",
-    "scraped_at": "2026-01-21T21:28:27.167581",
+    "scraped_at": "2026-01-22T01:43:25.539112",
     "query_user_id": "Paladin242"
   },
   {
@@ -19164,7 +20802,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=DuYtpQ9ghUo",
     "youtube_embed": "https://www.youtube.com/embed/DuYtpQ9ghUo",
-    "scraped_at": "2026-01-21T21:28:28.293579",
+    "scraped_at": "2026-01-22T01:43:26.669196",
     "query_user_id": "Paladin242"
   },
   {
@@ -19369,7 +21007,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=Z3hS55c9uAI",
     "youtube_embed": "https://www.youtube.com/embed/Z3hS55c9uAI",
-    "scraped_at": "2026-01-21T21:28:29.425960",
+    "scraped_at": "2026-01-22T01:43:27.798157",
     "query_user_id": "Paladin242"
   },
   {
@@ -19574,7 +21212,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=nrIE61VEC1E",
     "youtube_embed": "https://www.youtube.com/embed/nrIE61VEC1E",
-    "scraped_at": "2026-01-21T21:28:30.550880",
+    "scraped_at": "2026-01-22T01:43:28.927545",
     "query_user_id": "Paladin242"
   },
   {
@@ -19779,7 +21417,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=gFIRDxWziHw",
     "youtube_embed": "https://www.youtube.com/embed/gFIRDxWziHw",
-    "scraped_at": "2026-01-21T21:28:31.677471",
+    "scraped_at": "2026-01-22T01:43:30.075965",
     "query_user_id": "Paladin242"
   },
   {
@@ -19984,7 +21622,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=VD2BTvBZZoI",
     "youtube_embed": "https://www.youtube.com/embed/VD2BTvBZZoI",
-    "scraped_at": "2026-01-21T21:28:32.802524",
+    "scraped_at": "2026-01-22T01:43:31.204333",
     "query_user_id": "Paladin242"
   },
   {
@@ -20189,7 +21827,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=SnwjyGd5BGQ",
     "youtube_embed": "https://www.youtube.com/embed/SnwjyGd5BGQ",
-    "scraped_at": "2026-01-21T21:28:33.927435",
+    "scraped_at": "2026-01-22T01:43:32.334565",
     "query_user_id": "Paladin242"
   },
   {
@@ -20394,7 +22032,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=9OAydu8stv8",
     "youtube_embed": "https://www.youtube.com/embed/9OAydu8stv8",
-    "scraped_at": "2026-01-21T21:28:35.053475",
+    "scraped_at": "2026-01-22T01:43:33.462733",
     "query_user_id": "Paladin242"
   },
   {
@@ -20599,7 +22237,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=7l-_j9itqYI",
     "youtube_embed": "https://www.youtube.com/embed/7l-_j9itqYI",
-    "scraped_at": "2026-01-21T21:28:36.178452",
+    "scraped_at": "2026-01-22T01:43:34.592175",
     "query_user_id": "Paladin242"
   },
   {
@@ -20802,7 +22440,7 @@
     "total_score": "75",
     "score_vs_par": "+3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:28:37.305092",
+    "scraped_at": "2026-01-22T01:43:35.848830",
     "query_user_id": "Paladin242"
   },
   {
@@ -21007,7 +22645,7 @@
     "gsp": "9554",
     "youtube_video": "https://www.youtube.com/watch?v=OGoTuSgD7HE",
     "youtube_embed": "https://www.youtube.com/embed/OGoTuSgD7HE",
-    "scraped_at": "2026-01-21T21:28:38.430218",
+    "scraped_at": "2026-01-22T01:43:36.976962",
     "query_user_id": "Paladin242"
   },
   {
@@ -21210,7 +22848,7 @@
     "total_score": "76",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:28:39.558741",
+    "scraped_at": "2026-01-22T01:43:38.106553",
     "query_user_id": "Paladin242"
   },
   {
@@ -21415,7 +23053,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=jjKsj937XVA",
     "youtube_embed": "https://www.youtube.com/embed/jjKsj937XVA",
-    "scraped_at": "2026-01-21T21:28:40.705202",
+    "scraped_at": "2026-01-22T01:43:39.234330",
     "query_user_id": "Paladin242"
   },
   {
@@ -21620,7 +23258,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=NjdfGJ04Pqs",
     "youtube_embed": "https://www.youtube.com/embed/NjdfGJ04Pqs",
-    "scraped_at": "2026-01-21T21:28:41.830303",
+    "scraped_at": "2026-01-22T01:43:40.363798",
     "query_user_id": "Paladin242"
   },
   {
@@ -21823,7 +23461,7 @@
     "total_score": "73",
     "score_vs_par": "+1",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:28:42.956371",
+    "scraped_at": "2026-01-22T01:43:41.491889",
     "query_user_id": "Paladin242"
   },
   {
@@ -22028,7 +23666,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=8nD057A2AZY",
     "youtube_embed": "https://www.youtube.com/embed/8nD057A2AZY",
-    "scraped_at": "2026-01-21T21:28:44.081353",
+    "scraped_at": "2026-01-22T01:43:42.621038",
     "query_user_id": "Paladin242"
   },
   {
@@ -22233,7 +23871,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=_bEatOj52_M",
     "youtube_embed": "https://www.youtube.com/embed/_bEatOj52_M",
-    "scraped_at": "2026-01-21T21:28:45.206803",
+    "scraped_at": "2026-01-22T01:43:43.752903",
     "query_user_id": "Paladin242"
   },
   {
@@ -22438,7 +24076,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=C1ya0Dt2tYs",
     "youtube_embed": "https://www.youtube.com/embed/C1ya0Dt2tYs",
-    "scraped_at": "2026-01-21T21:28:46.334342",
+    "scraped_at": "2026-01-22T01:43:44.880514",
     "query_user_id": "Paladin242"
   },
   {
@@ -22643,7 +24281,7 @@
     "gsp": "2579",
     "youtube_video": "https://www.youtube.com/watch?v=GkPm4ArkZrM",
     "youtube_embed": "https://www.youtube.com/embed/GkPm4ArkZrM",
-    "scraped_at": "2026-01-21T21:28:47.459386",
+    "scraped_at": "2026-01-22T01:43:46.010452",
     "query_user_id": "Paladin242"
   },
   {
@@ -22848,7 +24486,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=jfVIfYz29G0",
     "youtube_embed": "https://www.youtube.com/embed/jfVIfYz29G0",
-    "scraped_at": "2026-01-21T21:28:48.735003",
+    "scraped_at": "2026-01-22T01:43:47.139337",
     "query_user_id": "Paladin242"
   },
   {
@@ -23051,7 +24689,7 @@
     "total_score": "89",
     "score_vs_par": "+17",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:28:50.003019",
+    "scraped_at": "2026-01-22T01:43:48.268485",
     "query_user_id": "Paladin242"
   },
   {
@@ -23256,7 +24894,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=zDHWUT7pM-M",
     "youtube_embed": "https://www.youtube.com/embed/zDHWUT7pM-M",
-    "scraped_at": "2026-01-21T21:28:51.609623",
+    "scraped_at": "2026-01-22T01:43:49.398660",
     "query_user_id": "Paladin242"
   },
   {
@@ -23461,7 +25099,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=fWUQT1tq_JY",
     "youtube_embed": "https://www.youtube.com/embed/fWUQT1tq_JY",
-    "scraped_at": "2026-01-21T21:28:52.737556",
+    "scraped_at": "2026-01-22T01:43:50.526838",
     "query_user_id": "Paladin242"
   },
   {
@@ -23666,7 +25304,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=_umWyhzGwyw",
     "youtube_embed": "https://www.youtube.com/embed/_umWyhzGwyw",
-    "scraped_at": "2026-01-21T21:28:53.863662",
+    "scraped_at": "2026-01-22T01:43:51.656426",
     "query_user_id": "Paladin242"
   },
   {
@@ -23871,7 +25509,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=I_MyDixAe2Y",
     "youtube_embed": "https://www.youtube.com/embed/I_MyDixAe2Y",
-    "scraped_at": "2026-01-21T21:28:54.991521",
+    "scraped_at": "2026-01-22T01:43:52.785942",
     "query_user_id": "Paladin242"
   },
   {
@@ -24076,7 +25714,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=v6E1ZzFhdQ8",
     "youtube_embed": "https://www.youtube.com/embed/v6E1ZzFhdQ8",
-    "scraped_at": "2026-01-21T21:28:56.117044",
+    "scraped_at": "2026-01-22T01:43:53.913923",
     "query_user_id": "Paladin242"
   },
   {
@@ -24281,7 +25919,7 @@
     "gsp": "3462",
     "youtube_video": "https://www.youtube.com/watch?v=JbpCNPiNhL8",
     "youtube_embed": "https://www.youtube.com/embed/JbpCNPiNhL8",
-    "scraped_at": "2026-01-21T21:28:57.242680",
+    "scraped_at": "2026-01-22T01:43:55.044896",
     "query_user_id": "Paladin242"
   },
   {
@@ -24484,7 +26122,7 @@
     "total_score": "71",
     "score_vs_par": "-1",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:28:58.370110",
+    "scraped_at": "2026-01-22T01:43:56.173873",
     "query_user_id": "Paladin242"
   },
   {
@@ -24689,7 +26327,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=wjwllS7uw5o",
     "youtube_embed": "https://www.youtube.com/embed/wjwllS7uw5o",
-    "scraped_at": "2026-01-21T21:28:59.494980",
+    "scraped_at": "2026-01-22T01:43:57.302451",
     "query_user_id": "Paladin242"
   },
   {
@@ -24892,7 +26530,7 @@
     "total_score": "75",
     "score_vs_par": "+2",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:00.622510",
+    "scraped_at": "2026-01-22T01:43:58.432514",
     "query_user_id": "Paladin242"
   },
   {
@@ -25095,7 +26733,7 @@
     "total_score": "71",
     "score_vs_par": "-1",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:01.751076",
+    "scraped_at": "2026-01-22T01:43:59.561495",
     "query_user_id": "Paladin242"
   },
   {
@@ -25300,7 +26938,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=xODBtO7FgHQ",
     "youtube_embed": "https://www.youtube.com/embed/xODBtO7FgHQ",
-    "scraped_at": "2026-01-21T21:29:02.876926",
+    "scraped_at": "2026-01-22T01:44:00.709021",
     "query_user_id": "Paladin242"
   },
   {
@@ -25505,7 +27143,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=ao5IlbsIPvY",
     "youtube_embed": "https://www.youtube.com/embed/ao5IlbsIPvY",
-    "scraped_at": "2026-01-21T21:29:04.004346",
+    "scraped_at": "2026-01-22T01:44:01.844076",
     "query_user_id": "Paladin242"
   },
   {
@@ -25710,7 +27348,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=-XKLK9hHVZg",
     "youtube_embed": "https://www.youtube.com/embed/-XKLK9hHVZg",
-    "scraped_at": "2026-01-21T21:29:05.130238",
+    "scraped_at": "2026-01-22T01:44:02.973534",
     "query_user_id": "Paladin242"
   },
   {
@@ -25913,7 +27551,7 @@
     "total_score": "73",
     "score_vs_par": "+1",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:06.310880",
+    "scraped_at": "2026-01-22T01:44:04.102561",
     "query_user_id": "Paladin242"
   },
   {
@@ -26118,7 +27756,7 @@
     "gsp": "2994",
     "youtube_video": "https://www.youtube.com/watch?v=d1G7qr5vLHM",
     "youtube_embed": "https://www.youtube.com/embed/d1G7qr5vLHM",
-    "scraped_at": "2026-01-21T21:29:07.438761",
+    "scraped_at": "2026-01-22T01:44:05.231146",
     "query_user_id": "Paladin242"
   },
   {
@@ -26323,7 +27961,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=CbKKHvTjulw",
     "youtube_embed": "https://www.youtube.com/embed/CbKKHvTjulw",
-    "scraped_at": "2026-01-21T21:29:08.566474",
+    "scraped_at": "2026-01-22T01:44:06.362153",
     "query_user_id": "Paladin242"
   },
   {
@@ -26528,7 +28166,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=PnaAbFQ4Oms",
     "youtube_embed": "https://www.youtube.com/embed/PnaAbFQ4Oms",
-    "scraped_at": "2026-01-21T21:29:09.692812",
+    "scraped_at": "2026-01-22T01:44:07.494219",
     "query_user_id": "Paladin242"
   },
   {
@@ -26731,7 +28369,7 @@
     "total_score": "27",
     "score_vs_par": "-1",
     "gsp": "41486",
-    "scraped_at": "2026-01-21T21:29:10.818082",
+    "scraped_at": "2026-01-22T01:44:08.624350",
     "query_user_id": "Paladin242"
   },
   {
@@ -26936,7 +28574,7 @@
     "gsp": "50003",
     "youtube_video": "https://www.youtube.com/watch?v=wlNSdWMft_U",
     "youtube_embed": "https://www.youtube.com/embed/wlNSdWMft_U",
-    "scraped_at": "2026-01-21T21:29:11.962946",
+    "scraped_at": "2026-01-22T01:44:09.753453",
     "query_user_id": "Paladin242"
   },
   {
@@ -27139,7 +28777,7 @@
     "total_score": "49",
     "score_vs_par": "-8",
     "gsp": "90503",
-    "scraped_at": "2026-01-21T21:29:13.091754",
+    "scraped_at": "2026-01-22T01:44:10.881230",
     "query_user_id": "Paladin242"
   },
   {
@@ -27342,7 +28980,7 @@
     "total_score": "31",
     "score_vs_par": "+3",
     "gsp": "48895",
-    "scraped_at": "2026-01-21T21:29:14.220588",
+    "scraped_at": "2026-01-22T01:44:12.011131",
     "query_user_id": "Paladin242"
   },
   {
@@ -27547,7 +29185,7 @@
     "gsp": "73372",
     "youtube_video": "https://www.youtube.com/watch?v=IMeM6-RnlAs",
     "youtube_embed": "https://www.youtube.com/embed/IMeM6-RnlAs",
-    "scraped_at": "2026-01-21T21:29:15.347688",
+    "scraped_at": "2026-01-22T01:44:13.138747",
     "query_user_id": "Paladin242"
   },
   {
@@ -27752,7 +29390,7 @@
     "gsp": "90013",
     "youtube_video": "https://www.youtube.com/watch?v=PnkaRlSshi0",
     "youtube_embed": "https://www.youtube.com/embed/PnkaRlSshi0",
-    "scraped_at": "2026-01-21T21:29:16.473359",
+    "scraped_at": "2026-01-22T01:44:14.269493",
     "query_user_id": "Paladin242"
   },
   {
@@ -27957,7 +29595,7 @@
     "gsp": "34256",
     "youtube_video": "https://www.youtube.com/watch?v=pWLSCd-oauI",
     "youtube_embed": "https://www.youtube.com/embed/pWLSCd-oauI",
-    "scraped_at": "2026-01-21T21:29:17.600047",
+    "scraped_at": "2026-01-22T01:44:15.398652",
     "query_user_id": "Paladin242"
   },
   {
@@ -28162,7 +29800,7 @@
     "gsp": "41178",
     "youtube_video": "https://www.youtube.com/watch?v=Dv3m_tC_Qb0",
     "youtube_embed": "https://www.youtube.com/embed/Dv3m_tC_Qb0",
-    "scraped_at": "2026-01-21T21:29:18.725436",
+    "scraped_at": "2026-01-22T01:44:16.527020",
     "query_user_id": "Paladin242"
   },
   {
@@ -28367,7 +30005,7 @@
     "gsp": "43501",
     "youtube_video": "https://www.youtube.com/watch?v=R6-8zuvWTIE",
     "youtube_embed": "https://www.youtube.com/embed/R6-8zuvWTIE",
-    "scraped_at": "2026-01-21T21:29:19.855057",
+    "scraped_at": "2026-01-22T01:44:17.656937",
     "query_user_id": "Paladin242"
   },
   {
@@ -28572,7 +30210,7 @@
     "gsp": "27536",
     "youtube_video": "https://www.youtube.com/watch?v=-zTk1twzqvQ",
     "youtube_embed": "https://www.youtube.com/embed/-zTk1twzqvQ",
-    "scraped_at": "2026-01-21T21:29:20.985198",
+    "scraped_at": "2026-01-22T01:44:18.785879",
     "query_user_id": "Paladin242"
   },
   {
@@ -28775,7 +30413,7 @@
     "total_score": "77",
     "score_vs_par": "+23",
     "gsp": "67995",
-    "scraped_at": "2026-01-21T21:29:22.110700",
+    "scraped_at": "2026-01-22T01:44:19.915383",
     "query_user_id": "Paladin242"
   },
   {
@@ -28978,7 +30616,7 @@
     "total_score": "23",
     "score_vs_par": "-3",
     "gsp": "29681",
-    "scraped_at": "2026-01-21T21:29:23.237905",
+    "scraped_at": "2026-01-22T01:44:21.043190",
     "query_user_id": "Paladin242"
   },
   {
@@ -29181,7 +30819,7 @@
     "total_score": "20",
     "score_vs_par": "-6",
     "gsp": "37440",
-    "scraped_at": "2026-01-21T21:29:24.364167",
+    "scraped_at": "2026-01-22T01:44:22.171536",
     "query_user_id": "Paladin242"
   },
   {
@@ -29384,7 +31022,7 @@
     "total_score": "104",
     "score_vs_par": "+32",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:34.244392",
+    "scraped_at": "2026-01-22T01:44:31.967026",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -29587,7 +31225,7 @@
     "total_score": "94",
     "score_vs_par": "+22",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:35.373784",
+    "scraped_at": "2026-01-22T01:44:33.095306",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -29790,7 +31428,7 @@
     "total_score": "95",
     "score_vs_par": "+23",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:36.503502",
+    "scraped_at": "2026-01-22T01:44:34.222944",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -29993,7 +31631,7 @@
     "total_score": "85",
     "score_vs_par": "+13",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:37.631231",
+    "scraped_at": "2026-01-22T01:44:35.354136",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -30196,7 +31834,7 @@
     "total_score": "86",
     "score_vs_par": "+14",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:38.758523",
+    "scraped_at": "2026-01-22T01:44:36.500666",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -30399,7 +32037,7 @@
     "total_score": "82",
     "score_vs_par": "+10",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:39.884117",
+    "scraped_at": "2026-01-22T01:44:37.630814",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -30602,7 +32240,7 @@
     "total_score": "82",
     "score_vs_par": "+10",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:41.009636",
+    "scraped_at": "2026-01-22T01:44:38.761016",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -30805,7 +32443,7 @@
     "total_score": "87",
     "score_vs_par": "+15",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:42.140401",
+    "scraped_at": "2026-01-22T01:44:39.889985",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -31008,7 +32646,7 @@
     "total_score": "76",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:43.269383",
+    "scraped_at": "2026-01-22T01:44:41.020066",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -31211,7 +32849,7 @@
     "total_score": "82",
     "score_vs_par": "+10",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:44.397039",
+    "scraped_at": "2026-01-22T01:44:42.151010",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -31414,7 +33052,7 @@
     "total_score": "77",
     "score_vs_par": "+5",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:45.522721",
+    "scraped_at": "2026-01-22T01:44:43.280574",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -31617,7 +33255,7 @@
     "total_score": "68",
     "score_vs_par": "-4",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:46.648565",
+    "scraped_at": "2026-01-22T01:44:44.409570",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -31820,7 +33458,7 @@
     "total_score": "75",
     "score_vs_par": "+3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:47.827854",
+    "scraped_at": "2026-01-22T01:44:45.538164",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -32023,7 +33661,7 @@
     "total_score": "93",
     "score_vs_par": "+20",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:48.955275",
+    "scraped_at": "2026-01-22T01:44:46.665818",
     "query_user_id": "LynnInDenver"
   },
   {
@@ -32226,7 +33864,7 @@
     "total_score": "42",
     "score_vs_par": "+5",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:58.332517",
+    "scraped_at": "2026-01-22T01:44:58.307290",
     "query_user_id": "KeenCobra"
   },
   {
@@ -32429,7 +34067,7 @@
     "total_score": "93",
     "score_vs_par": "+21",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:29:59.849573",
+    "scraped_at": "2026-01-22T01:44:59.824075",
     "query_user_id": "KeenCobra"
   },
   {
@@ -32632,7 +34270,7 @@
     "total_score": "68",
     "score_vs_par": "-4",
     "gsp": "4274",
-    "scraped_at": "2026-01-21T21:30:09.366871",
+    "scraped_at": "2026-01-22T01:45:10.043510",
     "query_user_id": "intelekt"
   },
   {
@@ -32835,7 +34473,7 @@
     "total_score": "74",
     "score_vs_par": "+2",
     "gsp": "4260",
-    "scraped_at": "2026-01-21T21:30:10.492257",
+    "scraped_at": "2026-01-22T01:45:11.171467",
     "query_user_id": "intelekt"
   },
   {
@@ -33038,7 +34676,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:11.619553",
+    "scraped_at": "2026-01-22T01:45:12.297970",
     "query_user_id": "intelekt"
   },
   {
@@ -33241,7 +34879,7 @@
     "total_score": "63",
     "score_vs_par": "-9",
     "gsp": "26809",
-    "scraped_at": "2026-01-21T21:30:12.744789",
+    "scraped_at": "2026-01-22T01:45:13.425540",
     "query_user_id": "intelekt"
   },
   {
@@ -33446,7 +35084,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=xWLFymbfJV4",
     "youtube_embed": "https://www.youtube.com/embed/xWLFymbfJV4",
-    "scraped_at": "2026-01-21T21:30:13.870265",
+    "scraped_at": "2026-01-22T01:45:14.556553",
     "query_user_id": "intelekt"
   },
   {
@@ -33649,7 +35287,7 @@
     "total_score": "72",
     "score_vs_par": "E",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:14.995514",
+    "scraped_at": "2026-01-22T01:45:15.688832",
     "query_user_id": "intelekt"
   },
   {
@@ -33852,7 +35490,7 @@
     "total_score": "73",
     "score_vs_par": "+1",
     "gsp": "11341",
-    "scraped_at": "2026-01-21T21:30:16.120745",
+    "scraped_at": "2026-01-22T01:45:16.837573",
     "query_user_id": "intelekt"
   },
   {
@@ -34057,7 +35695,7 @@
     "gsp": "20132",
     "youtube_video": "https://www.youtube.com/watch?v=EmcRW_0shpY",
     "youtube_embed": "https://www.youtube.com/embed/EmcRW_0shpY",
-    "scraped_at": "2026-01-21T21:30:17.248201",
+    "scraped_at": "2026-01-22T01:45:17.965125",
     "query_user_id": "intelekt"
   },
   {
@@ -34262,7 +35900,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=BW--1t3Djts",
     "youtube_embed": "https://www.youtube.com/embed/BW--1t3Djts",
-    "scraped_at": "2026-01-21T21:30:18.373054",
+    "scraped_at": "2026-01-22T01:45:19.092740",
     "query_user_id": "intelekt"
   },
   {
@@ -34467,7 +36105,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=IcPCxy7m4jw",
     "youtube_embed": "https://www.youtube.com/embed/IcPCxy7m4jw",
-    "scraped_at": "2026-01-21T21:30:19.499136",
+    "scraped_at": "2026-01-22T01:45:20.220960",
     "query_user_id": "intelekt"
   },
   {
@@ -34672,7 +36310,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=FqCkpHKnO1w",
     "youtube_embed": "https://www.youtube.com/embed/FqCkpHKnO1w",
-    "scraped_at": "2026-01-21T21:30:20.624409",
+    "scraped_at": "2026-01-22T01:45:21.348833",
     "query_user_id": "intelekt"
   },
   {
@@ -34877,7 +36515,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=FwBzy87UqZc",
     "youtube_embed": "https://www.youtube.com/embed/FwBzy87UqZc",
-    "scraped_at": "2026-01-21T21:30:21.750876",
+    "scraped_at": "2026-01-22T01:45:22.476158",
     "query_user_id": "intelekt"
   },
   {
@@ -35082,7 +36720,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=gjiRydBGP8I",
     "youtube_embed": "https://www.youtube.com/embed/gjiRydBGP8I",
-    "scraped_at": "2026-01-21T21:30:22.895238",
+    "scraped_at": "2026-01-22T01:45:23.602580",
     "query_user_id": "intelekt"
   },
   {
@@ -35287,7 +36925,7 @@
     "gsp": "0",
     "youtube_video": "https://www.youtube.com/watch?v=6aS6oGPAdD0",
     "youtube_embed": "https://www.youtube.com/embed/6aS6oGPAdD0",
-    "scraped_at": "2026-01-21T21:30:24.023594",
+    "scraped_at": "2026-01-22T01:45:24.730418",
     "query_user_id": "intelekt"
   },
   {
@@ -35490,7 +37128,7 @@
     "total_score": "73",
     "score_vs_par": "+1",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:25.150249",
+    "scraped_at": "2026-01-22T01:45:25.860919",
     "query_user_id": "intelekt"
   },
   {
@@ -35693,7 +37331,7 @@
     "total_score": "74",
     "score_vs_par": "+2",
     "gsp": "5022",
-    "scraped_at": "2026-01-21T21:30:26.301701",
+    "scraped_at": "2026-01-22T01:45:26.991127",
     "query_user_id": "intelekt"
   },
   {
@@ -35896,7 +37534,7 @@
     "total_score": "75",
     "score_vs_par": "+3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:27.426469",
+    "scraped_at": "2026-01-22T01:45:28.119769",
     "query_user_id": "intelekt"
   },
   {
@@ -36099,7 +37737,7 @@
     "total_score": "51",
     "score_vs_par": "-6",
     "gsp": "80113",
-    "scraped_at": "2026-01-21T21:30:28.553932",
+    "scraped_at": "2026-01-22T01:45:29.248212",
     "query_user_id": "intelekt"
   },
   {
@@ -36302,7 +37940,7 @@
     "total_score": "54",
     "score_vs_par": "-3",
     "gsp": "115357",
-    "scraped_at": "2026-01-21T21:30:29.678605",
+    "scraped_at": "2026-01-22T01:45:30.375666",
     "query_user_id": "intelekt"
   },
   {
@@ -36505,8 +38143,414 @@
     "total_score": "32",
     "score_vs_par": "+6",
     "gsp": "40301",
-    "scraped_at": "2026-01-21T21:30:30.804938",
+    "scraped_at": "2026-01-22T01:45:31.504366",
     "query_user_id": "intelekt"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt07&entryId=284",
+    "game": "Golden Tee Live 2007",
+    "username": "vpfiends",
+    "course": "Moose Landing",
+    "date": "22-01-2026 02:01:37",
+    "capture_id": "",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "453",
+      "294",
+      "104",
+      "448",
+      "268",
+      "375",
+      "161",
+      "253",
+      "540",
+      "2896",
+      "514",
+      "490",
+      "294",
+      "73",
+      "496",
+      "273",
+      "592",
+      "104",
+      "239",
+      "3075",
+      "5971",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "35",
+      "5",
+      "5",
+      "4",
+      "3",
+      "4",
+      "4",
+      "5",
+      "3",
+      "4",
+      "37",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "3",
+          "4",
+          "2",
+          "4",
+          "4",
+          "4",
+          "4",
+          "4",
+          "5",
+          "34",
+          "4",
+          "6",
+          "4",
+          "4",
+          "4",
+          "5",
+          "9",
+          "6",
+          "5",
+          "47",
+          "81",
+          "+9",
+          "0"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "81",
+    "score_vs_par": "+9",
+    "gsp": "0",
+    "scraped_at": "2026-01-22T01:45:41.907504",
+    "query_user_id": "vpfiends"
+  },
+  {
+    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1072",
+    "game": "Golden Tee Unplugged 2016",
+    "username": "vpfiends",
+    "course": "Sequoia Grove",
+    "date": "22-01-2026 01:23:45",
+    "capture_id": "01211718402026",
+    "holes": [
+      "HOLE",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "OUT",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "IN",
+      "TOT",
+      "+/-",
+      "GSP"
+    ],
+    "distances": [
+      "466",
+      "441",
+      "117",
+      "247",
+      "406",
+      "67",
+      "228",
+      "460",
+      "269",
+      "2701",
+      "342",
+      "124",
+      "473",
+      "257",
+      "399",
+      "176",
+      "290",
+      "272",
+      "300",
+      "2633",
+      "5334",
+      "0",
+      "0"
+    ],
+    "pars": [
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "4",
+      "3",
+      "5",
+      "4",
+      "4",
+      "3",
+      "4",
+      "5",
+      "4",
+      "36",
+      "72",
+      "0",
+      "0"
+    ],
+    "players": [
+      {
+        "player": "1",
+        "scores": [
+          "3",
+          "5",
+          "2",
+          "4",
+          "4",
+          "2",
+          "3",
+          "4",
+          "3",
+          "30",
+          "3",
+          "2",
+          "5",
+          "5",
+          "5",
+          "5",
+          "4",
+          "7",
+          "4",
+          "40",
+          "70",
+          "-2",
+          "0"
+        ]
+      },
+      {
+        "player": "2",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "3",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      },
+      {
+        "player": "4",
+        "scores": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "E",
+          "0"
+        ]
+      }
+    ],
+    "total_score": "70",
+    "score_vs_par": "-2",
+    "gsp": "0",
+    "scraped_at": "2026-01-22T01:45:43.037178",
+    "query_user_id": "vpfiends"
   },
   {
     "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt16&entryId=1066",
@@ -36708,7 +38752,7 @@
     "total_score": "63",
     "score_vs_par": "-9",
     "gsp": "16111",
-    "scraped_at": "2026-01-21T21:30:40.384942",
+    "scraped_at": "2026-01-22T01:45:44.165973",
     "query_user_id": "vpfiends"
   },
   {
@@ -36911,7 +38955,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "4422",
-    "scraped_at": "2026-01-21T21:30:41.510370",
+    "scraped_at": "2026-01-22T01:45:45.293322",
     "query_user_id": "vpfiends"
   },
   {
@@ -37114,7 +39158,7 @@
     "total_score": "59",
     "score_vs_par": "-13",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:42.635349",
+    "scraped_at": "2026-01-22T01:45:46.421392",
     "query_user_id": "vpfiends"
   },
   {
@@ -37317,7 +39361,7 @@
     "total_score": "64",
     "score_vs_par": "-8",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:43.762084",
+    "scraped_at": "2026-01-22T01:45:47.549271",
     "query_user_id": "vpfiends"
   },
   {
@@ -37520,7 +39564,7 @@
     "total_score": "76",
     "score_vs_par": "+4",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:44.886677",
+    "scraped_at": "2026-01-22T01:45:48.679547",
     "query_user_id": "vpfiends"
   },
   {
@@ -37723,7 +39767,7 @@
     "total_score": "74",
     "score_vs_par": "+3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:46.015546",
+    "scraped_at": "2026-01-22T01:45:49.808817",
     "query_user_id": "vpfiends"
   },
   {
@@ -37926,7 +39970,7 @@
     "total_score": "65",
     "score_vs_par": "-7",
     "gsp": "12380",
-    "scraped_at": "2026-01-21T21:30:47.140596",
+    "scraped_at": "2026-01-22T01:45:50.937314",
     "query_user_id": "vpfiends"
   },
   {
@@ -38129,7 +40173,7 @@
     "total_score": "61",
     "score_vs_par": "-11",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:48.266856",
+    "scraped_at": "2026-01-22T01:45:52.083501",
     "query_user_id": "vpfiends"
   },
   {
@@ -38332,7 +40376,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "6663",
-    "scraped_at": "2026-01-21T21:30:49.393932",
+    "scraped_at": "2026-01-22T01:45:53.210029",
     "query_user_id": "vpfiends"
   },
   {
@@ -38535,7 +40579,7 @@
     "total_score": "63",
     "score_vs_par": "-9",
     "gsp": "10487",
-    "scraped_at": "2026-01-21T21:30:50.519995",
+    "scraped_at": "2026-01-22T01:45:54.336442",
     "query_user_id": "vpfiends"
   },
   {
@@ -38738,7 +40782,7 @@
     "total_score": "59",
     "score_vs_par": "-13",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:51.648917",
+    "scraped_at": "2026-01-22T01:45:55.465142",
     "query_user_id": "vpfiends"
   },
   {
@@ -38941,7 +40985,7 @@
     "total_score": "70",
     "score_vs_par": "-2",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:52.774912",
+    "scraped_at": "2026-01-22T01:45:56.591678",
     "query_user_id": "vpfiends"
   },
   {
@@ -39144,7 +41188,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "3876",
-    "scraped_at": "2026-01-21T21:30:53.902591",
+    "scraped_at": "2026-01-22T01:45:57.719696",
     "query_user_id": "vpfiends"
   },
   {
@@ -39347,7 +41391,7 @@
     "total_score": "59",
     "score_vs_par": "-13",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:55.028800",
+    "scraped_at": "2026-01-22T01:45:58.847128",
     "query_user_id": "vpfiends"
   },
   {
@@ -39550,7 +41594,7 @@
     "total_score": "68",
     "score_vs_par": "-3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:56.154745",
+    "scraped_at": "2026-01-22T01:45:59.974783",
     "query_user_id": "vpfiends"
   },
   {
@@ -39753,7 +41797,7 @@
     "total_score": "66",
     "score_vs_par": "-7",
     "gsp": "6687",
-    "scraped_at": "2026-01-21T21:30:57.282829",
+    "scraped_at": "2026-01-22T01:46:01.104384",
     "query_user_id": "vpfiends"
   },
   {
@@ -39956,7 +42000,7 @@
     "total_score": "78",
     "score_vs_par": "+5",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:58.412072",
+    "scraped_at": "2026-01-22T01:46:02.232161",
     "query_user_id": "vpfiends"
   },
   {
@@ -40159,7 +42203,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:30:59.538512",
+    "scraped_at": "2026-01-22T01:46:03.361910",
     "query_user_id": "vpfiends"
   },
   {
@@ -40362,7 +42406,7 @@
     "total_score": "70",
     "score_vs_par": "-3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:00.685451",
+    "scraped_at": "2026-01-22T01:46:04.488567",
     "query_user_id": "vpfiends"
   },
   {
@@ -40565,7 +42609,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "16878",
-    "scraped_at": "2026-01-21T21:31:01.810321",
+    "scraped_at": "2026-01-22T01:46:05.615393",
     "query_user_id": "vpfiends"
   },
   {
@@ -40768,7 +42812,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:02.937168",
+    "scraped_at": "2026-01-22T01:46:06.743627",
     "query_user_id": "vpfiends"
   },
   {
@@ -40971,7 +43015,7 @@
     "total_score": "69",
     "score_vs_par": "-3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:04.062457",
+    "scraped_at": "2026-01-22T01:46:07.870519",
     "query_user_id": "vpfiends"
   },
   {
@@ -41174,7 +43218,7 @@
     "total_score": "63",
     "score_vs_par": "-9",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:05.188917",
+    "scraped_at": "2026-01-22T01:46:08.999020",
     "query_user_id": "vpfiends"
   },
   {
@@ -41377,7 +43421,7 @@
     "total_score": "57",
     "score_vs_par": "-15",
     "gsp": "3831",
-    "scraped_at": "2026-01-21T21:31:06.314016",
+    "scraped_at": "2026-01-22T01:46:10.125804",
     "query_user_id": "vpfiends"
   },
   {
@@ -41580,7 +43624,7 @@
     "total_score": "60",
     "score_vs_par": "-12",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:07.440657",
+    "scraped_at": "2026-01-22T01:46:11.255227",
     "query_user_id": "vpfiends"
   },
   {
@@ -41783,7 +43827,7 @@
     "total_score": "65",
     "score_vs_par": "-7",
     "gsp": "5514",
-    "scraped_at": "2026-01-21T21:31:08.568196",
+    "scraped_at": "2026-01-22T01:46:12.382308",
     "query_user_id": "vpfiends"
   },
   {
@@ -41986,7 +44030,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:09.693524",
+    "scraped_at": "2026-01-22T01:46:13.511172",
     "query_user_id": "vpfiends"
   },
   {
@@ -42189,7 +44233,7 @@
     "total_score": "69",
     "score_vs_par": "-3",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:10.820056",
+    "scraped_at": "2026-01-22T01:46:14.641867",
     "query_user_id": "vpfiends"
   },
   {
@@ -42392,7 +44436,7 @@
     "total_score": "64",
     "score_vs_par": "-8",
     "gsp": "4770",
-    "scraped_at": "2026-01-21T21:31:11.946072",
+    "scraped_at": "2026-01-22T01:46:15.769724",
     "query_user_id": "vpfiends"
   },
   {
@@ -42595,7 +44639,7 @@
     "total_score": "70",
     "score_vs_par": "-2",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:13.072564",
+    "scraped_at": "2026-01-22T01:46:16.898076",
     "query_user_id": "vpfiends"
   },
   {
@@ -42798,7 +44842,7 @@
     "total_score": "62",
     "score_vs_par": "-10",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:14.198793",
+    "scraped_at": "2026-01-22T01:46:18.024108",
     "query_user_id": "vpfiends"
   },
   {
@@ -43001,7 +45045,7 @@
     "total_score": "70",
     "score_vs_par": "-2",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:15.323810",
+    "scraped_at": "2026-01-22T01:46:19.150284",
     "query_user_id": "vpfiends"
   },
   {
@@ -43204,7 +45248,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:16.451203",
+    "scraped_at": "2026-01-22T01:46:20.277949",
     "query_user_id": "vpfiends"
   },
   {
@@ -43407,7 +45451,7 @@
     "total_score": "65",
     "score_vs_par": "-7",
     "gsp": "5749",
-    "scraped_at": "2026-01-21T21:31:17.576585",
+    "scraped_at": "2026-01-22T01:46:21.405455",
     "query_user_id": "vpfiends"
   },
   {
@@ -43610,7 +45654,7 @@
     "total_score": "64",
     "score_vs_par": "-8",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:18.701422",
+    "scraped_at": "2026-01-22T01:46:22.554580",
     "query_user_id": "vpfiends"
   },
   {
@@ -43813,7 +45857,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:19.834357",
+    "scraped_at": "2026-01-22T01:46:23.680223",
     "query_user_id": "vpfiends"
   },
   {
@@ -44016,7 +46060,7 @@
     "total_score": "80",
     "score_vs_par": "+8",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:20.959630",
+    "scraped_at": "2026-01-22T01:46:24.808147",
     "query_user_id": "vpfiends"
   },
   {
@@ -44219,7 +46263,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:22.086244",
+    "scraped_at": "2026-01-22T01:46:25.936159",
     "query_user_id": "vpfiends"
   },
   {
@@ -44422,7 +46466,7 @@
     "total_score": "60",
     "score_vs_par": "-12",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:23.212333",
+    "scraped_at": "2026-01-22T01:46:27.062465",
     "query_user_id": "vpfiends"
   },
   {
@@ -44625,7 +46669,7 @@
     "total_score": "60",
     "score_vs_par": "-12",
     "gsp": "5478",
-    "scraped_at": "2026-01-21T21:31:24.339471",
+    "scraped_at": "2026-01-22T01:46:28.190368",
     "query_user_id": "vpfiends"
   },
   {
@@ -44828,7 +46872,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:25.464401",
+    "scraped_at": "2026-01-22T01:46:29.317265",
     "query_user_id": "vpfiends"
   },
   {
@@ -45031,7 +47075,7 @@
     "total_score": "60",
     "score_vs_par": "-12",
     "gsp": "30997",
-    "scraped_at": "2026-01-21T21:31:26.589225",
+    "scraped_at": "2026-01-22T01:46:30.443353",
     "query_user_id": "vpfiends"
   },
   {
@@ -45234,7 +47278,7 @@
     "total_score": "71",
     "score_vs_par": "-1",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:27.715726",
+    "scraped_at": "2026-01-22T01:46:31.571699",
     "query_user_id": "vpfiends"
   },
   {
@@ -45437,7 +47481,7 @@
     "total_score": "66",
     "score_vs_par": "-7",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:28.840755",
+    "scraped_at": "2026-01-22T01:46:32.697107",
     "query_user_id": "vpfiends"
   },
   {
@@ -45640,7 +47684,7 @@
     "total_score": "65",
     "score_vs_par": "-7",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:29.966712",
+    "scraped_at": "2026-01-22T01:46:33.826434",
     "query_user_id": "vpfiends"
   },
   {
@@ -45843,7 +47887,7 @@
     "total_score": "69",
     "score_vs_par": "-4",
     "gsp": "10774",
-    "scraped_at": "2026-01-21T21:31:31.112061",
+    "scraped_at": "2026-01-22T01:46:34.953683",
     "query_user_id": "vpfiends"
   },
   {
@@ -46046,7 +48090,7 @@
     "total_score": "62",
     "score_vs_par": "-10",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:32.238191",
+    "scraped_at": "2026-01-22T01:46:36.081516",
     "query_user_id": "vpfiends"
   },
   {
@@ -46249,7 +48293,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:33.364773",
+    "scraped_at": "2026-01-22T01:46:37.212313",
     "query_user_id": "vpfiends"
   },
   {
@@ -46452,7 +48496,7 @@
     "total_score": "55",
     "score_vs_par": "-17",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:34.489920",
+    "scraped_at": "2026-01-22T01:46:38.338979",
     "query_user_id": "vpfiends"
   },
   {
@@ -46655,7 +48699,7 @@
     "total_score": "64",
     "score_vs_par": "-8",
     "gsp": "9796",
-    "scraped_at": "2026-01-21T21:31:35.616262",
+    "scraped_at": "2026-01-22T01:46:39.466879",
     "query_user_id": "vpfiends"
   },
   {
@@ -46858,7 +48902,7 @@
     "total_score": "70",
     "score_vs_par": "-2",
     "gsp": "4531",
-    "scraped_at": "2026-01-21T21:31:36.742189",
+    "scraped_at": "2026-01-22T01:46:40.593704",
     "query_user_id": "vpfiends"
   },
   {
@@ -47061,7 +49105,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:37.867423",
+    "scraped_at": "2026-01-22T01:46:41.721393",
     "query_user_id": "vpfiends"
   },
   {
@@ -47264,7 +49308,7 @@
     "total_score": "66",
     "score_vs_par": "-6",
     "gsp": "10072",
-    "scraped_at": "2026-01-21T21:31:38.994234",
+    "scraped_at": "2026-01-22T01:46:42.847945",
     "query_user_id": "vpfiends"
   },
   {
@@ -47467,210 +49511,7 @@
     "total_score": "59",
     "score_vs_par": "-13",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:40.121858",
-    "query_user_id": "vpfiends"
-  },
-  {
-    "entry_url": "https://teknoparrot.com/en/Highscore/EntrySpecificGt06?gameId=gt17&entryId=320",
-    "game": "Golden Tee Unplugged 2017",
-    "username": "vpfiends",
-    "course": "Tahiti Cove",
-    "date": "14-01-2026 02:58:39",
-    "capture_id": "01131851282026",
-    "holes": [
-      "HOLE",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "OUT",
-      "10",
-      "11",
-      "12",
-      "13",
-      "14",
-      "15",
-      "16",
-      "17",
-      "18",
-      "IN",
-      "TOT",
-      "+/-",
-      "GSP"
-    ],
-    "distances": [
-      "466",
-      "297",
-      "187",
-      "500",
-      "410",
-      "145",
-      "527",
-      "448",
-      "487",
-      "3467",
-      "492",
-      "167",
-      "466",
-      "325",
-      "287",
-      "334",
-      "505",
-      "166",
-      "243",
-      "2985",
-      "6452",
-      "0",
-      "0"
-    ],
-    "pars": [
-      "4",
-      "4",
-      "3",
-      "5",
-      "4",
-      "3",
-      "5",
-      "4",
-      "4",
-      "36",
-      "4",
-      "3",
-      "5",
-      "4",
-      "4",
-      "4",
-      "5",
-      "3",
-      "4",
-      "36",
-      "72",
-      "0",
-      "0"
-    ],
-    "players": [
-      {
-        "player": "1",
-        "scores": [
-          "3",
-          "3",
-          "2",
-          "3",
-          "4",
-          "2",
-          "4",
-          "3",
-          "3",
-          "27",
-          "4",
-          "2",
-          "4",
-          "4",
-          "5",
-          "3",
-          "5",
-          "2",
-          "3",
-          "32",
-          "59",
-          "-13",
-          "11498"
-        ]
-      },
-      {
-        "player": "2",
-        "scores": [
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "E",
-          "0"
-        ]
-      },
-      {
-        "player": "3",
-        "scores": [
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "E",
-          "0"
-        ]
-      },
-      {
-        "player": "4",
-        "scores": [
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "0",
-          "E",
-          "0"
-        ]
-      }
-    ],
-    "total_score": "59",
-    "score_vs_par": "-13",
-    "gsp": "11498",
-    "scraped_at": "2026-01-21T21:31:41.248419",
+    "scraped_at": "2026-01-22T01:46:43.973645",
     "query_user_id": "vpfiends"
   },
   {
@@ -47873,7 +49714,7 @@
     "total_score": "62",
     "score_vs_par": "-10",
     "gsp": "3102",
-    "scraped_at": "2026-01-21T21:31:42.373718",
+    "scraped_at": "2026-01-22T01:46:45.227132",
     "query_user_id": "vpfiends"
   },
   {
@@ -48076,7 +49917,7 @@
     "total_score": "67",
     "score_vs_par": "-6",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:43.499881",
+    "scraped_at": "2026-01-22T01:46:46.355008",
     "query_user_id": "vpfiends"
   },
   {
@@ -48279,7 +50120,7 @@
     "total_score": "67",
     "score_vs_par": "-5",
     "gsp": "0",
-    "scraped_at": "2026-01-21T21:31:44.628722",
+    "scraped_at": "2026-01-22T01:46:47.481459",
     "query_user_id": "vpfiends"
   },
   {
@@ -48482,7 +50323,7 @@
     "total_score": "54",
     "score_vs_par": "-3",
     "gsp": "82948",
-    "scraped_at": "2026-01-21T21:31:45.753693",
+    "scraped_at": "2026-01-22T01:46:48.609666",
     "query_user_id": "vpfiends"
   },
   {
@@ -48685,7 +50526,7 @@
     "total_score": "51",
     "score_vs_par": "-6",
     "gsp": "96277",
-    "scraped_at": "2026-01-21T21:31:46.879658",
+    "scraped_at": "2026-01-22T01:46:49.737500",
     "query_user_id": "vpfiends"
   },
   {
@@ -48888,7 +50729,7 @@
     "total_score": "57",
     "score_vs_par": "E",
     "gsp": "80604",
-    "scraped_at": "2026-01-21T21:31:48.005301",
+    "scraped_at": "2026-01-22T01:46:50.863997",
     "query_user_id": "vpfiends"
   },
   {
@@ -49091,7 +50932,7 @@
     "total_score": "51",
     "score_vs_par": "-7",
     "gsp": "79998",
-    "scraped_at": "2026-01-21T21:31:49.129941",
+    "scraped_at": "2026-01-22T01:46:51.991368",
     "query_user_id": "vpfiends"
   },
   {
@@ -49294,7 +51135,7 @@
     "total_score": "63",
     "score_vs_par": "+6",
     "gsp": "101696",
-    "scraped_at": "2026-01-21T21:31:50.256197",
+    "scraped_at": "2026-01-22T01:46:53.135329",
     "query_user_id": "vpfiends"
   }
 ]
