@@ -675,12 +675,16 @@
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
             document.getElementById('weeklyCourseName').textContent = WEEKLY_CHALLENGE_COURSE;
 
-            // FILTER LOGIC: include scores up to the current moment 'et' to capture Monday morning runs
+            // FILTER LOGIC: Adjusted to capture entries even if they are slightly ahead of system time (e.g., Jan 24 entries)
             const allWeeklyEntries = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
                 const entryDate = parseDate(entry.date);
                 if (!entryDate) return false;
-                return entryDate >= weekStart && entryDate <= et;
+                
+                // Keep entries that are within the week window or very recently after the week window 
+                // (allowing for time skew up to 24 hours in the "future" for current sessions)
+                const extendedNow = new Date(et.getTime() + (24 * 60 * 60 * 1000));
+                return entryDate >= weekStart && entryDate <= extendedNow;
             });
 
             const playerBestScores = {};
@@ -962,7 +966,6 @@
         function initializeLeaderboards() {
             const availableGames = [...new Set(leaderboardData.map(entry => entry.game))];
             
-            // FIX: explicitly handle 2016 and 2017 separately
             const targetOrder = [
                 'Golden Tee Unplugged 2017',
                 'Golden Tee Unplugged 2016',
