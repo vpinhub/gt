@@ -92,7 +92,7 @@ class TeknoParrotScraper:
         """Check if the game is a Golden Tee variant"""
         if not game_name:
             return False
-        # UPDATED LIST: Added 2018 variants and missing 2017 Live
+        # UPDATED LIST: Added 2018 variants
         target_games = [
             'golden tee unplugged 2018',
             'golden tee live 2018',
