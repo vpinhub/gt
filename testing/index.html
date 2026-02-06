@@ -646,7 +646,9 @@
                     }
                 }
             }
-            const d = new Date(year, month, day, hours, minutes, seconds);
+            // Use Date.UTC to interpret the source data as UTC time
+            const utcTime = Date.UTC(year, month, day, hours, minutes, seconds);
+            const d = new Date(utcTime);
             return isNaN(d.getTime()) ? null : d;
         }
 
