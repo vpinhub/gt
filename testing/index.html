@@ -646,7 +646,7 @@
                     }
                 }
             }
-            // Use Date.UTC to interpret the source data as UTC time
+            // MODIFIED: Use Date.UTC to treat the components as UTC time
             const utcTime = Date.UTC(year, month, day, hours, minutes, seconds);
             const d = new Date(utcTime);
             return isNaN(d.getTime()) ? null : d;
@@ -679,7 +679,9 @@
 
             // FILTER LOGIC: Adjusted to capture entries even if they are slightly ahead of system time (e.g., Jan 24 entries)
             const allWeeklyEntries = leaderboardData.filter(entry => {
-                if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
+                // Strict check for Course Name AND Game Title
+                if (entry.course !== WEEKLY_CHALLENGE_COURSE || entry.game !== 'Golden Tee Unplugged 2016') return false;
+                
                 const entryDate = parseDate(entry.date);
                 if (!entryDate) return false;
                 
