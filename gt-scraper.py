@@ -92,9 +92,12 @@ class TeknoParrotScraper:
         """Check if the game is a Golden Tee variant"""
         if not game_name:
             return False
-        # UPDATED LIST: Added Unplugged 2017 and Live 2007
+        # UPDATED LIST: Added 2018 variants and missing 2017 Live
         target_games = [
+            'golden tee unplugged 2018',
+            'golden tee live 2018',
             'golden tee unplugged 2017',
+            'golden tee live 2017',
             'golden tee unplugged 2016',
             'power putt live 2013',
             'golden tee live 2007',
