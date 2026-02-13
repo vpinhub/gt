@@ -437,8 +437,8 @@
     <section class="section" id="weekly">
         <div class="container">
             <div class="section-header">
-                <h2>🏆 Weekly Challenge Course</h2>
-                <p id="weeklyCourseName">Grizzly Flats</p>
+                <h2>🏆 Weekly Challenge Course (GT 2018)</h2>
+                <p id="weeklyCourseName">Royal Dubai</p>
                 <p id="weeklyDateRange" style="font-size: 0.9em; opacity: 0.8; margin-top: 0.5rem;">Loading week range...</p>
             </div>
 
@@ -583,7 +583,8 @@
         let bestRoundEntry = null;
 
         // Weekly Challenge Configuration
-        const WEEKLY_CHALLENGE_COURSE = "Grizzly Flats"; 
+        // UPDATED: Set course to Royal Dubai
+        const WEEKLY_CHALLENGE_COURSE = "Royal Dubai"; 
 
         // Auto-load data on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -646,7 +647,6 @@
                     }
                 }
             }
-            // MODIFIED: Use Date.UTC to treat the components as UTC time
             const utcTime = Date.UTC(year, month, day, hours, minutes, seconds);
             const d = new Date(utcTime);
             return isNaN(d.getTime()) ? null : d;
@@ -656,14 +656,12 @@
             const now = new Date();
             const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
             
-            // Set weekStart to the most recent Friday at 12pm ET
             let weekStart = new Date(et);
             weekStart.setHours(12, 0, 0, 0);
             const dayNum = weekStart.getDay(); 
             const daysSinceFriday = (dayNum >= 5) ? (dayNum - 5) : (dayNum + 2);
             weekStart.setDate(weekStart.getDate() - daysSinceFriday);
             
-            // If it's currently Friday before 12pm, move back one week
             if (et.getDay() === 5 && et.getHours() < 12) {
                 weekStart.setDate(weekStart.getDate() - 7);
             }
@@ -677,16 +675,13 @@
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
             document.getElementById('weeklyCourseName').textContent = WEEKLY_CHALLENGE_COURSE;
 
-            // FILTER LOGIC: Adjusted to capture entries even if they are slightly ahead of system time (e.g., Jan 24 entries)
+            // FILTER LOGIC: Updated to check for Golden Tee Unplugged 2018
             const allWeeklyEntries = leaderboardData.filter(entry => {
-                // Strict check for Course Name AND Game Title
-                if (entry.course !== WEEKLY_CHALLENGE_COURSE || entry.game !== 'Golden Tee Unplugged 2016') return false;
+                if (entry.course !== WEEKLY_CHALLENGE_COURSE || entry.game !== 'Golden Tee Unplugged 2018') return false;
                 
                 const entryDate = parseDate(entry.date);
                 if (!entryDate) return false;
                 
-                // Keep entries that are within the week window or very recently after the week window 
-                // (allowing for time skew up to 24 hours in the "future" for current sessions)
                 const extendedNow = new Date(et.getTime() + (24 * 60 * 60 * 1000));
                 return entryDate >= weekStart && entryDate <= extendedNow;
             });
