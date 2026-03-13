@@ -438,7 +438,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>🏆 Weekly Challenge Course (GT 2018)</h2>
-                <p id="weeklyCourseName">Safari Dunes</p>
+                <p id="weeklyCourseName">Rhineland</p>
                 <p id="weeklyDateRange" style="font-size: 0.9em; opacity: 0.8; margin-top: 0.5rem;">Loading week range...</p>
             </div>
 
@@ -548,7 +548,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 VPINHUB Golden Tee Ballers. All rights reserved.</p>
+                <p>&copy; 2026 VPINHUB Golden Tee Ballers. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -583,8 +583,8 @@
         let bestRoundEntry = null;
 
         // Weekly Challenge Configuration
-        // UPDATED: Set course to Safari Dunes
-        const WEEKLY_CHALLENGE_COURSE = "Safari Dunes"; 
+        // UPDATED: Set course to Rhineland
+        const WEEKLY_CHALLENGE_COURSE = "Rhineland"; 
 
         // Auto-load data on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -675,7 +675,6 @@
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
             document.getElementById('weeklyCourseName').textContent = WEEKLY_CHALLENGE_COURSE;
 
-            // FILTER LOGIC: Updated to check for Golden Tee Unplugged 2018
             const allWeeklyEntries = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE || entry.game !== 'Golden Tee Unplugged 2018') return false;
                 
