@@ -582,8 +582,8 @@
         let leaderboardData = [];
         let bestRoundEntry = null;
 
-        // Weekly Challenge Configuration
-        const WEEKLY_CHALLENGE_COURSE = "Mayfield Golf Club"; 
+        // UPDATED: Match the exact output from Teknoparrot
+        const WEEKLY_CHALLENGE_COURSE = "Mayfield"; 
 
         // Auto-load data on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -672,7 +672,9 @@
             const startStr = weekStart.toLocaleDateString('en-US', options);
             const endStr = weekEnd.toLocaleDateString('en-US', options);
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
-            document.getElementById('weeklyCourseName').textContent = WEEKLY_CHALLENGE_COURSE;
+            
+            // UPDATED: Hardcode the display value here so it reads nice on the page
+            document.getElementById('weeklyCourseName').textContent = "Mayfield Golf Club";
 
             const allWeeklyEntries = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE || entry.game !== 'Golden Tee Unplugged 2018') return false;
@@ -706,7 +708,7 @@
                 container.innerHTML = `
                     <div class="no-data">
                         <p style="font-size: 1.5em; margin-bottom: 1rem;">No entries yet for this week's challenge!</p>
-                        <p>Be the first to play <strong style="color: var(--primary-orange);">${WEEKLY_CHALLENGE_COURSE}</strong> and submit your score.</p>
+                        <p>Be the first to play <strong style="color: var(--primary-orange);">Mayfield Golf Club</strong> and submit your score.</p>
                     </div>
                 `;
                 return;
@@ -715,7 +717,7 @@
             let html = `
                 <div style="text-align: center; margin-bottom: 2rem; padding: 1.5rem; background: var(--medium-gray); border-radius: 10px; border: 2px solid var(--primary-orange);">
                     <h3 style="color: var(--primary-orange); margin-bottom: 0.5rem;">Current Week's Challenge</h3>
-                    <p style="font-size: 1.2em;"><strong>${WEEKLY_CHALLENGE_COURSE}</strong></p>
+                    <p style="font-size: 1.2em;"><strong>Mayfield Golf Club</strong></p>
                     <p style="font-size: 0.9em; opacity: 0.8;">${weeklyEntries.length} player${weeklyEntries.length === 1 ? '' : 's'} competing this week</p>
                 </div>
                 <table>
