@@ -237,6 +237,36 @@
         .player-name { font-weight: 600; color: #ffffff; }
         .score-highlight { color: var(--primary-orange); font-weight: 700; font-size: 1.1em; }
         .video-icon { color: var(--primary-orange); font-size: 1.2em; }
+        /* Player Card */
+        .player-card {
+            background: var(--dark-gray);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid var(--light-gray);
+            transition: border-color 0.3s;
+        }
+        .player-card:hover { border-color: var(--primary-orange); }
+        .player-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--light-gray);
+        }
+        .player-rank { font-size: 3em; font-weight: 700; min-width: 80px; }
+        .player-details { flex: 1; margin-left: 2rem; }
+        .player-details h3 { font-size: 2em; margin-bottom: 0.5rem; }
+        .player-stats { display: flex; gap: 2rem; color: var(--text-gray); }
+        .scorecard-video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .scorecard-compact { overflow-x: auto; }
+        .scorecard-compact table { font-size: 0.9em; }
         /* Stats Grid */
         .stats-grid {
             display: grid;
@@ -268,36 +298,6 @@
             color: var(--text-gray);
             margin-top: 0.5rem;
         }
-        /* Player Card */
-        .player-card {
-            background: var(--dark-gray);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border: 2px solid var(--light-gray);
-            transition: border-color 0.3s;
-        }
-        .player-card:hover { border-color: var(--primary-orange); }
-        .player-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid var(--light-gray);
-        }
-        .player-rank { font-size: 3em; font-weight: 700; min-width: 80px; }
-        .player-details { flex: 1; margin-left: 2rem; }
-        .player-details h3 { font-size: 2em; margin-bottom: 0.5rem; }
-        .player-stats { display: flex; gap: 2rem; color: var(--text-gray); }
-        .scorecard-video-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-        .scorecard-compact { overflow-x: auto; }
-        .scorecard-compact table { font-size: 0.9em; }
         /* Footer */
         .footer {
             background: var(--dark-gray);
@@ -438,7 +438,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>🏆 Weekly Challenge Course (GT 2018)</h2>
-                <p id="weeklyCourseName">Mayfield Golf Club</p>
+                <p id="weeklyCourseName">Falcon Sands</p>
                 <p id="weeklyDateRange" style="font-size: 0.9em; opacity: 0.8; margin-top: 0.5rem;">Loading week range...</p>
             </div>
 
@@ -582,8 +582,8 @@
         let leaderboardData = [];
         let bestRoundEntry = null;
 
-        // UPDATED: Match the exact output from Teknoparrot
-        const WEEKLY_CHALLENGE_COURSE = "Mayfield"; 
+        // UPDATED: Match the exact output from Teknoparrot for Falcon Sands
+        const WEEKLY_CHALLENGE_COURSE = "Falcon Sands"; 
 
         // Auto-load data on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -674,7 +674,7 @@
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
             
             // UPDATED: Hardcode the display value here so it reads nice on the page
-            document.getElementById('weeklyCourseName').textContent = "Mayfield Golf Club";
+            document.getElementById('weeklyCourseName').textContent = "Falcon Sands";
 
             const allWeeklyEntries = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE || entry.game !== 'Golden Tee Unplugged 2018') return false;
@@ -708,7 +708,7 @@
                 container.innerHTML = `
                     <div class="no-data">
                         <p style="font-size: 1.5em; margin-bottom: 1rem;">No entries yet for this week's challenge!</p>
-                        <p>Be the first to play <strong style="color: var(--primary-orange);">Mayfield Golf Club</strong> and submit your score.</p>
+                        <p>Be the first to play <strong style="color: var(--primary-orange);">Falcon Sands</strong> and submit your score.</p>
                     </div>
                 `;
                 return;
@@ -717,7 +717,7 @@
             let html = `
                 <div style="text-align: center; margin-bottom: 2rem; padding: 1.5rem; background: var(--medium-gray); border-radius: 10px; border: 2px solid var(--primary-orange);">
                     <h3 style="color: var(--primary-orange); margin-bottom: 0.5rem;">Current Week's Challenge</h3>
-                    <p style="font-size: 1.2em;"><strong>Mayfield Golf Club</strong></p>
+                    <p style="font-size: 1.2em;"><strong>Falcon Sands</strong></p>
                     <p style="font-size: 0.9em; opacity: 0.8;">${weeklyEntries.length} player${weeklyEntries.length === 1 ? '' : 's'} competing this week</p>
                 </div>
                 <table>
