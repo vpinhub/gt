@@ -549,6 +549,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 VPINHUB Golden Tee Ballers. All rights reserved.</p>
+                <p id="lastUpdated" style="font-size: 0.85em; opacity: 0.6; margin-top: 0.4rem;"></p>
             </div>
         </div>
     </footer>
@@ -582,7 +583,8 @@
         let leaderboardData = [];
         let bestRoundEntry = null;
 
-        const WEEKLY_CHALLENGE_COURSE = "Southern Oaks"; 
+        const WEEKLY_CHALLENGE_COURSE = "Southern Oaks";
+        const WEEKLY_GAME_YEAR = "2018"; // matches any GT 2018 variant
 
         // Auto-load data on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -596,6 +598,7 @@
                     leaderboardData = data;
                     initializeLeaderboards();
                     updateStats();
+                    showLastUpdated();
                     showRandomSpotlight();
                     showWeeklyChallenge();
                     showPlayers();
@@ -675,13 +678,11 @@
             document.getElementById('weeklyCourseName').textContent = "Southern Oaks";
 
             const allWeeklyEntries = leaderboardData.filter(entry => {
-                if (entry.course !== WEEKLY_CHALLENGE_COURSE || entry.game !== 'Golden Tee Unplugged 2018') return false;
-                
+                if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
+                if (!entry.game || !entry.game.includes(WEEKLY_GAME_YEAR)) return false;
                 const entryDate = parseDate(entry.date);
                 if (!entryDate) return false;
-                
-                const extendedNow = new Date(et.getTime() + (24 * 60 * 60 * 1000));
-                return entryDate >= weekStart && entryDate <= extendedNow;
+                return entryDate >= weekStart && entryDate <= weekEnd;
             });
 
             const playerBestScores = {};
@@ -945,6 +946,19 @@
             container.innerHTML = html;
         }
 
+        function showLastUpdated() {
+            const dates = leaderboardData
+                .map(e => e.scraped_at)
+                .filter(Boolean)
+                .sort()
+                .reverse();
+            if (!dates.length) return;
+            const d = new Date(dates[0]);
+            if (isNaN(d.getTime())) return;
+            const el = document.getElementById('lastUpdated');
+            if (el) el.textContent = 'Data updated: ' + d.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
+        }
+
         function showVideoModal(entry) { showScorecard(entry); }
         function showJoinModal() { document.getElementById('joinModal').classList.add('active'); }
         function closeJoinModal() { document.getElementById('joinModal').classList.remove('active'); }
@@ -965,8 +979,11 @@
             
             const targetOrder = [
                 'Golden Tee Unplugged 2018',
+                'Golden Tee Live 2018',
                 'Golden Tee Unplugged 2017',
+                'Golden Tee Live 2017',
                 'Golden Tee Unplugged 2016',
+                'Golden Tee Live 2016',
                 'Golden Tee Live 2007',
                 'Golden Tee Live 2006',
                 'Power Putt Live 2013'
