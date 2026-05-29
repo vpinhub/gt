@@ -438,7 +438,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>🏆 Weekly Challenge Course (GT 2018)</h2>
-                <p id="weeklyCourseName">The Great Wall</p>
+                <p id="weeklyCourseName">Grand Canyon</p>
                 <p id="weeklyDateRange" style="font-size: 0.9em; opacity: 0.8; margin-top: 0.5rem;">Loading week range...</p>
             </div>
 
@@ -549,6 +549,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 VPINHUB Golden Tee Ballers. All rights reserved.</p>
+                <p id="lastUpdated" style="font-size: 0.85em; opacity: 0.6; margin-top: 0.4rem;"></p>
             </div>
         </div>
     </footer>
@@ -582,7 +583,8 @@
         let leaderboardData = [];
         let bestRoundEntry = null;
 
-        const WEEKLY_CHALLENGE_COURSE = "The Great Wall"; 
+        const WEEKLY_CHALLENGE_COURSE = "Grand Canyon";
+        const WEEKLY_GAME_YEAR = "2018"; // matches any GT 2018 variant
 
         // Auto-load data on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -596,6 +598,7 @@
                     leaderboardData = data;
                     initializeLeaderboards();
                     updateStats();
+                    showLastUpdated();
                     showRandomSpotlight();
                     showWeeklyChallenge();
                     showPlayers();
@@ -672,16 +675,14 @@
             const endStr = weekEnd.toLocaleDateString('en-US', options);
             document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
             
-            document.getElementById('weeklyCourseName').textContent = "The Great Wall";
+            document.getElementById('weeklyCourseName').textContent = "Grand Canyon";
 
             const allWeeklyEntries = leaderboardData.filter(entry => {
-                if (entry.course !== WEEKLY_CHALLENGE_COURSE || entry.game !== 'Golden Tee Unplugged 2018') return false;
-                
+                if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
+                if (!entry.game || !entry.game.includes(WEEKLY_GAME_YEAR)) return false;
                 const entryDate = parseDate(entry.date);
                 if (!entryDate) return false;
-                
-                const extendedNow = new Date(et.getTime() + (24 * 60 * 60 * 1000));
-                return entryDate >= weekStart && entryDate <= extendedNow;
+                return entryDate >= weekStart && entryDate <= weekEnd;
             });
 
             const playerBestScores = {};
@@ -706,7 +707,7 @@
                 container.innerHTML = `
                     <div class="no-data">
                         <p style="font-size: 1.5em; margin-bottom: 1rem;">No entries yet for this week's challenge!</p>
-                        <p>Be the first to play <strong style="color: var(--primary-orange);">The Great Wall</strong> and submit your score.</p>
+                        <p>Be the first to play <strong style="color: var(--primary-orange);">Grand Canyon</strong> and submit your score.</p>
                     </div>
                 `;
                 return;
@@ -715,7 +716,7 @@
             let html = `
                 <div style="text-align: center; margin-bottom: 2rem; padding: 1.5rem; background: var(--medium-gray); border-radius: 10px; border: 2px solid var(--primary-orange);">
                     <h3 style="color: var(--primary-orange); margin-bottom: 0.5rem;">Current Week's Challenge</h3>
-                    <p style="font-size: 1.2em;"><strong>The Great Wall</strong></p>
+                    <p style="font-size: 1.2em;"><strong>Grand Canyon</strong></p>
                     <p style="font-size: 0.9em; opacity: 0.8;">${weeklyEntries.length} player${weeklyEntries.length === 1 ? '' : 's'} competing this week</p>
                 </div>
                 <table>
@@ -945,6 +946,19 @@
             container.innerHTML = html;
         }
 
+        function showLastUpdated() {
+            const dates = leaderboardData
+                .map(e => e.scraped_at)
+                .filter(Boolean)
+                .sort()
+                .reverse();
+            if (!dates.length) return;
+            const d = new Date(dates[0]);
+            if (isNaN(d.getTime())) return;
+            const el = document.getElementById('lastUpdated');
+            if (el) el.textContent = 'Data updated: ' + d.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
+        }
+
         function showVideoModal(entry) { showScorecard(entry); }
         function showJoinModal() { document.getElementById('joinModal').classList.add('active'); }
         function closeJoinModal() { document.getElementById('joinModal').classList.remove('active'); }
@@ -965,8 +979,11 @@
             
             const targetOrder = [
                 'Golden Tee Unplugged 2018',
+                'Golden Tee Live 2018',
                 'Golden Tee Unplugged 2017',
+                'Golden Tee Live 2017',
                 'Golden Tee Unplugged 2016',
+                'Golden Tee Live 2016',
                 'Golden Tee Live 2007',
                 'Golden Tee Live 2006',
                 'Power Putt Live 2013'
