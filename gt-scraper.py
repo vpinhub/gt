@@ -87,6 +87,8 @@ class TeknoParrotScraper:
         if not game_name:
             return False
         target_games = [
+            'golden tee unplugged 2019',
+            'golden tee live 2019',
             'golden tee unplugged 2018',
             'golden tee live 2018',
             'golden tee unplugged 2017',
@@ -379,7 +381,7 @@ class TeknoParrotScraper:
         # Pre-filter to known Golden Tee / Power Putt game IDs so we don't
         # waste a network round-trip on every non-GT entry (arcade racers, etc.)
         GT_GAME_IDS = re.compile(r'gameId=(gt\d+|ppl\d+)', re.I)
-        GT_ID_WHITELIST = {'gt06', 'gt07', 'gt16', 'gt17', 'gt18', 'ppl13'}
+        GT_ID_WHITELIST = {'gt06', 'gt07', 'gt16', 'gt17', 'gt18', 'gt19', 'ppl13'}
 
         def is_gt_url(url):
             m = GT_GAME_IDS.search(url)

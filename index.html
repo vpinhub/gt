@@ -6,7 +6,6 @@
     <title>VPINHUB Golden Tee Ballers - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* --- CSS STYLES --- */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --primary-orange: #FF6B00;
@@ -16,6 +15,8 @@
             --medium-gray: #2a2a2a;
             --light-gray: #3a3a3a;
             --text-gray: #cccccc;
+            --score-under: #22c55e;
+            --score-over: #ef4444;
         }
         body {
             font-family: 'Poppins', sans-serif;
@@ -29,7 +30,8 @@
             font-weight: 700;
             color: #ffffff;
         }
-        /* Navigation */
+
+        /* ── Navigation ── */
         .navbar {
             background: linear-gradient(180deg, var(--dark-gray) 0%, var(--black) 100%);
             padding: 1rem 0;
@@ -79,8 +81,30 @@
             background: var(--primary-orange);
             transition: width 0.3s;
         }
-        .nav-menu a:hover::after { width: 100%; }
-        /* Hero Section */
+        .nav-menu a:hover::after, .nav-menu a.active::after { width: 100%; }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: var(--primary-orange);
+            transition: all 0.3s;
+        }
+        .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+        /* ── Hero ── */
         .hero {
             background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
             padding: 4rem 2rem;
@@ -130,9 +154,11 @@
             color: var(--primary-orange);
         }
         .btn-secondary:hover { background: var(--primary-orange); color: #ffffff; }
-        /* Container & Sections */
+
+        /* ── Container & Sections ── */
         .container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
         .section { padding: 4rem 0; }
+        .section-alt { background: var(--dark-gray); }
         .section-header { text-align: center; margin-bottom: 3rem; }
         .section-header h2 {
             font-size: 2.5em;
@@ -150,8 +176,9 @@
             height: 3px;
             background: var(--primary-orange);
         }
-        .section-header p { font-size: 1.1em; color: var(--text-gray); }
-        /* Spotlight */
+        .section-header p { font-size: 1.1em; color: var(--text-gray); margin-top: 0.5rem; }
+
+        /* ── Spotlight ── */
         .spotlight {
             background: var(--dark-gray);
             border-radius: 15px;
@@ -176,10 +203,8 @@
         }
         .video-container iframe {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
         }
         .spotlight-info { text-align: center; padding: 1rem; }
         .spotlight-info .player-name {
@@ -187,19 +212,31 @@
             color: var(--primary-orange);
             font-weight: 600;
         }
-        /* Leaderboard Components */
+
+        /* ── Leaderboard / Tabs ── */
         .leaderboard-preview {
             background: var(--dark-gray);
             border-radius: 15px;
             overflow: hidden;
             border: 2px solid var(--light-gray);
         }
+        .tabs-wrapper { position: relative; }
+        .tabs-wrapper::after {
+            content: '';
+            position: absolute;
+            right: 0; top: 0; bottom: 0;
+            width: 60px;
+            background: linear-gradient(to right, transparent, var(--medium-gray));
+            pointer-events: none;
+        }
         .game-tabs {
             display: flex;
             background: var(--medium-gray);
             border-bottom: 2px solid var(--primary-orange);
             overflow-x: auto;
+            scrollbar-width: none;
         }
+        .game-tabs::-webkit-scrollbar { display: none; }
         .tab {
             padding: 1rem 2rem;
             background: transparent;
@@ -236,8 +273,11 @@
         .rank-3 { color: #CD7F32; }
         .player-name { font-weight: 600; color: #ffffff; }
         .score-highlight { color: var(--primary-orange); font-weight: 700; font-size: 1.1em; }
+        .score-under { color: var(--score-under); font-weight: 700; font-size: 1.1em; }
+        .score-over  { color: var(--score-over);  font-weight: 700; font-size: 1.1em; }
         .video-icon { color: var(--primary-orange); font-size: 1.2em; }
-        /* Player Card */
+
+        /* ── Player Cards ── */
         .player-card {
             background: var(--dark-gray);
             border-radius: 15px;
@@ -258,7 +298,7 @@
         .player-rank { font-size: 3em; font-weight: 700; min-width: 80px; }
         .player-details { flex: 1; margin-left: 2rem; }
         .player-details h3 { font-size: 2em; margin-bottom: 0.5rem; }
-        .player-stats { display: flex; gap: 2rem; color: var(--text-gray); }
+        .player-stats { display: flex; gap: 2rem; color: var(--text-gray); flex-wrap: wrap; }
         .scorecard-video-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -267,7 +307,8 @@
         }
         .scorecard-compact { overflow-x: auto; }
         .scorecard-compact table { font-size: 0.9em; }
-        /* Stats Grid */
+
+        /* ── Stats Grid ── */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -283,22 +324,83 @@
             transition: transform 0.3s, border-color 0.3s;
             cursor: pointer;
         }
-        .stat-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary-orange);
-        }
-        .stat-card .stat-number {
-            font-size: 3em;
-            color: var(--primary-orange);
+        .stat-card:hover { transform: translateY(-5px); border-color: var(--primary-orange); }
+        .stat-card .stat-number { font-size: 3em; color: var(--primary-orange); font-weight: 700; display: block; }
+        .stat-card .stat-label { font-size: 1.1em; color: var(--text-gray); margin-top: 0.5rem; }
+
+        /* ── Weekly countdown badge ── */
+        .countdown-badge {
+            display: inline-block;
+            background: var(--primary-orange);
+            color: #fff;
             font-weight: 700;
+            font-size: 0.85em;
+            padding: 3px 12px;
+            border-radius: 20px;
+            margin-top: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+        .countdown-badge.urgent { background: var(--score-over); }
+
+        /* ── Video Card Grid ── */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 1.5rem;
+        }
+        .video-card {
+            background: var(--medium-gray);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--light-gray);
+            transition: border-color 0.3s, transform 0.2s;
+            cursor: pointer;
+        }
+        .video-card:hover { border-color: var(--primary-orange); transform: translateY(-4px); }
+        .video-thumbnail-wrapper { position: relative; }
+        .video-thumbnail-wrapper img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
             display: block;
         }
-        .stat-card .stat-label {
-            font-size: 1.1em;
-            color: var(--text-gray);
-            margin-top: 0.5rem;
+        .video-rank-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: rgba(0,0,0,0.82);
+            border-radius: 4px;
+            padding: 2px 9px;
+            font-weight: 700;
+            font-size: 0.85em;
+            font-family: 'Rajdhani', sans-serif;
         }
-        /* Footer */
+        .play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.28);
+            opacity: 0;
+            transition: opacity 0.2s;
+            font-size: 3em;
+        }
+        .video-card:hover .play-overlay { opacity: 1; }
+        .video-card-info { padding: 0.75rem 1rem 1rem; }
+        .video-card-info .vc-player { font-weight: 600; color: #fff; font-size: 1em; }
+        .video-card-info .vc-course { font-size: 0.85em; color: var(--text-gray); margin-top: 2px; }
+        .video-card-info .vc-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.5rem;
+            font-size: 0.82em;
+            color: var(--text-gray);
+        }
+
+        /* ── Footer ── */
         .footer {
             background: var(--dark-gray);
             border-top: 3px solid var(--primary-orange);
@@ -314,11 +416,7 @@
         .footer-section h3 { color: var(--primary-orange); margin-bottom: 1rem; }
         .footer-section ul { list-style: none; }
         .footer-section ul li { margin-bottom: 0.5rem; }
-        .footer-section a {
-            color: var(--text-gray);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+        .footer-section a { color: var(--text-gray); text-decoration: none; transition: color 0.3s; }
         .footer-section a:hover { color: var(--primary-orange); }
         .footer-bottom {
             text-align: center;
@@ -326,15 +424,14 @@
             border-top: 1px solid var(--light-gray);
             color: var(--text-gray);
         }
-        /* Modal */
+
+        /* ── Modal ── */
         .modal {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9);
             z-index: 2000;
             overflow-y: auto;
             padding: 2rem;
@@ -351,14 +448,12 @@
         }
         .modal-close {
             position: absolute;
-            top: 1rem;
-            right: 1rem;
+            top: 1rem; right: 1rem;
             background: var(--primary-orange);
             border: none;
             color: #ffffff;
             font-size: 1.5em;
-            width: 40px;
-            height: 40px;
+            width: 40px; height: 40px;
             border-radius: 50%;
             cursor: pointer;
             display: flex;
@@ -369,38 +464,60 @@
         .scorecard-table { width: 100%; margin-top: 2rem; overflow-x: auto; }
         .scorecard-table th { background: var(--medium-gray); padding: 0.75rem; text-align: center; }
         .scorecard-table td { text-align: center; padding: 0.75rem; }
-        
-        /* Mobile Breakpoints */
+        .loading { text-align: center; padding: 3rem; color: var(--text-gray); }
+        .no-data { text-align: center; padding: 3rem; color: var(--text-gray); font-size: 1.2em; }
+
+        /* ── Mobile ── */
         @media (max-width: 1024px) {
             .scorecard-video-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2em; }
-            .nav-menu { flex-direction: column; gap: 0.5rem; }
-            .game-tabs { flex-direction: column; }
+            .hamburger { display: flex; }
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: var(--dark-gray);
+                flex-direction: column;
+                padding: 0.5rem 0;
+                border-bottom: 2px solid var(--primary-orange);
+                gap: 0;
+            }
+            .nav-menu.open { display: flex; }
+            .nav-menu li { width: 100%; }
+            .nav-menu a {
+                display: block;
+                padding: 0.75rem 2rem;
+                border-bottom: 1px solid var(--light-gray);
+            }
+            .nav-menu a::after { display: none; }
             table { font-size: 0.9em; }
             th, td { padding: 0.5rem; }
+            .video-grid { grid-template-columns: 1fr; }
         }
-        .loading { text-align: center; padding: 3rem; color: var(--text-gray); }
-        .no-data { text-align: center; padding: 3rem; color: var(--text-gray); font-size: 1.2em; }
     </style>
 </head>
 <body>
+
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">VPINHUB <span>GT Ballers</span></a>
-            <ul class="nav-menu">
-                <li><a href="#" class="active">Home</a></li>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#weekly">Weekly Challenge</a></li>
                 <li><a href="#leaderboard">Rankings</a></li>
                 <li><a href="#players">Players</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#videos">Videos</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1><span class="highlight">VPINHUB</span> Golden Tee Ballers</h1>
             <p>Compete. Dominate. Rise through the ranks.</p>
@@ -411,7 +528,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="stats">
         <div class="container">
             <div class="stats-grid" id="statsGrid">
                 <div class="stat-card">
@@ -426,7 +543,7 @@
                     <span class="stat-number" id="totalVideos">-</span>
                     <span class="stat-label">Video Submissions</span>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" onclick="bestRoundEntry && showScorecard(bestRoundEntry)" style="cursor:pointer;">
                     <span class="stat-number" id="bestScore">-</span>
                     <span class="stat-label" id="bestScoreDetails">Current Best Round</span>
                 </div>
@@ -434,14 +551,14 @@
         </div>
     </section>
 
-    <section class="section" id="weekly">
+    <section class="section section-alt" id="weekly">
         <div class="container">
             <div class="section-header">
                 <h2>🏆 Weekly Challenge Course (GT 2018)</h2>
                 <p id="weeklyCourseName">Alpine Run</p>
                 <p id="weeklyDateRange" style="font-size: 0.9em; opacity: 0.8; margin-top: 0.5rem;">Loading week range...</p>
+                <div id="weeklyCountdown"></div>
             </div>
-
             <div class="leaderboard-preview">
                 <div class="leaderboard-content" id="weeklyContent">
                     <div class="loading">Loading weekly challenge...</div>
@@ -461,26 +578,43 @@
         </div>
     </section>
 
+    <section class="section section-alt" id="leaderboard">
+        <div class="container">
+            <div class="section-header">
+                <h2>Current Leaderboard</h2>
+                <p>Top performers across all Golden Tee games</p>
+            </div>
+            <div class="leaderboard-preview">
+                <div class="tabs-wrapper">
+                    <div class="game-tabs" id="gameTabs">
+                        <div class="loading">Loading games...</div>
+                    </div>
+                </div>
+                <div class="leaderboard-content" id="leaderboardContent">
+                    <div class="loading">Select a game to view rankings</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section" id="players">
         <div class="container">
             <div class="section-header">
                 <h2>Players</h2>
                 <p>Top performers ranked by best round</p>
             </div>
-
             <div id="playersContent">
                 <div class="loading">Loading players...</div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="courses">
+    <section class="section section-alt" id="courses">
         <div class="container">
             <div class="section-header">
                 <h2>Courses</h2>
                 <p>All played courses with best video submissions</p>
             </div>
-
             <div class="leaderboard-preview">
                 <div class="leaderboard-content" id="coursesContent">
                     <div class="loading">Loading courses...</div>
@@ -495,28 +629,9 @@
                 <h2>Video Submissions</h2>
                 <p>Best performances ranked by score</p>
             </div>
-
-            <div class="leaderboard-preview">
-                <div class="leaderboard-content" id="videosContent">
+            <div class="leaderboard-preview" style="overflow: visible;">
+                <div id="videosContent">
                     <div class="loading">Loading videos...</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="leaderboard">
-        <div class="container">
-            <div class="section-header">
-                <h2>Current Leaderboard</h2>
-                <p>Top performers across all Golden Tee games</p>
-            </div>
-
-            <div class="leaderboard-preview">
-                <div class="game-tabs" id="gameTabs">
-                    <div class="loading">Loading games...</div>
-                </div>
-                <div class="leaderboard-content" id="leaderboardContent">
-                    <div class="loading">Select a game to view rankings</div>
                 </div>
             </div>
         </div>
@@ -541,19 +656,18 @@
                 <div class="footer-section">
                     <h3>Community</h3>
                     <ul>
-                        <li><a href="https://discord.gg/teknoparrot" target="_blank">Discord</a></li>
                         <li><a href="https://teknoparrot.com" target="_blank">TeknoParrot</a></li>
-                        <li><a href="#">Videos</a></li>
+                        <li><a href="#videos">Videos</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 VPINHUB Golden Tee Ballers. All rights reserved.</p>
                 <p id="lastUpdated" style="font-size: 0.85em; opacity: 0.6; margin-top: 0.4rem;"></p>
             </div>
         </div>
     </footer>
 
+    <!-- Join Modal -->
     <div class="modal" id="joinModal">
         <div class="modal-content" style="max-width: 600px;">
             <button class="modal-close" onclick="closeJoinModal()">×</button>
@@ -572,6 +686,7 @@
         </div>
     </div>
 
+    <!-- Scorecard Modal -->
     <div class="modal" id="scorecardModal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">×</button>
@@ -584,16 +699,16 @@
         let bestRoundEntry = null;
 
         const WEEKLY_CHALLENGE_COURSE = "Alpine Run";
-        const WEEKLY_GAME_YEAR = "2018"; // matches any GT 2018 variant
+        const WEEKLY_GAME_YEAR = "2018";
 
-        // Auto-load data on page load
         window.addEventListener('DOMContentLoaded', function() {
             loadJSONFile('golden_tee_leaderboard.json');
+            initScrollSpy();
         });
 
         function loadJSONFile(filename) {
             fetch(filename + '?v=' + new Date().getTime())
-                .then(response => response.json())
+                .then(r => r.json())
                 .then(data => {
                     leaderboardData = data;
                     initializeLeaderboards();
@@ -605,281 +720,284 @@
                     showCourses();
                     showVideos();
                 })
-                .catch(error => {
-                    console.error('Error loading data:', error);
-                    document.getElementById('spotlightContent').innerHTML = '<div class="no-data">Unable to load data. Please check if golden_tee_leaderboard.json exists.</div>';
+                .catch(err => {
+                    console.error('Error loading data:', err);
+                    document.getElementById('spotlightContent').innerHTML =
+                        '<div class="no-data">Unable to load data. Please check if golden_tee_leaderboard.json exists.</div>';
                 });
         }
 
+        /* ── Score helpers ── */
+        function scoreClass(val) {
+            if (!val || val === 'E') return 'score-highlight';
+            const n = parseInt(val, 10);
+            if (isNaN(n)) return 'score-highlight';
+            if (n < 0) return 'score-under';
+            if (n > 0) return 'score-over';
+            return 'score-highlight';
+        }
+        function scoreSpan(val) {
+            return `<span class="${scoreClass(val)}">${val || 'E'}</span>`;
+        }
+
+        /* ── Hamburger ── */
+        function toggleNav() {
+            const menu = document.getElementById('navMenu');
+            const btn  = document.getElementById('hamburger');
+            menu.classList.toggle('open');
+            btn.classList.toggle('open');
+        }
+
+        /* ── Scroll spy ── */
+        function initScrollSpy() {
+            const sections  = document.querySelectorAll('section[id]');
+            const navLinks  = document.querySelectorAll('.nav-menu a[href^="#"]');
+            const observer  = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.toggle('active',
+                                link.getAttribute('href') === '#' + entry.target.id);
+                        });
+                    }
+                });
+            }, { threshold: 0.35 });
+            sections.forEach(s => observer.observe(s));
+        }
+
+        /* ── Date parsing ── */
         function parseDate(dateStr) {
             if (!dateStr) return null;
             const parts = dateStr.trim().split(' ');
-            const datePart = parts[0];
-            const timePart = parts[1];
-            const ampm = parts[2];
+            const datePart = parts[0], timePart = parts[1], ampm = parts[2];
             let day, month, year;
-
             if (datePart.includes('-')) {
-                const dateComponents = datePart.split('-');
-                if (dateComponents.length !== 3) return null;
-                day = parseInt(dateComponents[0], 10);
-                month = parseInt(dateComponents[1], 10) - 1;
-                year = parseInt(dateComponents[2], 10);
+                const c = datePart.split('-');
+                if (c.length !== 3) return null;
+                day = parseInt(c[0], 10); month = parseInt(c[1], 10) - 1; year = parseInt(c[2], 10);
             } else {
-                const dateComponents = datePart.split('/');
-                if (dateComponents.length !== 3) return null;
-                month = parseInt(dateComponents[0], 10) - 1;
-                day = parseInt(dateComponents[1], 10);
-                year = parseInt(dateComponents[2], 10);
+                const c = datePart.split('/');
+                if (c.length !== 3) return null;
+                month = parseInt(c[0], 10) - 1; day = parseInt(c[1], 10); year = parseInt(c[2], 10);
             }
-
             if (year < 100) year += 2000;
             let hours = 0, minutes = 0, seconds = 0;
             if (timePart) {
-                const timeComponents = timePart.split(':');
-                if (timeComponents.length >= 2) {
-                    hours = parseInt(timeComponents[0], 10);
-                    minutes = parseInt(timeComponents[1], 10);
-                    seconds = timeComponents.length > 2 ? parseInt(timeComponents[2], 10) : 0;
+                const t = timePart.split(':');
+                if (t.length >= 2) {
+                    hours = parseInt(t[0], 10); minutes = parseInt(t[1], 10);
+                    seconds = t.length > 2 ? parseInt(t[2], 10) : 0;
                     if (ampm) {
-                        const upperAmpm = ampm.toUpperCase();
-                        if (upperAmpm === 'PM' && hours < 12) hours += 12;
-                        if (upperAmpm === 'AM' && hours === 12) hours = 0;
+                        if (ampm.toUpperCase() === 'PM' && hours < 12) hours += 12;
+                        if (ampm.toUpperCase() === 'AM' && hours === 12) hours  = 0;
                     }
                 }
             }
-            const utcTime = Date.UTC(year, month, day, hours, minutes, seconds);
-            const d = new Date(utcTime);
+            const d = new Date(Date.UTC(year, month, day, hours, minutes, seconds));
             return isNaN(d.getTime()) ? null : d;
         }
 
+        /* ── YouTube helpers ── */
+        function getYtId(url) {
+            if (!url) return null;
+            const m = url.match(/(?:v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+            return m ? m[1] : null;
+        }
+        function ytThumb(url) {
+            const id = getYtId(url);
+            return id ? `https://img.youtube.com/vi/${id}/mqdefault.jpg` : null;
+        }
+
+        /* ── Weekly Challenge ── */
         function showWeeklyChallenge() {
             const now = new Date();
-            const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-            
+            const et  = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+
             let weekStart = new Date(et);
             weekStart.setHours(12, 0, 0, 0);
-            const dayNum = weekStart.getDay(); 
+            const dayNum = weekStart.getDay();
             const daysSinceFriday = (dayNum >= 5) ? (dayNum - 5) : (dayNum + 2);
             weekStart.setDate(weekStart.getDate() - daysSinceFriday);
-            
-            if (et.getDay() === 5 && et.getHours() < 12) {
-                weekStart.setDate(weekStart.getDate() - 7);
-            }
+            if (et.getDay() === 5 && et.getHours() < 12) weekStart.setDate(weekStart.getDate() - 7);
 
             const weekEnd = new Date(weekStart);
             weekEnd.setDate(weekEnd.getDate() + 7);
 
-            const options = { month: 'short', day: 'numeric', year: 'numeric' };
-            const startStr = weekStart.toLocaleDateString('en-US', options);
-            const endStr = weekEnd.toLocaleDateString('en-US', options);
-            document.getElementById('weeklyDateRange').textContent = `${startStr} 12pm ET - ${endStr} 12pm ET`;
-            
-            document.getElementById('weeklyCourseName').textContent = "Alpine Run";
+            const opts = { month: 'short', day: 'numeric', year: 'numeric' };
+            document.getElementById('weeklyDateRange').textContent =
+                `${weekStart.toLocaleDateString('en-US', opts)} 12pm ET – ${weekEnd.toLocaleDateString('en-US', opts)} 12pm ET`;
+            document.getElementById('weeklyCourseName').textContent = WEEKLY_CHALLENGE_COURSE;
 
-            const allWeeklyEntries = leaderboardData.filter(entry => {
+            // Countdown badge
+            const msLeft   = weekEnd - now;
+            const daysLeft  = Math.max(0, Math.floor(msLeft / 86400000));
+            const hoursLeft = Math.max(0, Math.floor((msLeft % 86400000) / 3600000));
+            const urgentClass = daysLeft < 2 ? ' urgent' : '';
+            const countdownText = daysLeft > 0
+                ? `⏱ ${daysLeft}d ${hoursLeft}h remaining`
+                : hoursLeft > 0 ? `⏱ ${hoursLeft}h remaining` : '⏱ Ending soon!';
+            document.getElementById('weeklyCountdown').innerHTML =
+                `<span class="countdown-badge${urgentClass}">${countdownText}</span>`;
+
+            const allWeekly = leaderboardData.filter(entry => {
                 if (entry.course !== WEEKLY_CHALLENGE_COURSE) return false;
                 if (!entry.game || !entry.game.includes(WEEKLY_GAME_YEAR)) return false;
-                const entryDate = parseDate(entry.date);
-                if (!entryDate) return false;
-                return entryDate >= weekStart && entryDate <= weekEnd;
+                const d = parseDate(entry.date);
+                return d && d >= weekStart && d <= weekEnd;
             });
 
-            const playerBestScores = {};
-            allWeeklyEntries.forEach(entry => {
-                const player = entry.username || 'Unknown';
-                const score = parseInt(entry.total_score, 10);
-                if (isNaN(score)) return;
-                if (!playerBestScores[player] || score < parseInt(playerBestScores[player].total_score, 10)) {
-                    playerBestScores[player] = entry;
-                }
+            const best = {};
+            allWeekly.forEach(entry => {
+                const p = entry.username || 'Unknown';
+                const s = parseInt(entry.total_score, 10);
+                if (isNaN(s)) return;
+                if (!best[p] || s < parseInt(best[p].total_score, 10)) best[p] = entry;
             });
 
-            const weeklyEntries = Object.values(playerBestScores);
-            weeklyEntries.sort((a, b) => {
-                const scoreA = parseInt(a.total_score, 10) || 999;
-                const scoreB = parseInt(b.total_score, 10) || 999;
-                return scoreA - scoreB;
-            });
+            const weekly = Object.values(best).sort((a, b) =>
+                (parseInt(a.total_score, 10) || 999) - (parseInt(b.total_score, 10) || 999));
 
             const container = document.getElementById('weeklyContent');
-            if (weeklyEntries.length === 0) {
-                container.innerHTML = `
-                    <div class="no-data">
-                        <p style="font-size: 1.5em; margin-bottom: 1rem;">No entries yet for this week's challenge!</p>
-                        <p>Be the first to play <strong style="color: var(--primary-orange);">Alpine Run</strong> and submit your score.</p>
-                    </div>
-                `;
+            if (!weekly.length) {
+                container.innerHTML = `<div class="no-data">
+                    <p style="font-size:1.5em;margin-bottom:1rem;">No entries yet for this week's challenge!</p>
+                    <p>Be the first to play <strong style="color:var(--primary-orange);">Alpine Run</strong> and submit your score.</p>
+                </div>`;
                 return;
             }
 
             let html = `
-                <div style="text-align: center; margin-bottom: 2rem; padding: 1.5rem; background: var(--medium-gray); border-radius: 10px; border: 2px solid var(--primary-orange);">
-                    <h3 style="color: var(--primary-orange); margin-bottom: 0.5rem;">Current Week's Challenge</h3>
-                    <p style="font-size: 1.2em;"><strong>Alpine Run</strong></p>
-                    <p style="font-size: 0.9em; opacity: 0.8;">${weeklyEntries.length} player${weeklyEntries.length === 1 ? '' : 's'} competing this week</p>
+                <div style="text-align:center;margin-bottom:2rem;padding:1.5rem;background:var(--medium-gray);border-radius:10px;border:2px solid var(--primary-orange);">
+                    <h3 style="color:var(--primary-orange);margin-bottom:0.5rem;">Current Week's Challenge</h3>
+                    <p style="font-size:1.2em;"><strong>Alpine Run</strong></p>
+                    <p style="font-size:0.9em;opacity:0.8;">${weekly.length} player${weekly.length === 1 ? '' : 's'} competing this week</p>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Player</th>
-                            <th>Score</th>
-                            <th>Total</th>
-                            <th>Date</th>
-                            <th>Video</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
+                <table><thead><tr><th>Rank</th><th>Player</th><th>Score</th><th>Total</th><th>Date</th><th>Video</th></tr></thead><tbody>`;
 
-            weeklyEntries.forEach((entry, index) => {
-                const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
-                const dateObj = parseDate(entry.date);
-                const dateStr = dateObj ? dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : 'N/A';
-
-                html += `
-                    <tr onclick='showScorecard(${JSON.stringify(entry).replace(/'/g, "&apos;")})' style="cursor: pointer;">
-                        <td><span class="rank ${rankClass}">#${index + 1}</span></td>
-                        <td><span class="player-name">${entry.username || 'Unknown'}</span></td>
-                        <td><span class="score-highlight">${entry.score_vs_par || 'E'}</span></td>
-                        <td>${entry.total_score || 'N/A'}</td>
-                        <td>${dateStr}</td>
-                        <td>${entry.youtube_video ? '<span class="video-icon">📹</span>' : ''}</td>
-                    </tr>
-                `;
+            weekly.forEach((entry, i) => {
+                const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : '';
+                const d = parseDate(entry.date);
+                const dateStr = d ? d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : 'N/A';
+                html += `<tr onclick='showScorecard(${JSON.stringify(entry).replace(/'/g, "&apos;")})'>
+                    <td><span class="rank ${rankClass}">#${i + 1}</span></td>
+                    <td><span class="player-name">${entry.username || 'Unknown'}</span></td>
+                    <td>${scoreSpan(entry.score_vs_par)}</td>
+                    <td>${entry.total_score || 'N/A'}</td>
+                    <td>${dateStr}</td>
+                    <td>${entry.youtube_video ? '<span class="video-icon">📹</span>' : ''}</td>
+                </tr>`;
             });
-
             html += '</tbody></table>';
             container.innerHTML = html;
         }
 
+        /* ── Stats ── */
         function updateStats() {
             const players = new Set(leaderboardData.map(e => e.username)).size;
-            const rounds = leaderboardData.length;
-            const videos = leaderboardData.filter(e => e.youtube_video).length;
-            let bestEntry = null;
-            let bestScoreValue = 999;
+            const rounds  = leaderboardData.length;
+            const videos  = leaderboardData.filter(e => e.youtube_video).length;
+            let bestEntry = null, bestScoreValue = 999;
 
-            leaderboardData.forEach(entry => {
-                const score = parseInt(entry.total_score, 10);
-                if (!isNaN(score) && score < bestScoreValue) {
-                    bestScoreValue = score;
-                    bestEntry = entry;
-                }
+            leaderboardData.filter(e => e.game && /^golden tee/i.test(e.game)).forEach(entry => {
+                const s = parseInt(entry.total_score, 10);
+                if (!isNaN(s) && s < bestScoreValue) { bestScoreValue = s; bestEntry = entry; }
             });
 
             document.getElementById('totalPlayers').textContent = players;
-            document.getElementById('totalRounds').textContent = rounds;
-            document.getElementById('totalVideos').textContent = videos;
+            document.getElementById('totalRounds').textContent  = rounds;
+            document.getElementById('totalVideos').textContent  = videos;
 
             if (bestEntry) {
                 bestRoundEntry = bestEntry;
                 document.getElementById('bestScore').textContent = bestEntry.score_vs_par || 'E';
                 document.getElementById('bestScoreDetails').innerHTML = `
-                    <strong style="color: var(--primary-orange); font-size: 1.2em;">Best Round</strong><br>
+                    <strong style="color:var(--primary-orange);font-size:1.2em;">Best Round</strong><br>
                     ${bestEntry.username || 'Unknown'}<br>
                     ${bestEntry.course || 'Unknown Course'}<br>
-                    (${bestEntry.total_score})
-                `;
+                    (${bestEntry.total_score})`;
             }
         }
 
+        /* ── Players ── */
         function showPlayers() {
-            const playersMap = {};
+            const map = {};
             leaderboardData.forEach(entry => {
-                const player = entry.username || 'Unknown';
-                const score = parseInt(entry.total_score, 10);
-                if (!playersMap[player]) {
-                    playersMap[player] = { name: player, bestScore: 999, bestEntry: null, totalRounds: 0 };
-                }
-                playersMap[player].totalRounds++;
-                if (!isNaN(score) && score < playersMap[player].bestScore) {
-                    playersMap[player].bestScore = score;
-                    playersMap[player].bestEntry = entry;
-                }
+                const p = entry.username || 'Unknown';
+                const s = parseInt(entry.total_score, 10);
+                if (!map[p]) map[p] = { name: p, bestScore: 999, bestEntry: null, totalRounds: 0 };
+                map[p].totalRounds++;
+                if (!isNaN(s) && s < map[p].bestScore) { map[p].bestScore = s; map[p].bestEntry = entry; }
             });
 
-            const players = Object.values(playersMap).filter(p => p.bestEntry).sort((a, b) => a.bestScore - b.bestScore);
+            const players = Object.values(map).filter(p => p.bestEntry)
+                .sort((a, b) => a.bestScore - b.bestScore);
             const container = document.getElementById('playersContent');
-            if (players.length === 0) {
-                container.innerHTML = '<div class="no-data">No players found</div>';
-                return;
-            }
+            if (!players.length) { container.innerHTML = '<div class="no-data">No players found</div>'; return; }
 
             let html = '';
-            players.forEach((player, index) => {
+            players.forEach((player, i) => {
                 const entry = player.bestEntry;
-                const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
-                html += `
-                    <div class="player-card">
-                        <div class="player-header">
-                            <div class="player-rank ${rankClass}">#${index + 1}</div>
-                            <div class="player-details">
-                                <h3>${player.name}</h3>
-                                <div class="player-stats">
-                                    <span><strong>Best Score:</strong> <span class="score-highlight">${entry.score_vs_par || 'E'}</span> (${entry.total_score})</span>
-                                    <span><strong>Course:</strong> ${entry.course || 'Unknown'}</span>
-                                    <span><strong>Rounds Played:</strong> ${player.totalRounds}</span>
-                                </div>
+                const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : '';
+                html += `<div class="player-card">
+                    <div class="player-header">
+                        <div class="player-rank ${rankClass}">#${i + 1}</div>
+                        <div class="player-details">
+                            <h3>${player.name}</h3>
+                            <div class="player-stats">
+                                <span><strong>Best Score:</strong> ${scoreSpan(entry.score_vs_par)} (${entry.total_score})</span>
+                                <span><strong>Course:</strong> ${entry.course || 'Unknown'}</span>
+                                <span><strong>Rounds Played:</strong> ${player.totalRounds}</span>
                             </div>
-                        </div>
-                        <div class="scorecard-video-grid">
-                            <div class="scorecard-compact">
-                                <h4 style="color: var(--primary-orange); margin-bottom: 1rem;">Best Round Scorecard</h4>
-                                ${buildCompactScorecard(entry)}
-                            </div>
-                            ${entry.youtube_embed ? `
-                                <div>
-                                    <h4 style="color: var(--primary-orange); margin-bottom: 1rem;">Video Preview</h4>
-                                    <div class="video-container">
-                                        <iframe src="${entry.youtube_embed}" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            ` : '<div style="display: flex; align-items: center; justify-content: center; opacity: 0.5;">No video available</div>'}
                         </div>
                     </div>
-                `;
+                    <div class="scorecard-video-grid">
+                        <div class="scorecard-compact">
+                            <h4 style="color:var(--primary-orange);margin-bottom:1rem;">Best Round Scorecard</h4>
+                            ${buildCompactScorecard(entry)}
+                        </div>
+                        ${entry.youtube_embed ? `<div>
+                            <h4 style="color:var(--primary-orange);margin-bottom:1rem;">Video Preview</h4>
+                            <div class="video-container">
+                                <iframe src="${entry.youtube_embed}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>` : '<div style="display:flex;align-items:center;justify-content:center;opacity:0.5;">No video available</div>'}
+                    </div>
+                </div>`;
             });
             container.innerHTML = html;
         }
 
         function buildCompactScorecard(entry) {
-            if (!entry.players || entry.players.length === 0) return '<p>No scorecard data available</p>';
+            if (!entry.players || !entry.players.length) return '<p>No scorecard data available</p>';
             const player = entry.players[0];
-            const scores = player.scores;
-            const pars = entry.pars;
-            const holes = entry.holes || [];
-            let holeHeaders = [];
-            let dataIndices = [];
+            const scores = player.scores, pars = entry.pars, holes = entry.holes || [];
+            const holeHeaders = [], dataIndices = [];
             for (let i = 1; i < holes.length; i++) {
                 if (holes[i] && !isNaN(parseInt(holes[i], 10))) {
-                    holeHeaders.push(holes[i]);
-                    dataIndices.push(i - 1);
+                    holeHeaders.push(holes[i]); dataIndices.push(i - 1);
                 }
             }
-            if (dataIndices.length === 0) return '<p>No hole data available</p>';
+            if (!dataIndices.length) return '<p>No hole data available</p>';
             let html = '<table><thead><tr><th>Hole</th>';
             holeHeaders.forEach(h => html += `<th>${h}</th>`);
             html += '<th>Total</th></tr></thead><tbody>';
-            if (pars && pars.length > 0) {
+            if (pars && pars.length) {
                 html += '<tr><td><strong>Par</strong></td>';
                 dataIndices.forEach(i => html += `<td>${pars[i] || '-'}</td>`);
                 html += `<td><strong>${entry.score_vs_par || 'E'}</strong></td></tr>`;
             }
             html += '<tr><td><strong>Score</strong></td>';
             dataIndices.forEach(i => {
-                const score = scores[i] || '-';
-                const par = pars && pars[i] ? parseInt(pars[i], 10) : null;
-                const scoreNum = parseInt(score, 10);
+                const score = scores[i] || '-', par = pars && pars[i] ? parseInt(pars[i], 10) : null;
+                const n = parseInt(score, 10);
                 let style = '';
-                if (!isNaN(scoreNum) && par !== null) {
-                    if (scoreNum === 1) style = 'color: #FFD700; font-weight: bold;';
+                if (!isNaN(n) && par !== null) {
+                    if (n === 1) style = 'color:#FFD700;font-weight:bold;';
                     else {
-                        const diff = scoreNum - par;
-                        if (diff <= -2) style = 'color: #00BFFF; font-weight: bold;';
-                        else if (diff === -1) style = 'color: #00FF00; font-weight: bold;';
-                        else if (diff > 0) style = 'color: #FF0000; font-weight: bold;';
+                        const diff = n - par;
+                        if (diff <= -2) style = 'color:#00BFFF;font-weight:bold;';
+                        else if (diff === -1) style = 'color:var(--score-under);font-weight:bold;';
+                        else if (diff > 0)  style = 'color:var(--score-over);font-weight:bold;';
                     }
                 }
                 html += `<td style="${style}">${score}</td>`;
@@ -888,198 +1006,193 @@
             return html;
         }
 
+        /* ── Courses ── */
         function showCourses() {
-            const coursesMap = {};
+            const map = {};
             leaderboardData.forEach(entry => {
-                const course = entry.course;
-                if (!course) return;
-                if (!coursesMap[course]) coursesMap[course] = { name: course, bestScore: 999, bestEntry: null };
-                const score = parseInt(entry.total_score, 10);
-                if (!isNaN(score) && score < coursesMap[course].bestScore) {
-                    coursesMap[course].bestScore = score;
-                    coursesMap[course].bestEntry = entry;
-                }
+                const c = entry.course; if (!c) return;
+                if (!map[c]) map[c] = { name: c, bestScore: 999, bestEntry: null };
+                const s = parseInt(entry.total_score, 10);
+                if (!isNaN(s) && s < map[c].bestScore) { map[c].bestScore = s; map[c].bestEntry = entry; }
             });
-            const courses = Object.values(coursesMap).sort((a, b) => a.name.localeCompare(b.name));
+            const courses = Object.values(map).sort((a, b) => a.name.localeCompare(b.name));
             const container = document.getElementById('coursesContent');
-            if (courses.length === 0) {
-                container.innerHTML = '<div class="no-data">No courses found</div>';
-                return;
-            }
+            if (!courses.length) { container.innerHTML = '<div class="no-data">No courses found</div>'; return; }
             let html = `<table><thead><tr><th>Course Name</th><th>Best Score</th><th>Player</th><th>Best Video</th></tr></thead><tbody>`;
             courses.forEach(course => {
-                const entry = course.bestEntry;
-                const hasVideo = entry && entry.youtube_video;
-                html += `
-                    <tr ${hasVideo ? `onclick='showScorecard(${JSON.stringify(entry).replace(/'/g, "&apos;")})'` : ''} style="${hasVideo ? 'cursor: pointer;' : ''}">
-                        <td><strong style="color: #ffffff;">${course.name}</strong></td>
-                        <td><span class="score-highlight">${entry?.score_vs_par || 'N/A'}</span> (${entry?.total_score || 'N/A'})</td>
-                        <td><span class="player-name">${entry?.username || 'Unknown'}</span></td>
-                        <td>${hasVideo ? `<a href="${entry.youtube_video}" target="_blank" onclick="event.stopPropagation()" style="color: var(--primary-orange); text-decoration: none;">🎬 Watch</a>` : '<span style="opacity: 0.5;">No video</span>'}</td>
-                    </tr>`;
+                const entry = course.bestEntry, hasVideo = entry && entry.youtube_video;
+                html += `<tr ${hasVideo ? `onclick='showScorecard(${JSON.stringify(entry).replace(/'/g, "&apos;")})' style="cursor:pointer;"` : ''}>
+                    <td><strong style="color:#fff;">${course.name}</strong></td>
+                    <td>${scoreSpan(entry?.score_vs_par)} (${entry?.total_score || 'N/A'})</td>
+                    <td><span class="player-name">${entry?.username || 'Unknown'}</span></td>
+                    <td>${hasVideo
+                        ? `<a href="${entry.youtube_video}" target="_blank" onclick="event.stopPropagation()" style="color:var(--primary-orange);text-decoration:none;">🎬 Watch</a>`
+                        : '<span style="opacity:0.5;">No video</span>'
+                    }</td>
+                </tr>`;
             });
             html += '</tbody></table>';
             container.innerHTML = html;
         }
 
+        /* ── Videos — card grid ── */
         function showVideos() {
-            const videoEntries = leaderboardData.filter(entry => entry.youtube_video).sort((a, b) => (parseInt(a.total_score, 10) || 999) - (parseInt(b.total_score, 10) || 999));
+            const entries = leaderboardData
+                .filter(e => e.youtube_video)
+                .sort((a, b) => (parseInt(a.total_score, 10) || 999) - (parseInt(b.total_score, 10) || 999));
             const container = document.getElementById('videosContent');
-            if (videoEntries.length === 0) {
-                container.innerHTML = '<div class="no-data">No video submissions yet</div>';
-                return;
-            }
-            let html = `<table><thead><tr><th>Rank</th><th>Player</th><th>Game</th><th>Course</th><th>Score</th><th>Video</th></tr></thead><tbody>`;
-            videoEntries.forEach((entry, index) => {
-                const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
-                html += `
-                    <tr onclick='showVideoModal(${JSON.stringify(entry).replace(/'/g, "&apos;")})' style="cursor: pointer;">
-                        <td><span class="rank ${rankClass}">#${index + 1}</span></td>
-                        <td><span class="player-name">${entry.username || 'Unknown'}</span></td>
-                        <td>${entry.game || 'Unknown'}</td>
-                        <td>${entry.course || 'Unknown'}</td>
-                        <td><span class="score-highlight">${entry.score_vs_par || 'E'}</span> (${entry.total_score || 'N/A'})</td>
-                        <td><a href="${entry.youtube_video}" target="_blank" onclick="event.stopPropagation()" style="color: var(--primary-orange); text-decoration: none;">🎬 Watch</a></td>
-                    </tr>`;
+            if (!entries.length) { container.innerHTML = '<div class="no-data">No video submissions yet</div>'; return; }
+
+            let html = '<div class="video-grid">';
+            entries.forEach((entry, i) => {
+                const thumb = ytThumb(entry.youtube_video);
+                const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : '';
+                const imgHtml = thumb
+                    ? `<img src="${thumb}" alt="Thumbnail" loading="lazy">`
+                    : `<div style="width:100%;aspect-ratio:16/9;background:var(--light-gray);display:flex;align-items:center;justify-content:center;font-size:2em;">🎬</div>`;
+                html += `<div class="video-card" onclick='showScorecard(${JSON.stringify(entry).replace(/'/g, "&apos;")})'>
+                    <div class="video-thumbnail-wrapper">
+                        ${imgHtml}
+                        <span class="video-rank-badge ${rankClass}">#${i + 1}</span>
+                        <div class="play-overlay">▶</div>
+                    </div>
+                    <div class="video-card-info">
+                        <div class="vc-player">${entry.username || 'Unknown'}</div>
+                        <div class="vc-course">${entry.course || 'Unknown Course'}</div>
+                        <div class="vc-meta">
+                            <span style="font-size:0.8em;opacity:0.7;">${entry.game || ''}</span>
+                            ${scoreSpan(entry.score_vs_par)}
+                        </div>
+                    </div>
+                </div>`;
             });
-            html += '</tbody></table>';
+            html += '</div>';
             container.innerHTML = html;
         }
 
+        /* ── Last Updated ── */
         function showLastUpdated() {
-            const dates = leaderboardData
-                .map(e => e.scraped_at)
-                .filter(Boolean)
-                .sort()
-                .reverse();
+            const dates = leaderboardData.map(e => e.scraped_at).filter(Boolean).sort().reverse();
             if (!dates.length) return;
             const d = new Date(dates[0]);
             if (isNaN(d.getTime())) return;
             const el = document.getElementById('lastUpdated');
-            if (el) el.textContent = 'Data updated: ' + d.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
+            if (el) el.textContent = 'Data updated: ' + d.toLocaleString('en-US',
+                { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
         }
 
-        function showVideoModal(entry) { showScorecard(entry); }
-        function showJoinModal() { document.getElementById('joinModal').classList.add('active'); }
-        function closeJoinModal() { document.getElementById('joinModal').classList.remove('active'); }
+        /* ── Spotlight ── */
         function showRandomSpotlight() {
-            const videoEntries = leaderboardData.filter(entry => entry.youtube_embed);
-            if (videoEntries.length === 0) {
+            const entries = leaderboardData.filter(e => e.youtube_embed);
+            if (!entries.length) {
                 document.getElementById('spotlightContent').innerHTML = '<div class="no-data">No videos available</div>';
                 return;
             }
-            const randomEntry = videoEntries[Math.floor(Math.random() * videoEntries.length)];
+            const e = entries[Math.floor(Math.random() * entries.length)];
             document.getElementById('spotlightContent').innerHTML = `
-                <div class="video-container"><iframe src="${randomEntry.youtube_embed}" frameborder="0" allowfullscreen></iframe></div>
-                <div class="spotlight-info"><span class="player-name">${randomEntry.username || 'Unknown'}</span> on ${randomEntry.course || 'Unknown Course'}<br>Score: <strong style="color: var(--primary-orange)">${randomEntry.score_vs_par || 'E'}</strong> (${randomEntry.total_score || 'N/A'})</div>`;
+                <div class="video-container"><iframe src="${e.youtube_embed}" frameborder="0" allowfullscreen></iframe></div>
+                <div class="spotlight-info">
+                    <span class="player-name">${e.username || 'Unknown'}</span> on ${e.course || 'Unknown Course'}<br>
+                    Score: <strong style="color:var(--primary-orange)">${e.score_vs_par || 'E'}</strong> (${e.total_score || 'N/A'})
+                </div>`;
         }
 
+        /* ── Leaderboard tabs ── */
         function initializeLeaderboards() {
-            const availableGames = [...new Set(leaderboardData.map(entry => entry.game))];
-            
-            const targetOrder = [
-                'Golden Tee Unplugged 2018',
-                'Golden Tee Live 2018',
-                'Golden Tee Unplugged 2017',
-                'Golden Tee Live 2017',
-                'Golden Tee Unplugged 2016',
-                'Golden Tee Live 2016',
-                'Golden Tee Live 2007',
-                'Golden Tee Live 2006',
-                'Power Putt Live 2013'
+            const available = [...new Set(leaderboardData.map(e => e.game))];
+            const order = [
+                'Golden Tee Unplugged 2019','Golden Tee Live 2019',
+                'Golden Tee Unplugged 2018','Golden Tee Live 2018',
+                'Golden Tee Unplugged 2017','Golden Tee Live 2017',
+                'Golden Tee Unplugged 2016','Golden Tee Live 2016',
+                'Golden Tee Live 2007','Golden Tee Live 2006','Power Putt Live 2013'
             ];
-
-            const filteredGames = targetOrder.filter(gameName => availableGames.includes(gameName));
-            createTabs(filteredGames);
-            if (filteredGames.length > 0) showGame(filteredGames[0]);
+            const games = order.filter(g => available.includes(g));
+            createTabs(games);
+            if (games.length) showGame(games[0]);
         }
 
         function createTabs(games) {
-            const tabsContainer = document.getElementById('gameTabs');
-            tabsContainer.innerHTML = '';
+            const c = document.getElementById('gameTabs');
+            c.innerHTML = '';
             games.forEach(game => {
-                const tab = document.createElement('button');
-                tab.className = 'tab';
-                tab.textContent = game;
-                tab.onclick = () => showGame(game);
-                tabsContainer.appendChild(tab);
+                const btn = document.createElement('button');
+                btn.className = 'tab';
+                btn.textContent = game;
+                btn.onclick = () => showGame(game);
+                c.appendChild(btn);
             });
         }
 
         function showGame(game) {
-            document.querySelectorAll('.tab').forEach(tab => tab.classList.toggle('active', tab.textContent === game));
-            const entries = leaderboardData.filter(entry => entry.game === game).sort((a, b) => (parseInt(a.total_score, 10) || 999) - (parseInt(b.total_score, 10) || 999)).slice(0, 10);
+            document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.textContent === game));
+            const entries = leaderboardData.filter(e => e.game === game)
+                .sort((a, b) => (parseInt(a.total_score, 10) || 999) - (parseInt(b.total_score, 10) || 999))
+                .slice(0, 10);
             displayLeaderboard(entries);
         }
 
         function displayLeaderboard(entries) {
             const container = document.getElementById('leaderboardContent');
-            if (entries.length === 0) {
-                container.innerHTML = '<div class="no-data">No entries found</div>';
-                return;
-            }
+            if (!entries.length) { container.innerHTML = '<div class="no-data">No entries found</div>'; return; }
             let html = `<table><thead><tr><th>Rank</th><th>Player</th><th>Course</th><th>Score</th><th>Total</th><th>Video</th></tr></thead><tbody>`;
-            entries.forEach((entry, index) => {
-                const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
-                html += `
-                    <tr onclick='showScorecard(${JSON.stringify(entry).replace(/'/g, "&apos;")})'>
-                        <td><span class="rank ${rankClass}">#${index + 1}</span></td>
-                        <td><span class="player-name">${entry.username || 'Unknown'}</span></td>
-                        <td>${entry.course || 'Unknown'}</td>
-                        <td><span class="score-highlight">${entry.score_vs_par || 'E'}</span></td>
-                        <td>${entry.total_score || 'N/A'}</td>
-                        <td>${entry.youtube_video ? '<span class="video-icon">📹</span>' : ''}</td>
-                    </tr>`;
+            entries.forEach((entry, i) => {
+                const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : '';
+                html += `<tr onclick='showScorecard(${JSON.stringify(entry).replace(/'/g, "&apos;")})'>
+                    <td><span class="rank ${rankClass}">#${i + 1}</span></td>
+                    <td><span class="player-name">${entry.username || 'Unknown'}</span></td>
+                    <td>${entry.course || 'Unknown'}</td>
+                    <td>${scoreSpan(entry.score_vs_par)}</td>
+                    <td>${entry.total_score || 'N/A'}</td>
+                    <td>${entry.youtube_video ? '<span class="video-icon">📹</span>' : ''}</td>
+                </tr>`;
             });
             html += '</tbody></table>';
             container.innerHTML = html;
         }
 
+        /* ── Scorecard modal ── */
         function showScorecard(entry) {
-            const modal = document.getElementById('scorecardModal');
             const content = document.getElementById('modalContent');
-            let html = `<h2 style="color: var(--primary-orange)">${entry.game}</h2><h3>${entry.username || 'Unknown'} - ${entry.course || 'Unknown'}</h3><p style="font-size: 1.3em; margin: 1rem 0;"><strong style="color: var(--primary-orange); font-size: 1.5em;">${entry.score_vs_par || 'E'}</strong><span style="opacity: 0.7;">(${entry.total_score || 'N/A'})</span> | ${entry.date || 'Unknown date'}</p>`;
+            let html = `<h2 style="color:var(--primary-orange)">${entry.game}</h2>
+                <h3>${entry.username || 'Unknown'} – ${entry.course || 'Unknown'}</h3>
+                <p style="font-size:1.3em;margin:1rem 0;">
+                    <strong style="font-size:1.5em;">${scoreSpan(entry.score_vs_par)}</strong>
+                    <span style="opacity:0.7;"> (${entry.total_score || 'N/A'})</span> | ${entry.date || 'Unknown date'}
+                </p>`;
             if (entry.youtube_embed) html += `<div class="video-container"><iframe src="${entry.youtube_embed}" frameborder="0" allowfullscreen></iframe></div>`;
-            if (entry.players && entry.players.length > 0) html += buildScorecardTable(entry);
+            if (entry.players && entry.players.length) html += buildScorecardTable(entry);
             content.innerHTML = html;
-            modal.classList.add('active');
+            document.getElementById('scorecardModal').classList.add('active');
         }
 
         function buildScorecardTable(entry) {
-            const player = entry.players[0];
-            const scores = player.scores;
-            const pars = entry.pars;
-            const holes = entry.holes || [];
-            let holeHeaders = [];
-            let dataIndices = [];
+            const player = entry.players[0], scores = player.scores, pars = entry.pars, holes = entry.holes || [];
+            const holeHeaders = [], dataIndices = [];
             for (let i = 1; i < holes.length; i++) {
-                if (holes[i] && !isNaN(parseInt(holes[i], 10))) {
-                    holeHeaders.push(holes[i]);
-                    dataIndices.push(i - 1);
-                }
+                if (holes[i] && !isNaN(parseInt(holes[i], 10))) { holeHeaders.push(holes[i]); dataIndices.push(i - 1); }
             }
-            if (dataIndices.length === 0) return '';
+            if (!dataIndices.length) return '';
             let html = '<div class="scorecard-table"><table><thead><tr><th>Hole</th>';
             holeHeaders.forEach(h => html += `<th>${h}</th>`);
             html += '<th>Total</th></tr></thead><tbody>';
-            if (pars && pars.length > 0) {
+            if (pars && pars.length) {
                 html += '<tr><td><strong>Par</strong></td>';
                 dataIndices.forEach(i => html += `<td>${pars[i] || '-'}</td>`);
                 html += `<td><strong>${entry.score_vs_par || 'E'}</strong></td></tr>`;
             }
             html += '<tr><td><strong>Score</strong></td>';
             dataIndices.forEach(i => {
-                const score = scores[i] || '-';
-                const par = pars && pars[i] ? parseInt(pars[i], 10) : null;
-                const scoreNum = parseInt(score, 10);
+                const score = scores[i] || '-', par = pars && pars[i] ? parseInt(pars[i], 10) : null;
+                const n = parseInt(score, 10);
                 let style = '';
-                if (!isNaN(scoreNum) && par !== null) {
-                    if (scoreNum === 1) style = 'color: #FFD700; font-weight: bold;';
+                if (!isNaN(n) && par !== null) {
+                    if (n === 1) style = 'color:#FFD700;font-weight:bold;';
                     else {
-                        const diff = scoreNum - par;
-                        if (diff <= -2) style = 'color: #00BFFF; font-weight: bold;';
-                        else if (diff === -1) style = 'color: #00FF00; font-weight: bold;';
-                        else if (diff > 0) style = 'color: #FF0000; font-weight: bold;';
+                        const diff = n - par;
+                        if (diff <= -2) style = 'color:#00BFFF;font-weight:bold;';
+                        else if (diff === -1) style = 'color:var(--score-under);font-weight:bold;';
+                        else if (diff > 0)  style = 'color:var(--score-over);font-weight:bold;';
                     }
                 }
                 html += `<td style="${style}">${score}</td>`;
@@ -1088,7 +1201,11 @@
             return html;
         }
 
+        function showVideoModal(entry) { showScorecard(entry); }
         function closeModal() { document.getElementById('scorecardModal').classList.remove('active'); }
+        function showJoinModal() { document.getElementById('joinModal').classList.add('active'); }
+        function closeJoinModal() { document.getElementById('joinModal').classList.remove('active'); }
+
         document.getElementById('scorecardModal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
         document.getElementById('joinModal').addEventListener('click', function(e) { if (e.target === this) closeJoinModal(); });
     </script>
