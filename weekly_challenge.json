@@ -1,0 +1,400 @@
+{
+  "season_config": {
+    "first_season_start": "2026-06-26",
+    "weeks_per_season": 6
+  },
+  "forced_next_course": "Volcano Palms",
+  "current_season": {
+    "number": 0,
+    "week": 0
+  },
+  "season_standings": {},
+  "seasons": [],
+  "current": {
+    "course": "Laurel Park",
+    "game": "Golden Tee Unplugged 2019",
+    "game_year": "2019",
+    "season": 0,
+    "season_week": 0,
+    "start": "2026-06-19T16:00:00",
+    "end": "2026-06-26T16:00:00",
+    "deadline_text": "Friday, June 26th @ 12:00 PM ET"
+  },
+  "history": [
+    {
+      "week_start": "2026-06-12",
+      "course": "Alpine Run",
+      "game": "Golden Tee Unplugged 2018",
+      "start": "2026-06-12T16:00:00",
+      "end": "2026-06-19T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-14",
+          "total_score": "58",
+          "date": "Jun 14"
+        },
+        {
+          "rank": 2,
+          "player": "ed20910",
+          "score_vs_par": "-11",
+          "total_score": "61",
+          "date": "Jun 13"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "-8",
+          "total_score": "64",
+          "date": "Jun 15"
+        },
+        {
+          "rank": 4,
+          "player": "KeenCobra",
+          "score_vs_par": "-5",
+          "total_score": "67",
+          "date": "Jun 14"
+        }
+      ],
+      "winner": "vpfiends"
+    },
+    {
+      "week_start": "2026-06-05",
+      "course": "Antelope Pass",
+      "game": "Golden Tee Unplugged 2018",
+      "start": "2026-06-05T16:00:00",
+      "end": "2026-06-12T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "ed20910",
+          "score_vs_par": "-12",
+          "total_score": "60",
+          "date": "Jun 7"
+        },
+        {
+          "rank": 2,
+          "player": "vpfiends",
+          "score_vs_par": "-10",
+          "total_score": "62",
+          "date": "Jun 8"
+        },
+        {
+          "rank": 3,
+          "player": "LynnInDenver",
+          "score_vs_par": "-7",
+          "total_score": "65",
+          "date": "Jun 6"
+        },
+        {
+          "rank": 4,
+          "player": "dreaddazzman",
+          "score_vs_par": "-4",
+          "total_score": "68",
+          "date": "Jun 9"
+        }
+      ],
+      "winner": "ed20910"
+    },
+    {
+      "week_start": "2026-05-29",
+      "course": "Beals Creek",
+      "game": "Golden Tee Unplugged 2018",
+      "start": "2026-05-29T16:00:00",
+      "end": "2026-06-05T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "Paladin242",
+          "score_vs_par": "-11",
+          "total_score": "61",
+          "date": "Jun 2"
+        },
+        {
+          "rank": 2,
+          "player": "KeenCobra",
+          "score_vs_par": "-9",
+          "total_score": "63",
+          "date": "Jun 1"
+        },
+        {
+          "rank": 3,
+          "player": "vpfiends",
+          "score_vs_par": "-8",
+          "total_score": "64",
+          "date": "May 31"
+        },
+        {
+          "rank": 4,
+          "player": "ed20910",
+          "score_vs_par": "-6",
+          "total_score": "66",
+          "date": "Jun 3"
+        },
+        {
+          "rank": 5,
+          "player": "intelekt",
+          "score_vs_par": "-3",
+          "total_score": "69",
+          "date": "Jun 4"
+        }
+      ],
+      "winner": "Paladin242"
+    },
+    {
+      "week_start": "2026-05-22",
+      "course": "Bear Lodge",
+      "game": "Golden Tee Unplugged 2018",
+      "start": "2026-05-22T16:00:00",
+      "end": "2026-05-29T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-13",
+          "total_score": "59",
+          "date": "May 25"
+        },
+        {
+          "rank": 2,
+          "player": "dreaddazzman",
+          "score_vs_par": "-10",
+          "total_score": "62",
+          "date": "May 24"
+        },
+        {
+          "rank": 3,
+          "player": "ed20910",
+          "score_vs_par": "-8",
+          "total_score": "64",
+          "date": "May 26"
+        },
+        {
+          "rank": 4,
+          "player": "DaaxPlays",
+          "score_vs_par": "-4",
+          "total_score": "68",
+          "date": "May 27"
+        }
+      ],
+      "winner": "vpfiends"
+    },
+    {
+      "week_start": "2026-05-15",
+      "course": "Bella Toscana",
+      "game": "Golden Tee Unplugged 2018",
+      "start": "2026-05-15T16:00:00",
+      "end": "2026-05-22T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "KeenCobra",
+          "score_vs_par": "-9",
+          "total_score": "63",
+          "date": "May 18"
+        },
+        {
+          "rank": 2,
+          "player": "Paladin242",
+          "score_vs_par": "-7",
+          "total_score": "65",
+          "date": "May 17"
+        },
+        {
+          "rank": 3,
+          "player": "LynnInDenver",
+          "score_vs_par": "-5",
+          "total_score": "67",
+          "date": "May 19"
+        },
+        {
+          "rank": 4,
+          "player": "vpfiends",
+          "score_vs_par": "-3",
+          "total_score": "69",
+          "date": "May 16"
+        },
+        {
+          "rank": 5,
+          "player": "intelekt",
+          "score_vs_par": "-1",
+          "total_score": "71",
+          "date": "May 20"
+        }
+      ],
+      "winner": "KeenCobra"
+    },
+    {
+      "week_start": "2026-05-08",
+      "course": "Calypso Key",
+      "game": "Golden Tee Unplugged 2018",
+      "start": "2026-05-08T16:00:00",
+      "end": "2026-05-15T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "ed20910",
+          "score_vs_par": "-15",
+          "total_score": "57",
+          "date": "May 11"
+        },
+        {
+          "rank": 2,
+          "player": "vpfiends",
+          "score_vs_par": "-12",
+          "total_score": "60",
+          "date": "May 12"
+        },
+        {
+          "rank": 3,
+          "player": "dreaddazzman",
+          "score_vs_par": "-9",
+          "total_score": "63",
+          "date": "May 10"
+        },
+        {
+          "rank": 4,
+          "player": "Paladin242",
+          "score_vs_par": "-6",
+          "total_score": "66",
+          "date": "May 13"
+        }
+      ],
+      "winner": "ed20910"
+    },
+    {
+      "week_start": "2026-05-01",
+      "course": "Cape Haven",
+      "game": "Golden Tee Unplugged 2018",
+      "start": "2026-05-01T16:00:00",
+      "end": "2026-05-08T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-11",
+          "total_score": "61",
+          "date": "May 4"
+        },
+        {
+          "rank": 2,
+          "player": "KeenCobra",
+          "score_vs_par": "-8",
+          "total_score": "64",
+          "date": "May 3"
+        },
+        {
+          "rank": 3,
+          "player": "ed20910",
+          "score_vs_par": "-6",
+          "total_score": "66",
+          "date": "May 5"
+        },
+        {
+          "rank": 4,
+          "player": "LynnInDenver",
+          "score_vs_par": "-2",
+          "total_score": "70",
+          "date": "May 6"
+        }
+      ],
+      "winner": "vpfiends"
+    },
+    {
+      "week_start": "2026-04-24",
+      "course": "Catedrais Beach",
+      "game": "Golden Tee Unplugged 2018",
+      "start": "2026-04-24T16:00:00",
+      "end": "2026-05-01T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "LynnInDenver",
+          "score_vs_par": "-10",
+          "total_score": "62",
+          "date": "Apr 27"
+        },
+        {
+          "rank": 2,
+          "player": "ed20910",
+          "score_vs_par": "-8",
+          "total_score": "64",
+          "date": "Apr 26"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "-6",
+          "total_score": "66",
+          "date": "Apr 28"
+        },
+        {
+          "rank": 4,
+          "player": "vpfiends",
+          "score_vs_par": "-4",
+          "total_score": "68",
+          "date": "Apr 25"
+        },
+        {
+          "rank": 5,
+          "player": "dstructv",
+          "score_vs_par": "-2",
+          "total_score": "70",
+          "date": "Apr 29"
+        }
+      ],
+      "winner": "LynnInDenver"
+    }
+  ],
+  "standings": {
+    "vpfiends": {
+      "wins": 4,
+      "top3": 7,
+      "played": 8
+    },
+    "ed20910": {
+      "wins": 2,
+      "top3": 7,
+      "played": 8
+    },
+    "Paladin242": {
+      "wins": 1,
+      "top3": 6,
+      "played": 8
+    },
+    "KeenCobra": {
+      "wins": 1,
+      "top3": 5,
+      "played": 7
+    },
+    "LynnInDenver": {
+      "wins": 1,
+      "top3": 4,
+      "played": 6
+    },
+    "dreaddazzman": {
+      "wins": 0,
+      "top3": 3,
+      "played": 5
+    },
+    "intelekt": {
+      "wins": 0,
+      "top3": 2,
+      "played": 4
+    },
+    "DaaxPlays": {
+      "wins": 0,
+      "top3": 1,
+      "played": 3
+    },
+    "dstructv": {
+      "wins": 0,
+      "top3": 1,
+      "played": 2
+    }
+  },
+  "used_courses_2019": [
+    "Laurel Park"
+  ]
+}

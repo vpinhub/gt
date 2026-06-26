@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT Ballers — Weekly Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-orange: #FF6B00;
+            --dark-orange: #CC5500;
+            --black: #000000;
+            --dark-gray: #1a1a1a;
+            --medium-gray: #2a2a2a;
+            --light-gray: #3a3a3a;
+            --text-gray: #cccccc;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--black);
+            color: var(--text-gray);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        h1, h2, h3 { font-family: 'Rajdhani', sans-serif; font-weight: 700; color: #fff; }
+        .navbar {
+            background: linear-gradient(180deg, var(--dark-gray) 0%, var(--black) 100%);
+            padding: 1rem 2rem;
+            border-bottom: 2px solid var(--primary-orange);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo { font-size: 1.4em; font-weight: 700; color: var(--primary-orange); text-decoration: none; }
+        .navbar .logo span { color: #fff; }
+        .navbar a.back { color: var(--text-gray); text-decoration: none; font-size: 0.9em; transition: color 0.2s; }
+        .navbar a.back:hover { color: var(--primary-orange); }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .card {
+            background: var(--dark-gray);
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            padding: 1.75rem;
+            margin-bottom: 2rem;
+        }
+        .card-title {
+            font-size: 1.4em;
+            color: var(--primary-orange);
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--light-gray);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        /* Current challenge info grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+        .info-item { display: flex; flex-direction: column; gap: 0.2rem; }
+        .info-label { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.6; }
+        .info-value { font-size: 1.05em; font-weight: 600; color: #fff; }
+        .info-value.highlight { color: var(--primary-orange); }
+        /* Discord message area */
+        .msg-area {
+            width: 100%;
+            min-height: 420px;
+            background: var(--medium-gray);
+            border: 2px solid var(--light-gray);
+            border-radius: 8px;
+            padding: 1rem;
+            color: var(--text-gray);
+            font-family: 'Courier New', monospace;
+            font-size: 0.88em;
+            line-height: 1.7;
+            resize: vertical;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .msg-area:focus { border-color: var(--primary-orange); }
+        .btn-row { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; align-items: center; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.65rem 1.4rem;
+            background: var(--primary-orange);
+            color: #fff;
+            border: 2px solid var(--primary-orange);
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn:hover { background: transparent; color: var(--primary-orange); }
+        .btn.secondary { background: transparent; color: var(--primary-orange); }
+        .btn.secondary:hover { background: var(--primary-orange); color: #fff; }
+        .btn.success { background: #22c55e; border-color: #22c55e; }
+        .copy-hint { font-size: 0.82em; opacity: 0.55; }
+        /* Status strip */
+        .status-strip {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.82em;
+            opacity: 0.65;
+            margin-top: 0.75rem;
+        }
+        .dot { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; flex-shrink: 0; }
+        .dot.warn { background: #f59e0b; }
+        .dot.error { background: #ef4444; }
+        /* History table */
+        table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+        th { padding: 0.65rem 0.75rem; text-align: left; color: var(--primary-orange); border-bottom: 2px solid var(--primary-orange); }
+        td { padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--light-gray); }
+        tr:hover td { background: var(--medium-gray); }
+        .rank-1 { color: #FFD700; font-weight: 700; }
+        .loading { opacity: 0.5; font-style: italic; }
+        @media (max-width: 600px) {
+            .container { padding: 1rem; }
+            .info-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">VPINHUB <span>GT Ballers</span></a>
+        <a href="index.html" class="back">← Back to leaderboard</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-title">🗓️ Current Weekly Challenge</div>
+            <div class="info-grid" id="challengeInfo">
+                <div class="loading">Loading...</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">📋 Discord Message</div>
+            <p style="font-size: 0.85em; opacity: 0.65; margin-bottom: 1rem;">
+                Generated by the weekly rollover script. Copy and paste directly into Discord.
+            </p>
+            <textarea class="msg-area" id="discordMsg" readonly spellcheck="false">Loading preview...</textarea>
+            <div class="btn-row">
+                <button class="btn" id="copyBtn" onclick="copyMessage()">📋 Copy to Clipboard</button>
+                <button class="btn secondary" onclick="selectAll()">Select All</button>
+                <span class="copy-hint" id="copyHint"></span>
+            </div>
+            <div class="status-strip" id="previewStatus"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🏆 Recent Results</div>
+            <div id="historyTable"><div class="loading">Loading...</div></div>
+        </div>
+
+    </div>
+
+    <script>
+        const bust = '?v=' + Date.now();
+
+        async function load() {
+            const [weekly, preview] = await Promise.allSettled([
+                fetch('weekly_challenge.json' + bust).then(r => r.json()),
+                fetch('discord_preview.txt' + bust).then(r => {
+                    if (!r.ok) throw new Error(`${r.status}`);
+                    return r.text();
+                }),
+            ]);
+
+            if (weekly.status === 'fulfilled') {
+                renderChallenge(weekly.value);
+                renderHistory(weekly.value);
+            } else {
+                document.getElementById('challengeInfo').innerHTML =
+                    '<span style="color:#ef4444">Could not load weekly_challenge.json</span>';
+            }
+
+            if (preview.status === 'fulfilled') {
+                const txt = preview.value.trim();
+                document.getElementById('discordMsg').value = txt;
+                setStatus('green', 'discord_preview.txt loaded — ready to copy');
+            } else {
+                document.getElementById('discordMsg').value =
+                    'No preview file found.\n\nRun the weekly-rollover.py script (or trigger the GitHub Action) to generate the Discord message.';
+                setStatus('warn', 'discord_preview.txt not found — run the rollover script to generate it');
+            }
+        }
+
+        function renderChallenge(data) {
+            const c = data.current || {};
+            const lastWeek = data.history && data.history[0];
+            const totalWeeks = data.history ? data.history.length : 0;
+
+            document.getElementById('challengeInfo').innerHTML = `
+                <div class="info-item">
+                    <span class="info-label">Current Course</span>
+                    <span class="info-value highlight">${c.course || '—'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Game</span>
+                    <span class="info-value">${c.game || '—'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Deadline</span>
+                    <span class="info-value">${c.deadline_text || '—'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Last Winner</span>
+                    <span class="info-value rank-1">${lastWeek && lastWeek.winner ? '🏆 ' + lastWeek.winner : '—'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Last Course</span>
+                    <span class="info-value">${lastWeek ? lastWeek.course : '—'}</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Weeks Completed</span>
+                    <span class="info-value">${totalWeeks}</span>
+                </div>
+            `;
+        }
+
+        function renderHistory(data) {
+            const history = data.history || [];
+            if (history.length === 0) {
+                document.getElementById('historyTable').innerHTML =
+                    '<p style="opacity:0.5">No completed weeks yet.</p>';
+                return;
+            }
+            const rows = history.slice(0, 10).map((week, i) => {
+                const weekNum = history.length - i;
+                const date = week.week_start
+                    ? new Date(week.week_start + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+                    : '—';
+                const first = week.results && week.results[0];
+                const second = week.results && week.results[1];
+                return `<tr>
+                    <td>#${weekNum}</td>
+                    <td>${date}</td>
+                    <td><strong style="color:#fff">${week.course}</strong></td>
+                    <td><span class="rank-1">${first ? '🏆 ' + first.player : '—'}</span></td>
+                    <td>${first ? first.score_vs_par + ' (' + first.total_score + ')' : '—'}</td>
+                    <td style="opacity:0.7">${second ? second.player + ' ' + second.score_vs_par : '—'}</td>
+                </tr>`;
+            }).join('');
+            document.getElementById('historyTable').innerHTML = `
+                <table>
+                    <thead><tr><th>#</th><th>Date</th><th>Course</th><th>Winner</th><th>Score</th><th>2nd Place</th></tr></thead>
+                    <tbody>${rows}</tbody>
+                </table>`;
+        }
+
+        function setStatus(level, msg) {
+            const cls = level === 'green' ? '' : level === 'warn' ? 'warn' : 'error';
+            document.getElementById('previewStatus').innerHTML =
+                `<span class="dot ${cls}"></span><span>${msg}</span>`;
+        }
+
+        function copyMessage() {
+            const ta = document.getElementById('discordMsg');
+            if (!ta.value || ta.value.startsWith('No preview')) return;
+            navigator.clipboard.writeText(ta.value).then(() => {
+                const btn = document.getElementById('copyBtn');
+                btn.textContent = '✅ Copied!';
+                btn.classList.add('success');
+                document.getElementById('copyHint').textContent = 'Paste directly into Discord';
+                setTimeout(() => {
+                    btn.textContent = '📋 Copy to Clipboard';
+                    btn.classList.remove('success');
+                    document.getElementById('copyHint').textContent = '';
+                }, 3000);
+            }).catch(() => {
+                // Fallback for browsers that block clipboard API
+                ta.select();
+                document.execCommand('copy');
+                document.getElementById('copyHint').textContent = 'Copied via fallback — paste into Discord';
+            });
+        }
+
+        function selectAll() {
+            const ta = document.getElementById('discordMsg');
+            ta.focus();
+            ta.select();
+        }
+
+        load();
+    </script>
+</body>
+</html>

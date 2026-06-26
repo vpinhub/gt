@@ -1,0 +1,219 @@
+{
+  "_instructions": "For each course, 'intro' is a Discord announcement intro (no 'Attention GT Ballers' prefix) and 'tip' is a course-specific pro-tip. Both are used by weekly-rollover.py; leave blank to fall back to the generic random pool.",
+  "Agave Ranch": {
+    "intro": "Pack your sunscreen for a trip to the arid landscapes and towering cacti of Agave Ranch. Watch out for the desert scrub and tricky rock formations as you navigate this sun-baked course.",
+    "tip": "Use plenty of backspin on the firm greens to keep your ball from rolling off the back into the desert hazards."
+  },
+  "Alpine Run": {
+    "intro": "Bundle up and prepare for massive elevation changes at Alpine Run. The crisp mountain air means your ball is going to fly beautifully, but the steep drops will test your nerve.",
+    "tip": "Factor in the severe downhill drops on your approach shots, as gravity will add significant yardage to your clubs."
+  },
+  "Antelope Pass": {
+    "intro": "Navigate the winding canyons and sheer red rock cliffs of Antelope Pass. This breathtaking southwest layout demands absolute precision off the tee to survive the narrow corridors.",
+    "tip": "Play the wind carefully through the canyon walls, as a bad gust can easily push your ball into unplayable rocky territory."
+  },
+  "Auburn Glen": {
+    "intro": "Experience the brilliant autumn foliage and challenging doglegs of Auburn Glen. The crisp fall weather provides a beautiful backdrop to a deceptively tricky woodland layout.",
+    "tip": "Stay out of the thick fallen leaves and use the rolling fairway mounds to kick your ball safely toward the pin."
+  },
+  "Beals Creek": {
+    "intro": "Navigate the dense forests and treacherous water crossings of Beals Creek. This traditional parkland course requires a steady hand and excellent course management.",
+    "tip": "Water is in play on almost every hole, so prioritize accuracy over distance off the tee to keep your scorecard clean."
+  },
+  "Bear Lodge": {
+    "intro": "Tackle the rugged wilderness and steep mountain slopes of Bear Lodge. You will need to conquer massive elevation changes and dense pine forests to shoot a low score here.",
+    "tip": "Keep your drives safely on the elevated fairways to avoid being completely blocked out by the towering mountain pines."
+  },
+  "Bella Toscana": {
+    "intro": "Take a trip to the Italian wine country with the stunning rolling hills of Bella Toscana. Don't let the beautiful vineyards distract you from the severely sloped terrain.",
+    "tip": "The greens are highly contoured, so make sure you aim for the correct tier to avoid impossible uphill putts."
+  },
+  "Calypso Key": {
+    "intro": "Enjoy the pristine beaches and crystal-clear waters of Calypso Key. This tropical paradise looks relaxing, but the ocean breezes and island greens are anything but.",
+    "tip": "Coastal winds can be fierce, so club up and keep your shots low to pierce through the gusts coming off the water."
+  },
+  "Cape Haven": {
+    "intro": "Battle the coastal gales, deep bunker traps, and lighthouse views of Cape Haven. This seaside course will test your ability to control your ball flight in heavy wind.",
+    "tip": "Use the natural slope of the coastal fairways to run your ball up to the well-protected greens."
+  },
+  "Catedrais Beach": {
+    "intro": "We are heading to Spain to play among the dramatic coastal rock arches of Catedrais Beach. The ocean waves crashing against the cliffs provide a stunning but hazardous backdrop.",
+    "tip": "You can occasionally use the natural rock walls to bounce your ball back into play if you miss the fairway, but it's a risky play."
+  },
+  "Celtic Shores": {
+    "intro": "Embrace the brutal winds and knee-high fescue of Celtic Shores. This traditional Irish links layout will punish anyone who strays off the short grass.",
+    "tip": "Avoid the devastating pot bunkers at all costs, even if it means swallowing your pride and laying up off the tee."
+  },
+  "Coral Vista": {
+    "intro": "Welcome to a tropical paradise filled with ocean hazards at Coral Vista. The bright blue water is beautiful, but it will quickly ruin your round if you get too aggressive.",
+    "tip": "Watch out for the deceptive water inlets that cut right into the fairways, requiring precise carry distances."
+  },
+  "Crawdad Swamp": {
+    "intro": "Watch your step in the muddy waters and thick Spanish moss of Crawdad Swamp. This murky southern layout requires a lot of carry, as the wet ground offers zero roll.",
+    "tip": "The soggy fairways will kill your roll instantly, so make sure you carry the ball all the way to your landing zone."
+  },
+  "Cumberland": {
+    "intro": "Enjoy a traditional parkland experience surrounded by towering, dense forests at Cumberland. Staying in the fairway is your only hope of shooting under par on this classic layout.",
+    "tip": "Shape your shots around the massive oak trees to give yourself a clear, unobstructed look at the pin."
+  },
+  "Cypress Cove": {
+    "intro": "Take on the rocky shorelines and heavy ocean spray of Cypress Cove. Modeled after iconic California coastal courses, the views here are as dramatic as the hazards.",
+    "tip": "Don't get greedy on the par 5s; the coastal crosswinds will easily push aggressive shots into the Pacific Ocean."
+  },
+  "Desert Valley Resort": {
+    "intro": "Blistering heat, unforgiving desert hazards, and fast fairways await at Desert Valley Resort. Precision is everything when you are surrounded by miles of unplayable sand and brush.",
+    "tip": "The desert rough is brutal — keep it in the fairway off the tee and your short game will do the rest."
+  },
+  "Dusty Bend": {
+    "intro": "Navigate the dry creek beds and rugged terrain of Dusty Bend. The sun-baked ground offers plenty of extra distance, but controlling the bounce is incredibly difficult.",
+    "tip": "Take advantage of the firm fairways to gain extra rollout on your drives, but apply heavy backspin on your approaches."
+  },
+  "Elkhorn Ridge": {
+    "intro": "Conquer the steep slopes and narrow mountain passes of Elkhorn Ridge. Playing at this altitude means massive drives, but the plunging drop-offs leave no margin for error.",
+    "tip": "Account for extreme elevation changes by taking significantly less club on the massive downhill par 3s."
+  },
+  "Falcon Sands": {
+    "intro": "Master the massive dunes and unforgiving desert scrub of Falcon Sands. The wide open vistas provide no protection from the wind, making distance control a nightmare.",
+    "tip": "Stay out of the sprawling waste bunkers that line the fairways, as they will severely limit your spin and distance."
+  },
+  "Grand Canyon": {
+    "intro": "We are heading to the majestic southwest to navigate the massive drops and steep cliffs of the Grand Canyon! Get ready for breathtaking views and terrifying tee shots over sheer chasms.",
+    "tip": "Watch your wind speed closely and factor in the extra hang time on those massive, plunging canyon drives."
+  },
+  "Greek Hills": {
+    "intro": "Play among ancient ruins and stunning Mediterranean views at Greek Hills. The historic architecture and bright blue waters make this one of the most scenic challenges on the tour.",
+    "tip": "Use the ancient stone structures to your advantage by intentionally banking tricky approach shots onto the green."
+  },
+  "Grizzly Flats": {
+    "intro": "Navigate the winding rivers and thick forests of Grizzly Flats. You will need to carefully plot your way through the woods and over the rushing water to score well here.",
+    "tip": "The greens are tightly guarded by winding creeks, so make sure you carry enough club to clear the water hazards."
+  },
+  "Hawthorne Manor": {
+    "intro": "Experience the pristine gardens and sophisticated English layout of Hawthorne Manor. Do not let the beautiful estate fool you; the fast greens are incredibly punishing.",
+    "tip": "The greens are like glass, so leave your approach shots below the hole to avoid terrifying downhill putts."
+  },
+  "Heather Pointe": {
+    "intro": "Tackle the thick purple heather and coastal winds of this classic Scottish links layout. The views are magnificent, but the rough is an absolute scorecard destroyer.",
+    "tip": "The native heather will swallow your ball completely, so keep your shots strictly in the short grass."
+  },
+  "Highland Links": {
+    "intro": "Test your skills against the traditional rolling dunes and deep bunkers of Highland Links. You will have to fight the wind every step of the way on this coastal gem.",
+    "tip": "Play the bump-and-run on your approach shots to keep your ball out of the relentless Scottish winds."
+  },
+  "Indigo Mound": {
+    "intro": "Enjoy the autumn harvest vibes and tall native grasses of Indigo Mound. The rustic farm setting features wide fairways, but missing them will cost you dearly.",
+    "tip": "The tall native grass acts like a wall, so club up heavily if you find yourself off the fairway."
+  },
+  "Jack Rabbit Junction": {
+    "intro": "Avoid the sprawling desert brush and dry ravines of Jack Rabbit Junction. The arid climate makes the greens lightning fast, demanding soft hands on your approach shots.",
+    "tip": "The greens are firm and fast, so use high-lofted clubs with plenty of backspin to land the ball softly."
+  },
+  "Juniper Falls": {
+    "intro": "Listen to the roaring waterfalls as you navigate the dense alpine forests of Juniper Falls. Elevation drops and water hazards dominate this breathtaking woodland course.",
+    "tip": "Water hazards are everywhere, so utilize your bite and backspin to keep the ball from skidding off the greens."
+  },
+  "Laurel Park": {
+    "intro": "Take a stroll through the manicured fairways and challenging doglegs of Laurel Park. This traditional country club layout rewards smart course management and precise shot shaping.",
+    "tip": "Positioning off the tee is crucial here to ensure a clear shot past the large, strategically placed fairway bunkers."
+  },
+  "Mayfield": {
+    "intro": "Head out to the countryside for a relaxed but deceptively tricky round at Mayfield. The open farm fields provide a false sense of security before you reach the heavily sloped greens.",
+    "tip": "The wide fairways are inviting, but you must leave your approach shots on the correct side of the pin to avoid three-putts."
+  },
+  "Mystic Hills": {
+    "intro": "Battle the heavy fog and eerie, rolling terrain of Mystic Hills. The low visibility makes trusting your swing and yardage critical on this spooky layout.",
+    "tip": "Trust your yardage marker over your eyes, as the heavy fog can make the flag look much further away than it actually is."
+  },
+  "Pearl Lagoon": {
+    "intro": "Island hop your way through the tropical, over-water shots of Pearl Lagoon. The stunning blue waters are everywhere, waiting to swallow up any mishit golf balls.",
+    "tip": "Don't let the beautiful water distract you; check the wind carefully before attempting any risky shortcuts over the lagoon."
+  },
+  "Pelican Grove": {
+    "intro": "Enjoy the sunny Florida vibes, complete with palm trees and abundant water hazards at Pelican Grove. The flat terrain means you won't get much extra distance from elevation.",
+    "tip": "The sandy coastal soil means less rollout on your drives, so aim to carry the ball as far as possible off the tee."
+  },
+  "Pembroke Links": {
+    "intro": "Brave the coastal storms and thick fescue of Pembroke Links. This authentic British layout requires immense creativity to navigate the rolling fairways and howling winds.",
+    "tip": "Keep your trajectory low and hit stingers to cheat the heavy winds coming off the coastal waters."
+  },
+  "Pine Coast": {
+    "intro": "Explore the stunning Pacific Northwest with towering pines and rocky shorelines at Pine Coast. You will need to expertly shape your shots through the giant trees to find the greens.",
+    "tip": "The dense trees will block high, looping shots, so learn to hit stingers under the branches when you get in trouble."
+  },
+  "Pine Meadow": {
+    "intro": "Weave your way through the dense, traditional pine forests of Pine Meadow. The fairways are tight, and the massive trees will severely punish an inaccurate drive.",
+    "tip": "Doglegs are abundant, so don't be afraid to hit a 3-wood off the tee to ensure you stay in the short grass."
+  },
+  "Rattlesnake Ridge": {
+    "intro": "Survive the jagged rocks, desert heat, and dangerous cliffs of Rattlesnake Ridge. This desert course is entirely unforgiving, with deep canyons waiting for any errant shots.",
+    "tip": "A missed fairway usually means a lost ball in the canyons, so play conservatively off the tee to keep your round alive."
+  },
+  "Rhineland": {
+    "intro": "Tee off in the shadow of majestic German castles at Rhineland. The lush green fairways and river hazards provide a regal but demanding test of golf.",
+    "tip": "Use the banking terrain on the hillsides to funnel your ball towards the heavily guarded pins."
+  },
+  "Rocky Hollow": {
+    "intro": "Navigate the massive boulders and tricky canyon walls of Rocky Hollow. You'll need high loft and incredible accuracy to clear the stone obstacles scattered across this course.",
+    "tip": "You can aggressively cut corners on the doglegs if you have enough loft to clear the massive canyon rocks."
+  },
+  "Royal Dubai": {
+    "intro": "Experience luxury and blistering desert heat among the skyscrapers of Royal Dubai. This oasis course features sprawling greens, but the surrounding sand traps are deep and deadly.",
+    "tip": "The massive greens allow for aggressive putts, but you must avoid the deep desert sand traps at all costs."
+  },
+  "Ruby Rock": {
+    "intro": "Admire the stunning red rock arches as you tee off at Ruby Rock. The canyon winds funnel through the stone formations, making club selection incredibly difficult.",
+    "tip": "Play the wind perfectly through the narrow canyon corridors to reach the heavily guarded greens."
+  },
+  "Rustic Bridge": {
+    "intro": "Enjoy the peaceful autumn creeks and wooden bridges of Rustic Bridge. This beautiful countryside layout requires excellent distance control to avoid the winding waterways.",
+    "tip": "The greens are small and heavily sloped, making proximity to the hole absolutely vital for securing birdies."
+  },
+  "Safari Dunes": {
+    "intro": "Take a trip to the African savanna and battle the sprawling sandy wastes of Safari Dunes. The expansive desert layout requires massive drives and perfect bunker avoidance.",
+    "tip": "Avoid the massive sand dunes off the tee, or you'll be forced to hit a drastic lay-up on your second shot."
+  },
+  "Sandhill Woods": {
+    "intro": "Weave through the pine forests and native sandy patches of Sandhill Woods. This Carolina-style course blends traditional tree-lined fairways with punishing waste areas.",
+    "tip": "The sandy waste areas will kill your club speed, so swing hard and club up if you find yourself offline."
+  },
+  "Sandy Reef": {
+    "intro": "Relax on the beautiful island beaches and coral formations of Sandy Reef. The tropical ocean breeze is constant, and water comes into play on nearly every hole.",
+    "tip": "Use bite and heavy backspin to hold the firm, sun-baked greens that are surrounded by ocean."
+  },
+  "Sequoia Grove": {
+    "intro": "Feel tiny as you play your way through the massive redwood trees of Sequoia Grove. These ancient giants line the fairways, demanding intense shot-shaping skills.",
+    "tip": "The giant redwood trees are impossible to hit over, so you must learn to expertly shape your shots around them."
+  },
+  "Sparkling Waters": {
+    "intro": "Navigate the interconnected lakes and winding rivers of Sparkling Waters. This lush course is beautiful, but the sheer amount of water will test your nerves on every approach.",
+    "tip": "Water is a constant threat, so aim for the fat part of the greens and accept a safe two-putt."
+  },
+  "Summit Lakes": {
+    "intro": "Breathe in the thin mountain air and enjoy the high elevation of Summit Lakes. The alpine views are incredible, and the ball flies forever in this mountain paradise.",
+    "tip": "Your ball will fly about ten percent further at this altitude, so be sure to club down on your approach shots."
+  },
+  "Tahiti Cove": {
+    "intro": "Soak in the bright South Pacific waters and tropical beauty of Tahiti Cove. The island greens are mesmerizing, but the ocean crosswinds are waiting to ruin your scorecard.",
+    "tip": "The island greens require pinpoint accuracy and a perfect read on the sweeping coastal winds."
+  },
+  "Teal Gardens": {
+    "intro": "Find your zen among the Asian-inspired ponds and bamboo forests of Teal Gardens. This tranquil layout demands precise iron play to navigate the stunning water features.",
+    "tip": "The bamboo shoots are incredibly dense, so keep your ball strictly in the fairway to maintain a clear line of sight to the pin."
+  },
+  "Turtle Island": {
+    "intro": "Welcome to a tropical paradise completely surrounded by ocean hazards at Turtle Island. You will be fighting the sea breeze from the first tee to the final putt.",
+    "tip": "The wind off the ocean is relentless, so factor in massive drift on your high-lofted wedge shots."
+  },
+  "Volcano Palms": {
+    "intro": "Dodge the lava flows and palm trees of this explosive Hawaiian layout at Volcano Palms. The black rock hazards are just as punishing as the tropical winds.",
+    "tip": "Do not hit your ball into the lava, as it counts as an unplayable hazard and will instantly ruin your scorecard."
+  },
+  "Whispering Valley": {
+    "intro": "Battle the constant winds sweeping through the wide open spaces of Whispering Valley. With no trees to block the gusts, calculating drift is the name of the game here.",
+    "tip": "Without trees to block the wind, you must manually adjust your aim significantly for every single shot."
+  },
+  "Winding Pines": {
+    "intro": "Master the sharp doglegs and towering trees of Winding Pines. This classic forest course requires you to work the ball both ways off the tee to find the short grass.",
+    "tip": "Shot shaping is an absolute must if you want to hold the greens on these sharp, heavily bending fairways."
+  }
+}

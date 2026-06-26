@@ -4,6 +4,7 @@ import json
 import csv
 from datetime import datetime
 import re
+import shutil
 import time
 import os
 import sys
@@ -472,9 +473,15 @@ class TeknoParrotScraper:
     def save_to_json(self, entries, filename='golden_tee_leaderboard.json'):
         if not entries:
             return
+        backup1 = filename.replace('.json', '.1.json')
+        backup2 = filename.replace('.json', '.2.json')
+        if os.path.exists(backup1):
+            shutil.copy2(backup1, backup2)
+        if os.path.exists(filename):
+            shutil.copy2(filename, backup1)
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(entries, f, indent=2, ensure_ascii=False)
-        print(f"✓ Saved {filename}")
+        print(f"✓ Saved {filename}  (backups: .1.json, .2.json)")
 
 
 def main():
