@@ -3,26 +3,38 @@
     "first_season_start": "2026-06-26",
     "weeks_per_season": 6
   },
-  "forced_next_course": "Volcano Palms",
   "current_season": {
-    "number": 0,
-    "week": 0
+    "number": 1,
+    "week": 1
   },
   "season_standings": {},
   "seasons": [],
   "current": {
-    "course": "Laurel Park",
+    "course": "Volcano Palms",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
-    "season": 0,
-    "season_week": 0,
-    "start": "2026-06-19T16:00:00",
-    "end": "2026-06-26T16:00:00",
-    "deadline_text": "Friday, June 26th @ 12:00 PM ET"
+    "season": 1,
+    "season_week": 1,
+    "start": "2026-06-26T16:17:39",
+    "end": "2026-07-03T16:00:00",
+    "deadline_text": "Friday, July 3rd @ 12:00 PM ET"
   },
-  "history": [],
+  "history": [
+    {
+      "week_start": "2026-06-19",
+      "course": "Laurel Park",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 0,
+      "season_week": 0,
+      "start": "2026-06-19T16:00:00",
+      "end": "2026-06-26T16:00:00",
+      "results": [],
+      "winner": null
+    }
+  ],
   "standings": {},
   "used_courses_2019": [
-    "Laurel Park"
+    "Laurel Park",
+    "Volcano Palms"
   ]
 }
