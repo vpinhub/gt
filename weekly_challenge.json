@@ -5,21 +5,70 @@
   },
   "current_season": {
     "number": 1,
-    "week": 1
+    "week": 2
   },
-  "season_standings": {},
+  "season_standings": {
+    "vpfiends": {
+      "wins": 1,
+      "top3": 1,
+      "played": 1
+    },
+    "ed20910": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    },
+    "Paladin242": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    }
+  },
   "seasons": [],
   "current": {
-    "course": "Volcano Palms",
+    "course": "Sparkling Waters",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 1,
-    "season_week": 1,
-    "start": "2026-06-26T16:17:39",
-    "end": "2026-07-03T16:00:00",
-    "deadline_text": "Friday, July 3rd @ 12:00 PM ET"
+    "season_week": 2,
+    "start": "2026-07-03T17:16:05",
+    "end": "2026-07-10T16:00:00",
+    "deadline_text": "Friday, July 10th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-06-26",
+      "course": "Volcano Palms",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 1,
+      "season_week": 1,
+      "start": "2026-06-26T16:17:39",
+      "end": "2026-07-03T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-20",
+          "total_score": "52",
+          "date": "Jun 27"
+        },
+        {
+          "rank": 2,
+          "player": "ed20910",
+          "score_vs_par": "-19",
+          "total_score": "53",
+          "date": "Jun 27"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "-5",
+          "total_score": "67",
+          "date": "Jun 27"
+        }
+      ],
+      "winner": "vpfiends"
+    },
     {
       "week_start": "2026-06-19",
       "course": "Laurel Park",
@@ -32,9 +81,26 @@
       "winner": null
     }
   ],
-  "standings": {},
+  "standings": {
+    "vpfiends": {
+      "wins": 1,
+      "top3": 1,
+      "played": 1
+    },
+    "ed20910": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    },
+    "Paladin242": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    }
+  },
   "used_courses_2019": [
     "Laurel Park",
-    "Volcano Palms"
+    "Volcano Palms",
+    "Sparkling Waters"
   ]
 }
