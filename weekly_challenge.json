@@ -5,13 +5,13 @@
   },
   "current_season": {
     "number": 1,
-    "week": 2
+    "week": 3
   },
   "season_standings": {
     "vpfiends": {
-      "wins": 1,
-      "top3": 1,
-      "played": 1
+      "wins": 2,
+      "top3": 2,
+      "played": 2
     },
     "ed20910": {
       "wins": 0,
@@ -20,22 +20,48 @@
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 1,
-      "played": 1
+      "top3": 2,
+      "played": 2
     }
   },
   "seasons": [],
   "current": {
-    "course": "Sparkling Waters",
+    "course": "Indigo Mound",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 1,
-    "season_week": 2,
-    "start": "2026-07-03T17:16:05",
-    "end": "2026-07-10T16:00:00",
-    "deadline_text": "Friday, July 10th @ 12:00 PM ET"
+    "season_week": 3,
+    "start": "2026-07-10T16:01:01",
+    "end": "2026-07-17T16:00:00",
+    "deadline_text": "Friday, July 17th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-07-03",
+      "course": "Sparkling Waters",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 1,
+      "season_week": 2,
+      "start": "2026-07-03T17:16:05",
+      "end": "2026-07-10T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-21",
+          "total_score": "51",
+          "date": "Jul 6"
+        },
+        {
+          "rank": 2,
+          "player": "Paladin242",
+          "score_vs_par": "E",
+          "total_score": "73",
+          "date": "Jul 7"
+        }
+      ],
+      "winner": "vpfiends"
+    },
     {
       "week_start": "2026-06-26",
       "course": "Volcano Palms",
@@ -83,9 +109,9 @@
   ],
   "standings": {
     "vpfiends": {
-      "wins": 1,
-      "top3": 1,
-      "played": 1
+      "wins": 2,
+      "top3": 2,
+      "played": 2
     },
     "ed20910": {
       "wins": 0,
@@ -94,13 +120,14 @@
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 1,
-      "played": 1
+      "top3": 2,
+      "played": 2
     }
   },
   "used_courses_2019": [
     "Laurel Park",
     "Volcano Palms",
-    "Sparkling Waters"
+    "Sparkling Waters",
+    "Indigo Mound"
   ]
 }
