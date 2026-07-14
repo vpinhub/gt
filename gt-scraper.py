@@ -521,7 +521,6 @@ def main():
     user_json = os.path.join(application_path, "users.json")
     if not os.path.exists(user_json):
         print(f"Error: 'users.json' not found in {application_path}")
-        input("Press Enter to exit...")
         return
 
     leaderboard_file = os.path.join(application_path, "golden_tee_leaderboard.json")
@@ -552,8 +551,6 @@ def main():
             print(f"  {g}: {c} new entries")
     else:
         print("\nNo new entries found since last scrape — nothing to save.")
-        print("Check any debug_<user>.html files for diagnosis.")
-        input("Press Enter to exit...")
 
 
 if __name__ == "__main__":
