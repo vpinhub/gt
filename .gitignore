@@ -1,0 +1,6 @@
+golden_tee_leaderboard.csv
+golden_tee_leaderboard.1.json
+golden_tee_leaderboard.2.json
+debug_*.html
+__pycache__/
+.venv/
