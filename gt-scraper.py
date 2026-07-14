@@ -9,6 +9,10 @@ import time
 import os
 import sys
 
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        _stream.reconfigure(encoding="utf-8")
+
 class TeknoParrotScraper:
     def __init__(self, user_ids=None):
         self.user_ids = []
@@ -367,7 +371,8 @@ class TeknoParrotScraper:
     # Scraping orchestration
     # ------------------------------------------------------------------
 
-    def scrape_user_entries(self, user_id):
+    def scrape_user_entries(self, user_id, known_urls=None):
+        known_urls = known_urls or set()
         base_url = f"https://teknoparrot.com/en/Highscore/UserSpecific?queryId={user_id}"
         print(f"\n{'=' * 60}\nScraping: {user_id}\n{'=' * 60}")
 
@@ -392,13 +397,21 @@ class TeknoParrotScraper:
 
         filtered_links = [l for l in entry_links if is_gt_url(l['url'])]
         skipped = len(entry_links) - len(filtered_links)
+
+        # Scorecards are immutable once posted, so anything already in our
+        # saved dataset never needs to be re-fetched — only chase new ones.
+        new_links = [l for l in filtered_links if l['url'] not in known_urls]
+        cached = len(filtered_links) - len(new_links)
+
         if skipped:
-            print(f"  Pre-filtered {skipped} non-GT entries; checking {len(filtered_links)}")
+            print(f"  Pre-filtered {skipped} non-GT entries")
+        if cached:
+            print(f"  {cached} already cached; fetching {len(new_links)} new entr{'y' if len(new_links) == 1 else 'ies'}")
         else:
-            print(f"  Found {len(filtered_links)} entries to check")
+            print(f"  Found {len(new_links)} entries to check")
         user_entries = []
 
-        for i, entry_info in enumerate(filtered_links, 1):
+        for i, entry_info in enumerate(new_links, 1):
             scorecard_html = self.fetch_page(entry_info['url'])
             if not scorecard_html:
                 continue
@@ -410,23 +423,35 @@ class TeknoParrotScraper:
             if not self.is_golden_tee_game(scorecard_data.get('game', '')):
                 continue
 
+            # Defense against cross-user contamination: this scorecard was
+            # reached via user_id's own UserSpecific page, but occasionally
+            # (session/caching quirks on TeknoParrot's end) the page returns
+            # a link to a different player's entry entirely. Verify the
+            # scorecard actually belongs to the user we think we're scraping
+            # before keeping it — if it's someone else's, their own scrape
+            # pass will pick it up correctly.
+            scraped_username = scorecard_data.get('username', '')
+            if scraped_username and scraped_username.lower() != user_id.lower():
+                print(f"  SKIP mismatch: expected {user_id}, scorecard belongs to {scraped_username} ({entry_info['url']})")
+                continue
+
             scorecard_data['scraped_at'] = datetime.now().isoformat()
             scorecard_data['query_user_id'] = user_id
             user_entries.append(scorecard_data)
 
             video_tag = ' [VIDEO]' if scorecard_data.get('youtube_video') else ''
-            print(f"  OK {i}/{len(filtered_links)} | {scorecard_data.get('game')} | {scorecard_data.get('course')} | {scorecard_data.get('total_score')}{video_tag}")
+            print(f"  OK {i}/{len(new_links)} | {scorecard_data.get('game')} | {scorecard_data.get('course')} | {scorecard_data.get('total_score')}{video_tag}")
             time.sleep(1)
 
         return user_entries
 
-    def scrape_all_users(self):
+    def scrape_all_users(self, known_urls=None):
         all_entries = []
         if not self.user_ids:
             return []
         for idx, user_id in enumerate(self.user_ids, 1):
             print(f"\n[User {idx}/{len(self.user_ids)}]")
-            all_entries.extend(self.scrape_user_entries(user_id))
+            all_entries.extend(self.scrape_user_entries(user_id, known_urls))
             if idx < len(self.user_ids):
                 time.sleep(2)
         return all_entries
@@ -499,21 +524,34 @@ def main():
         input("Press Enter to exit...")
         return
 
-    scraper = TeknoParrotScraper(user_json)
-    entries = scraper.scrape_all_users()
+    leaderboard_file = os.path.join(application_path, "golden_tee_leaderboard.json")
+    existing_entries = []
+    if os.path.exists(leaderboard_file):
+        try:
+            with open(leaderboard_file, "r", encoding="utf-8") as f:
+                existing_entries = json.load(f)
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"Warning: could not read existing {leaderboard_file}: {e}")
+    known_urls = {e.get("entry_url") for e in existing_entries if e.get("entry_url")}
+    print(f"Loaded {len(existing_entries)} cached entries ({len(known_urls)} known scorecards)")
 
-    if entries:
+    scraper = TeknoParrotScraper(user_json)
+    new_entries = scraper.scrape_all_users(known_urls)
+    entries = existing_entries + new_entries
+
+    if new_entries:
         scraper.save_to_csv(entries)
         scraper.save_to_json(entries)
         print(f"\n{'=' * 60}\nSUMMARY\n{'=' * 60}")
+        print(f"  {len(new_entries)} new entr{'y' if len(new_entries) == 1 else 'ies'} added ({len(entries)} total)")
         games = {}
-        for e in entries:
+        for e in new_entries:
             g = e.get('game', 'Unknown')
             games[g] = games.get(g, 0) + 1
         for g, c in games.items():
-            print(f"  {g}: {c} entries")
+            print(f"  {g}: {c} new entries")
     else:
-        print("\nNo entries found.")
+        print("\nNo new entries found since last scrape — nothing to save.")
         print("Check any debug_<user>.html files for diagnosis.")
         input("Press Enter to exit...")
 
