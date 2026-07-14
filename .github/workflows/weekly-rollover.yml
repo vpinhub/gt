@@ -28,12 +28,6 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Scrape fresh leaderboard data
-        run: python gt-scraper.py
-
       - name: Run weekly rollover
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
