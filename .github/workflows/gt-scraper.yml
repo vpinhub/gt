@@ -39,17 +39,19 @@ jobs:
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
-        git add golden_tee_leaderboard.json
-        
+        git add -A
+
         # Check if there are any staged changes
         if ! git diff --staged --quiet; then
           echo "Changes detected. Committing and pushing..."
           git commit -m "Update leaderboard data - $(date)"
-          
+
           # --- THE FIX ---
-          # Pull remote changes (if any) and rebase your commit on top
-          git pull --rebase
-          
+          # Pull remote changes (if any) and rebase your commit on top.
+          # --autostash guards against any leftover unstaged/untracked
+          # changes (e.g. debug_*.html) so the rebase can't fail on them.
+          git pull --rebase --autostash
+
           # Now push your rebased commit
           git push
         else
