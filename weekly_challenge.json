@@ -5,37 +5,82 @@
   },
   "current_season": {
     "number": 1,
-    "week": 3
+    "week": 4
   },
   "season_standings": {
     "vpfiends": {
       "wins": 2,
-      "top3": 2,
-      "played": 2
+      "top3": 3,
+      "played": 3
     },
     "ed20910": {
-      "wins": 0,
-      "top3": 1,
-      "played": 1
+      "wins": 1,
+      "top3": 2,
+      "played": 2
     },
     "Paladin242": {
       "wins": 0,
       "top3": 2,
-      "played": 2
+      "played": 3
+    },
+    "Dreaddazzman": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
     }
   },
   "seasons": [],
   "current": {
-    "course": "Indigo Mound",
+    "course": "Bella Toscana",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 1,
-    "season_week": 3,
-    "start": "2026-07-10T16:01:01",
-    "end": "2026-07-17T16:00:00",
-    "deadline_text": "Friday, July 17th @ 12:00 PM ET"
+    "season_week": 4,
+    "start": "2026-07-17T16:03:02",
+    "end": "2026-07-24T16:00:00",
+    "deadline_text": "Friday, July 24th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-07-10",
+      "course": "Indigo Mound",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 1,
+      "season_week": 3,
+      "start": "2026-07-10T16:01:01",
+      "end": "2026-07-17T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "ed20910",
+          "score_vs_par": "-17",
+          "total_score": "56",
+          "date": "Jul 17"
+        },
+        {
+          "rank": 2,
+          "player": "vpfiends",
+          "score_vs_par": "-12",
+          "total_score": "61",
+          "date": "Jul 15"
+        },
+        {
+          "rank": 3,
+          "player": "Dreaddazzman",
+          "score_vs_par": "-7",
+          "total_score": "66",
+          "date": "Jul 11"
+        },
+        {
+          "rank": 4,
+          "player": "Paladin242",
+          "score_vs_par": "-1",
+          "total_score": "71",
+          "date": "Jul 16"
+        }
+      ],
+      "winner": "ed20910"
+    },
     {
       "week_start": "2026-07-03",
       "course": "Sparkling Waters",
@@ -99,24 +144,30 @@
   "standings": {
     "vpfiends": {
       "wins": 2,
-      "top3": 2,
-      "played": 2
+      "top3": 3,
+      "played": 3
     },
     "ed20910": {
-      "wins": 0,
-      "top3": 1,
-      "played": 1
+      "wins": 1,
+      "top3": 2,
+      "played": 2
     },
     "Paladin242": {
       "wins": 0,
       "top3": 2,
-      "played": 2
+      "played": 3
+    },
+    "Dreaddazzman": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
     }
   },
   "used_courses_2019": [
     "Laurel Park",
     "Volcano Palms",
     "Sparkling Waters",
-    "Indigo Mound"
+    "Indigo Mound",
+    "Bella Toscana"
   ]
 }
