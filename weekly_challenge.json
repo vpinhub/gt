@@ -5,18 +5,18 @@
   },
   "current_season": {
     "number": 1,
-    "week": 5
+    "week": 6
   },
   "season_standings": {
     "vpfiends": {
-      "wins": 3,
-      "top3": 4,
-      "played": 4
+      "wins": 4,
+      "top3": 5,
+      "played": 5
     },
     "ed20910": {
       "wins": 1,
-      "top3": 3,
-      "played": 3
+      "top3": 4,
+      "played": 4
     },
     "Paladin242": {
       "wins": 0,
@@ -25,22 +25,55 @@
     },
     "Dreaddazzman": {
       "wins": 0,
-      "top3": 1,
-      "played": 2
+      "top3": 2,
+      "played": 3
     }
   },
   "seasons": [],
   "current": {
-    "course": "Cape Haven",
+    "course": "Ruby Rock",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 1,
-    "season_week": 5,
-    "start": "2026-07-24T16:04:35",
-    "end": "2026-07-31T16:00:00",
-    "deadline_text": "Friday, July 31st @ 12:00 PM ET"
+    "season_week": 6,
+    "start": "2026-07-31T16:04:51",
+    "end": "2026-08-07T16:00:00",
+    "deadline_text": "Friday, August 7th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-07-24",
+      "course": "Cape Haven",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 1,
+      "season_week": 5,
+      "start": "2026-07-24T16:04:35",
+      "end": "2026-07-31T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-20",
+          "total_score": "52",
+          "date": "Jul 29"
+        },
+        {
+          "rank": 2,
+          "player": "ed20910",
+          "score_vs_par": "-20",
+          "total_score": "52",
+          "date": "Jul 28"
+        },
+        {
+          "rank": 3,
+          "player": "Dreaddazzman",
+          "score_vs_par": "-6",
+          "total_score": "66",
+          "date": "Jul 27"
+        }
+      ],
+      "winner": "vpfiends"
+    },
     {
       "week_start": "2026-07-17",
       "course": "Bella Toscana",
@@ -183,14 +216,14 @@
   ],
   "standings": {
     "vpfiends": {
-      "wins": 3,
-      "top3": 4,
-      "played": 4
+      "wins": 4,
+      "top3": 5,
+      "played": 5
     },
     "ed20910": {
       "wins": 1,
-      "top3": 3,
-      "played": 3
+      "top3": 4,
+      "played": 4
     },
     "Paladin242": {
       "wins": 0,
@@ -199,8 +232,8 @@
     },
     "Dreaddazzman": {
       "wins": 0,
-      "top3": 1,
-      "played": 2
+      "top3": 2,
+      "played": 3
     }
   },
   "used_courses_2019": [
@@ -209,6 +242,7 @@
     "Sparkling Waters",
     "Indigo Mound",
     "Bella Toscana",
-    "Cape Haven"
+    "Cape Haven",
+    "Ruby Rock"
   ]
 }
