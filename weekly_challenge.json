@@ -4,43 +4,83 @@
     "weeks_per_season": 6
   },
   "current_season": {
-    "number": 1,
-    "week": 6
+    "number": 2,
+    "week": 1
   },
-  "season_standings": {
-    "vpfiends": {
-      "wins": 4,
-      "top3": 5,
-      "played": 5
-    },
-    "ed20910": {
-      "wins": 1,
-      "top3": 4,
-      "played": 4
-    },
-    "Paladin242": {
-      "wins": 0,
-      "top3": 3,
-      "played": 4
-    },
-    "Dreaddazzman": {
-      "wins": 0,
-      "top3": 2,
-      "played": 3
+  "season_standings": {},
+  "seasons": [
+    {
+      "number": 1,
+      "weeks": 6,
+      "champion": "vpfiends",
+      "standings": {
+        "vpfiends": {
+          "wins": 5,
+          "top3": 6,
+          "played": 6
+        },
+        "ed20910": {
+          "wins": 1,
+          "top3": 5,
+          "played": 5
+        },
+        "Paladin242": {
+          "wins": 0,
+          "top3": 4,
+          "played": 5
+        },
+        "Dreaddazzman": {
+          "wins": 0,
+          "top3": 2,
+          "played": 3
+        }
+      }
     }
-  },
-  "seasons": [],
+  ],
   "current": {
-    "course": "Ruby Rock",
+    "course": "Greek Hills",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
-    "season": 1,
-    "season_week": 6,
-    "start": "2026-07-31T16:04:51",
-    "end": "2026-08-07T16:00:00",
-    "deadline_text": "Friday, August 7th @ 12:00 PM ET"
+    "season": 2,
+    "season_week": 1,
+    "start": "2026-08-07T16:05:17",
+    "end": "2026-08-14T16:00:00",
+    "deadline_text": "Friday, August 14th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-07-31",
+      "course": "Ruby Rock",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 1,
+      "season_week": 6,
+      "start": "2026-07-31T16:04:51",
+      "end": "2026-08-07T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-23",
+          "total_score": "50",
+          "date": "Aug 7"
+        },
+        {
+          "rank": 2,
+          "player": "ed20910",
+          "score_vs_par": "-21",
+          "total_score": "51",
+          "date": "Aug 2"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "-9",
+          "total_score": "63",
+          "date": "Aug 2"
+        }
+      ],
+      "winner": "vpfiends"
+    },
     {
       "week_start": "2026-07-24",
       "course": "Cape Haven",
@@ -216,19 +256,19 @@
   ],
   "standings": {
     "vpfiends": {
-      "wins": 4,
-      "top3": 5,
-      "played": 5
+      "wins": 5,
+      "top3": 6,
+      "played": 6
     },
     "ed20910": {
       "wins": 1,
-      "top3": 4,
-      "played": 4
+      "top3": 5,
+      "played": 5
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 3,
-      "played": 4
+      "top3": 4,
+      "played": 5
     },
     "Dreaddazzman": {
       "wins": 0,
@@ -243,6 +283,7 @@
     "Indigo Mound",
     "Bella Toscana",
     "Cape Haven",
-    "Ruby Rock"
+    "Ruby Rock",
+    "Greek Hills"
   ]
 }
