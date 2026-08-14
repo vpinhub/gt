@@ -5,9 +5,25 @@
   },
   "current_season": {
     "number": 2,
-    "week": 1
+    "week": 2
   },
-  "season_standings": {},
+  "season_standings": {
+    "vpfiends": {
+      "wins": 1,
+      "top3": 1,
+      "played": 1
+    },
+    "ed20910": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    },
+    "Paladin242": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    }
+  },
   "seasons": [
     {
       "number": 1,
@@ -38,16 +54,49 @@
     }
   ],
   "current": {
-    "course": "Greek Hills",
+    "course": "Highland Links",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 2,
-    "season_week": 1,
-    "start": "2026-08-07T16:05:17",
-    "end": "2026-08-14T16:00:00",
-    "deadline_text": "Friday, August 14th @ 12:00 PM ET"
+    "season_week": 2,
+    "start": "2026-08-14T16:10:42",
+    "end": "2026-08-21T16:00:00",
+    "deadline_text": "Friday, August 21st @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-08-07",
+      "course": "Greek Hills",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 2,
+      "season_week": 1,
+      "start": "2026-08-07T16:05:17",
+      "end": "2026-08-14T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-14",
+          "total_score": "58",
+          "date": "Aug 9"
+        },
+        {
+          "rank": 2,
+          "player": "ed20910",
+          "score_vs_par": "-11",
+          "total_score": "61",
+          "date": "Aug 13"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "-6",
+          "total_score": "66",
+          "date": "Aug 9"
+        }
+      ],
+      "winner": "vpfiends"
+    },
     {
       "week_start": "2026-07-31",
       "course": "Ruby Rock",
@@ -256,19 +305,19 @@
   ],
   "standings": {
     "vpfiends": {
-      "wins": 5,
-      "top3": 6,
-      "played": 6
+      "wins": 6,
+      "top3": 7,
+      "played": 7
     },
     "ed20910": {
       "wins": 1,
-      "top3": 5,
-      "played": 5
+      "top3": 6,
+      "played": 6
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 4,
-      "played": 5
+      "top3": 5,
+      "played": 6
     },
     "Dreaddazzman": {
       "wins": 0,
@@ -284,6 +333,7 @@
     "Bella Toscana",
     "Cape Haven",
     "Ruby Rock",
-    "Greek Hills"
+    "Greek Hills",
+    "Highland Links"
   ]
 }
