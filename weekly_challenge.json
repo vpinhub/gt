@@ -5,28 +5,28 @@
   },
   "current_season": {
     "number": 2,
-    "week": 3
+    "week": 4
   },
   "season_standings": {
     "vpfiends": {
-      "wins": 2,
-      "top3": 2,
-      "played": 2
+      "wins": 3,
+      "top3": 3,
+      "played": 3
     },
     "ed20910": {
       "wins": 0,
-      "top3": 2,
-      "played": 2
+      "top3": 3,
+      "played": 3
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 2,
-      "played": 2
+      "top3": 3,
+      "played": 3
     },
     "Dreaddazzman": {
       "wins": 0,
       "top3": 0,
-      "played": 1
+      "played": 2
     }
   },
   "seasons": [
@@ -59,16 +59,56 @@
     }
   ],
   "current": {
-    "course": "Beals Creek",
+    "course": "Alpine Run",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 2,
-    "season_week": 3,
-    "start": "2026-08-21T16:23:22",
-    "end": "2026-08-28T16:00:00",
-    "deadline_text": "Friday, August 28th @ 12:00 PM ET"
+    "season_week": 4,
+    "start": "2026-08-28T19:01:04",
+    "end": "2026-09-04T16:00:00",
+    "deadline_text": "Friday, September 4th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-08-21",
+      "course": "Beals Creek",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 2,
+      "season_week": 3,
+      "start": "2026-08-21T16:23:22",
+      "end": "2026-08-28T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-19",
+          "total_score": "53",
+          "date": "Aug 23"
+        },
+        {
+          "rank": 2,
+          "player": "Paladin242",
+          "score_vs_par": "-17",
+          "total_score": "55",
+          "date": "Aug 27"
+        },
+        {
+          "rank": 3,
+          "player": "ed20910",
+          "score_vs_par": "-16",
+          "total_score": "56",
+          "date": "Aug 28"
+        },
+        {
+          "rank": 4,
+          "player": "Dreaddazzman",
+          "score_vs_par": "-4",
+          "total_score": "68",
+          "date": "Aug 27"
+        }
+      ],
+      "winner": "vpfiends"
+    },
     {
       "week_start": "2026-08-14",
       "course": "Highland Links",
@@ -350,24 +390,24 @@
   ],
   "standings": {
     "vpfiends": {
-      "wins": 7,
-      "top3": 8,
-      "played": 8
+      "wins": 8,
+      "top3": 9,
+      "played": 9
     },
     "ed20910": {
       "wins": 1,
-      "top3": 7,
-      "played": 7
+      "top3": 8,
+      "played": 8
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 6,
-      "played": 7
+      "top3": 7,
+      "played": 8
     },
     "Dreaddazzman": {
       "wins": 0,
       "top3": 2,
-      "played": 4
+      "played": 5
     }
   },
   "used_courses_2019": [
@@ -380,6 +420,7 @@
     "Ruby Rock",
     "Greek Hills",
     "Highland Links",
-    "Beals Creek"
+    "Beals Creek",
+    "Alpine Run"
   ]
 }
