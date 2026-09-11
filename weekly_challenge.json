@@ -5,28 +5,28 @@
   },
   "current_season": {
     "number": 2,
-    "week": 5
+    "week": 6
   },
   "season_standings": {
     "vpfiends": {
-      "wins": 4,
-      "top3": 4,
-      "played": 4
+      "wins": 5,
+      "top3": 5,
+      "played": 5
     },
     "ed20910": {
       "wins": 0,
       "top3": 4,
-      "played": 4
+      "played": 5
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 4,
-      "played": 4
+      "top3": 5,
+      "played": 5
     },
     "Dreaddazzman": {
       "wins": 0,
-      "top3": 0,
-      "played": 3
+      "top3": 1,
+      "played": 4
     }
   },
   "seasons": [
@@ -59,16 +59,56 @@
     }
   ],
   "current": {
-    "course": "Whispering Valley",
+    "course": "Sandhill Woods",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 2,
-    "season_week": 5,
-    "start": "2026-09-04T16:05:15",
-    "end": "2026-09-11T16:00:00",
-    "deadline_text": "Friday, September 11th @ 12:00 PM ET"
+    "season_week": 6,
+    "start": "2026-09-11T16:05:15",
+    "end": "2026-09-18T16:00:00",
+    "deadline_text": "Friday, September 18th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-09-04",
+      "course": "Whispering Valley",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 2,
+      "season_week": 5,
+      "start": "2026-09-04T16:05:15",
+      "end": "2026-09-11T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "vpfiends",
+          "score_vs_par": "-16",
+          "total_score": "56",
+          "date": "Sep 5"
+        },
+        {
+          "rank": 2,
+          "player": "Paladin242",
+          "score_vs_par": "-10",
+          "total_score": "62",
+          "date": "Sep 5"
+        },
+        {
+          "rank": 3,
+          "player": "Dreaddazzman",
+          "score_vs_par": "-3",
+          "total_score": "69",
+          "date": "Sep 9"
+        },
+        {
+          "rank": 4,
+          "player": "ed20910",
+          "score_vs_par": "-1",
+          "total_score": "71",
+          "date": "Sep 10"
+        }
+      ],
+      "winner": "vpfiends"
+    },
     {
       "week_start": "2026-08-28",
       "course": "Alpine Run",
@@ -430,24 +470,24 @@
   ],
   "standings": {
     "vpfiends": {
-      "wins": 9,
-      "top3": 10,
-      "played": 10
+      "wins": 10,
+      "top3": 11,
+      "played": 11
     },
     "ed20910": {
       "wins": 1,
       "top3": 9,
-      "played": 9
+      "played": 10
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 8,
-      "played": 9
+      "top3": 9,
+      "played": 10
     },
     "Dreaddazzman": {
       "wins": 0,
-      "top3": 2,
-      "played": 6
+      "top3": 3,
+      "played": 7
     }
   },
   "used_courses_2019": [
@@ -462,6 +502,7 @@
     "Highland Links",
     "Beals Creek",
     "Alpine Run",
-    "Whispering Valley"
+    "Whispering Valley",
+    "Sandhill Woods"
   ]
 }
