@@ -5,9 +5,25 @@
   },
   "current_season": {
     "number": 3,
-    "week": 1
+    "week": 2
   },
-  "season_standings": {},
+  "season_standings": {
+    "ed20910": {
+      "wins": 1,
+      "top3": 1,
+      "played": 1
+    },
+    "vpfiends": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    },
+    "Paladin242": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    }
+  },
   "seasons": [
     {
       "number": 1,
@@ -65,16 +81,49 @@
     }
   ],
   "current": {
-    "course": "Antelope Pass",
+    "course": "Celtic Shores",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 3,
-    "season_week": 1,
-    "start": "2026-09-18T16:05:13",
-    "end": "2026-09-25T16:00:00",
-    "deadline_text": "Friday, September 25th @ 12:00 PM ET"
+    "season_week": 2,
+    "start": "2026-09-25T16:05:16",
+    "end": "2026-10-02T16:00:00",
+    "deadline_text": "Friday, October 2nd @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-09-18",
+      "course": "Antelope Pass",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 3,
+      "season_week": 1,
+      "start": "2026-09-18T16:05:13",
+      "end": "2026-09-25T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "ed20910",
+          "score_vs_par": "-22",
+          "total_score": "50",
+          "date": "Sep 19"
+        },
+        {
+          "rank": 2,
+          "player": "vpfiends",
+          "score_vs_par": "-21",
+          "total_score": "51",
+          "date": "Sep 20"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "-11",
+          "total_score": "61",
+          "date": "Sep 18"
+        }
+      ],
+      "winner": "ed20910"
+    },
     {
       "week_start": "2026-09-11",
       "course": "Sandhill Woods",
@@ -517,18 +566,18 @@
   "standings": {
     "vpfiends": {
       "wins": 10,
-      "top3": 12,
-      "played": 12
+      "top3": 13,
+      "played": 13
     },
     "ed20910": {
-      "wins": 2,
-      "top3": 10,
-      "played": 11
+      "wins": 3,
+      "top3": 11,
+      "played": 12
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 10,
-      "played": 11
+      "top3": 11,
+      "played": 12
     },
     "Dreaddazzman": {
       "wins": 0,
@@ -550,6 +599,7 @@
     "Alpine Run",
     "Whispering Valley",
     "Sandhill Woods",
-    "Antelope Pass"
+    "Antelope Pass",
+    "Celtic Shores"
   ]
 }
