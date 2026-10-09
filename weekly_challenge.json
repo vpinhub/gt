@@ -5,23 +5,23 @@
   },
   "current_season": {
     "number": 3,
-    "week": 3
+    "week": 4
   },
   "season_standings": {
     "ed20910": {
-      "wins": 1,
-      "top3": 2,
-      "played": 2
+      "wins": 2,
+      "top3": 3,
+      "played": 3
     },
     "vpfiends": {
       "wins": 1,
-      "top3": 2,
-      "played": 2
+      "top3": 3,
+      "played": 3
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 2,
-      "played": 2
+      "top3": 3,
+      "played": 3
     }
   },
   "seasons": [
@@ -81,16 +81,49 @@
     }
   ],
   "current": {
-    "course": "Dusty Bend",
+    "course": "Pearl Lagoon",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 3,
-    "season_week": 3,
-    "start": "2026-10-02T16:05:34",
-    "end": "2026-10-09T16:00:00",
-    "deadline_text": "Friday, October 9th @ 12:00 PM ET"
+    "season_week": 4,
+    "start": "2026-10-09T16:05:14",
+    "end": "2026-10-16T16:00:00",
+    "deadline_text": "Friday, October 16th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-10-02",
+      "course": "Dusty Bend",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 3,
+      "season_week": 3,
+      "start": "2026-10-02T16:05:34",
+      "end": "2026-10-09T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "ed20910",
+          "score_vs_par": "-19",
+          "total_score": "53",
+          "date": "Oct 3"
+        },
+        {
+          "rank": 2,
+          "player": "vpfiends",
+          "score_vs_par": "-12",
+          "total_score": "60",
+          "date": "Oct 9"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "-4",
+          "total_score": "68",
+          "date": "Oct 9"
+        }
+      ],
+      "winner": "ed20910"
+    },
     {
       "week_start": "2026-09-25",
       "course": "Celtic Shores",
@@ -599,18 +632,18 @@
   "standings": {
     "vpfiends": {
       "wins": 11,
-      "top3": 14,
-      "played": 14
+      "top3": 15,
+      "played": 15
     },
     "ed20910": {
-      "wins": 3,
-      "top3": 12,
-      "played": 13
+      "wins": 4,
+      "top3": 13,
+      "played": 14
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 12,
-      "played": 13
+      "top3": 13,
+      "played": 14
     },
     "Dreaddazzman": {
       "wins": 0,
@@ -634,6 +667,7 @@
     "Sandhill Woods",
     "Antelope Pass",
     "Celtic Shores",
-    "Dusty Bend"
+    "Dusty Bend",
+    "Pearl Lagoon"
   ]
 }
