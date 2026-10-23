@@ -5,23 +5,23 @@
   },
   "current_season": {
     "number": 3,
-    "week": 5
+    "week": 6
   },
   "season_standings": {
     "ed20910": {
-      "wins": 2,
-      "top3": 4,
-      "played": 4
+      "wins": 3,
+      "top3": 5,
+      "played": 5
     },
     "vpfiends": {
       "wins": 2,
-      "top3": 4,
-      "played": 4
+      "top3": 5,
+      "played": 5
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 4,
-      "played": 4
+      "top3": 5,
+      "played": 5
     }
   },
   "seasons": [
@@ -81,16 +81,49 @@
     }
   ],
   "current": {
-    "course": "Rhineland",
+    "course": "Sequoia Grove",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 3,
-    "season_week": 5,
-    "start": "2026-10-16T16:05:13",
-    "end": "2026-10-23T16:00:00",
-    "deadline_text": "Friday, October 23rd @ 12:00 PM ET"
+    "season_week": 6,
+    "start": "2026-10-23T16:05:14",
+    "end": "2026-10-30T16:00:00",
+    "deadline_text": "Friday, October 30th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-10-16",
+      "course": "Rhineland",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 3,
+      "season_week": 5,
+      "start": "2026-10-16T16:05:13",
+      "end": "2026-10-23T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "ed20910",
+          "score_vs_par": "-21",
+          "total_score": "51",
+          "date": "Oct 18"
+        },
+        {
+          "rank": 2,
+          "player": "vpfiends",
+          "score_vs_par": "-20",
+          "total_score": "52",
+          "date": "Oct 18"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "E",
+          "total_score": "72",
+          "date": "Oct 20"
+        }
+      ],
+      "winner": "ed20910"
+    },
     {
       "week_start": "2026-10-09",
       "course": "Pearl Lagoon",
@@ -665,18 +698,18 @@
   "standings": {
     "vpfiends": {
       "wins": 12,
-      "top3": 16,
-      "played": 16
+      "top3": 17,
+      "played": 17
     },
     "ed20910": {
-      "wins": 4,
-      "top3": 14,
-      "played": 15
+      "wins": 5,
+      "top3": 15,
+      "played": 16
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 14,
-      "played": 15
+      "top3": 15,
+      "played": 16
     },
     "Dreaddazzman": {
       "wins": 0,
@@ -702,6 +735,7 @@
     "Celtic Shores",
     "Dusty Bend",
     "Pearl Lagoon",
-    "Rhineland"
+    "Rhineland",
+    "Sequoia Grove"
   ]
 }
