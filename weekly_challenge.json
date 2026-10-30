@@ -4,26 +4,10 @@
     "weeks_per_season": 6
   },
   "current_season": {
-    "number": 3,
-    "week": 6
+    "number": 4,
+    "week": 1
   },
-  "season_standings": {
-    "ed20910": {
-      "wins": 3,
-      "top3": 5,
-      "played": 5
-    },
-    "vpfiends": {
-      "wins": 2,
-      "top3": 5,
-      "played": 5
-    },
-    "Paladin242": {
-      "wins": 0,
-      "top3": 5,
-      "played": 5
-    }
-  },
+  "season_standings": {},
   "seasons": [
     {
       "number": 1,
@@ -78,19 +62,86 @@
           "played": 5
         }
       }
+    },
+    {
+      "number": 3,
+      "weeks": 6,
+      "champion": "ed20910",
+      "standings": {
+        "ed20910": {
+          "wins": 4,
+          "top3": 6,
+          "played": 6
+        },
+        "vpfiends": {
+          "wins": 2,
+          "top3": 6,
+          "played": 6
+        },
+        "Paladin242": {
+          "wins": 0,
+          "top3": 6,
+          "played": 6
+        },
+        "Dreaddazzman": {
+          "wins": 0,
+          "top3": 0,
+          "played": 1
+        }
+      }
     }
   ],
   "current": {
-    "course": "Sequoia Grove",
+    "course": "Agave Ranch",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
-    "season": 3,
-    "season_week": 6,
-    "start": "2026-10-23T16:05:14",
-    "end": "2026-10-30T16:00:00",
-    "deadline_text": "Friday, October 30th @ 12:00 PM ET"
+    "season": 4,
+    "season_week": 1,
+    "start": "2026-10-30T16:05:17",
+    "end": "2026-11-06T16:00:00",
+    "deadline_text": "Friday, November 6th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-10-23",
+      "course": "Sequoia Grove",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 3,
+      "season_week": 6,
+      "start": "2026-10-23T16:05:14",
+      "end": "2026-10-30T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "ed20910",
+          "score_vs_par": "-20",
+          "total_score": "52",
+          "date": "Oct 25"
+        },
+        {
+          "rank": 2,
+          "player": "vpfiends",
+          "score_vs_par": "-16",
+          "total_score": "56",
+          "date": "Oct 27"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "-2",
+          "total_score": "69",
+          "date": "Oct 29"
+        },
+        {
+          "rank": 4,
+          "player": "Dreaddazzman",
+          "score_vs_par": "-1",
+          "total_score": "71",
+          "date": "Oct 27"
+        }
+      ],
+      "winner": "ed20910"
+    },
     {
       "week_start": "2026-10-16",
       "course": "Rhineland",
@@ -698,23 +749,23 @@
   "standings": {
     "vpfiends": {
       "wins": 12,
-      "top3": 17,
-      "played": 17
+      "top3": 18,
+      "played": 18
     },
     "ed20910": {
-      "wins": 5,
-      "top3": 15,
-      "played": 16
+      "wins": 6,
+      "top3": 16,
+      "played": 17
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 15,
-      "played": 16
+      "top3": 16,
+      "played": 17
     },
     "Dreaddazzman": {
       "wins": 0,
       "top3": 3,
-      "played": 8
+      "played": 9
     }
   },
   "used_courses_2019": [
@@ -736,6 +787,7 @@
     "Dusty Bend",
     "Pearl Lagoon",
     "Rhineland",
-    "Sequoia Grove"
+    "Sequoia Grove",
+    "Agave Ranch"
   ]
 }
