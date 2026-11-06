@@ -5,9 +5,25 @@
   },
   "current_season": {
     "number": 4,
-    "week": 1
+    "week": 2
   },
-  "season_standings": {},
+  "season_standings": {
+    "ed20910": {
+      "wins": 1,
+      "top3": 1,
+      "played": 1
+    },
+    "vpfiends": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    },
+    "Dreaddazzman": {
+      "wins": 0,
+      "top3": 1,
+      "played": 1
+    }
+  },
   "seasons": [
     {
       "number": 1,
@@ -92,16 +108,49 @@
     }
   ],
   "current": {
-    "course": "Agave Ranch",
+    "course": "Teal Gardens",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 4,
-    "season_week": 1,
-    "start": "2026-10-30T16:05:17",
-    "end": "2026-11-06T16:00:00",
-    "deadline_text": "Friday, November 6th @ 12:00 PM ET"
+    "season_week": 2,
+    "start": "2026-11-06T17:05:14",
+    "end": "2026-11-13T16:00:00",
+    "deadline_text": "Friday, November 13th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-10-30",
+      "course": "Agave Ranch",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 4,
+      "season_week": 1,
+      "start": "2026-10-30T16:05:17",
+      "end": "2026-11-06T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "ed20910",
+          "score_vs_par": "-28",
+          "total_score": "44",
+          "date": "Nov 4"
+        },
+        {
+          "rank": 2,
+          "player": "vpfiends",
+          "score_vs_par": "-26",
+          "total_score": "46",
+          "date": "Nov 5"
+        },
+        {
+          "rank": 3,
+          "player": "Dreaddazzman",
+          "score_vs_par": "-3",
+          "total_score": "67",
+          "date": "Nov 4"
+        }
+      ],
+      "winner": "ed20910"
+    },
     {
       "week_start": "2026-10-23",
       "course": "Sequoia Grove",
@@ -749,13 +798,13 @@
   "standings": {
     "vpfiends": {
       "wins": 12,
-      "top3": 18,
-      "played": 18
+      "top3": 19,
+      "played": 19
     },
     "ed20910": {
-      "wins": 6,
-      "top3": 16,
-      "played": 17
+      "wins": 7,
+      "top3": 17,
+      "played": 18
     },
     "Paladin242": {
       "wins": 0,
@@ -764,8 +813,8 @@
     },
     "Dreaddazzman": {
       "wins": 0,
-      "top3": 3,
-      "played": 9
+      "top3": 4,
+      "played": 10
     }
   },
   "used_courses_2019": [
@@ -788,6 +837,7 @@
     "Pearl Lagoon",
     "Rhineland",
     "Sequoia Grove",
-    "Agave Ranch"
+    "Agave Ranch",
+    "Teal Gardens"
   ]
 }
