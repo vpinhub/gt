@@ -5,20 +5,25 @@
   },
   "current_season": {
     "number": 4,
-    "week": 2
+    "week": 3
   },
   "season_standings": {
     "ed20910": {
-      "wins": 1,
-      "top3": 1,
-      "played": 1
+      "wins": 2,
+      "top3": 2,
+      "played": 2
     },
     "vpfiends": {
+      "wins": 0,
+      "top3": 2,
+      "played": 2
+    },
+    "Dreaddazzman": {
       "wins": 0,
       "top3": 1,
       "played": 1
     },
-    "Dreaddazzman": {
+    "Paladin242": {
       "wins": 0,
       "top3": 1,
       "played": 1
@@ -108,16 +113,49 @@
     }
   ],
   "current": {
-    "course": "Teal Gardens",
+    "course": "Juniper Falls",
     "game": "Golden Tee Unplugged 2019",
     "game_year": "2019",
     "season": 4,
-    "season_week": 2,
-    "start": "2026-11-06T17:05:14",
-    "end": "2026-11-13T16:00:00",
-    "deadline_text": "Friday, November 13th @ 12:00 PM ET"
+    "season_week": 3,
+    "start": "2026-11-13T17:05:17",
+    "end": "2026-11-20T16:00:00",
+    "deadline_text": "Friday, November 20th @ 12:00 PM ET"
   },
   "history": [
+    {
+      "week_start": "2026-11-06",
+      "course": "Teal Gardens",
+      "game": "Golden Tee Unplugged 2019",
+      "season": 4,
+      "season_week": 2,
+      "start": "2026-11-06T17:05:14",
+      "end": "2026-11-13T16:00:00",
+      "results": [
+        {
+          "rank": 1,
+          "player": "ed20910",
+          "score_vs_par": "-23",
+          "total_score": "50",
+          "date": "Nov 7"
+        },
+        {
+          "rank": 2,
+          "player": "vpfiends",
+          "score_vs_par": "-23",
+          "total_score": "50",
+          "date": "Nov 8"
+        },
+        {
+          "rank": 3,
+          "player": "Paladin242",
+          "score_vs_par": "-9",
+          "total_score": "64",
+          "date": "Nov 7"
+        }
+      ],
+      "winner": "ed20910"
+    },
     {
       "week_start": "2026-10-30",
       "course": "Agave Ranch",
@@ -798,18 +836,18 @@
   "standings": {
     "vpfiends": {
       "wins": 12,
-      "top3": 19,
-      "played": 19
+      "top3": 20,
+      "played": 20
     },
     "ed20910": {
-      "wins": 7,
-      "top3": 17,
-      "played": 18
+      "wins": 8,
+      "top3": 18,
+      "played": 19
     },
     "Paladin242": {
       "wins": 0,
-      "top3": 16,
-      "played": 17
+      "top3": 17,
+      "played": 18
     },
     "Dreaddazzman": {
       "wins": 0,
@@ -838,6 +876,7 @@
     "Rhineland",
     "Sequoia Grove",
     "Agave Ranch",
-    "Teal Gardens"
+    "Teal Gardens",
+    "Juniper Falls"
   ]
 }
